@@ -2,8 +2,8 @@ name: Auto Update Data
 
 on:
   schedule:
-   - cron: "*/1 * * * *"  # Runs every 1 minute
-  workflow_dispatch:  # Allows manual triggering
+    - cron: "0 * * * *"  # Runs every hour
+  workflow_dispatch:  # Allows manual trigger (button click)
 
 jobs:
   update_data:
@@ -29,5 +29,5 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add output_data.json
-          git commit -m "Auto-updated data"
+          git commit -m "Manual or Hourly Update"
           git push
