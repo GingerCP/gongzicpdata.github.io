@@ -31,5 +31,43 @@ def fetch_data():
     else:
         print("❌ Failed to fetch data. Status Code:", response.status_code)
 
+
+
+def get_recent_updates():
+  novels = []
+  for page in range(0,1):
+    print(page/50)
+    url = "https://gongzicp.com/webapi/novel/novelGetList?page="+str(page)+"&size=10&tid=75&field=4&order=0"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Referer": "https://www.gongzicp.com/home/indexRanking?rid=2&tid=0"}
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        text = response.text
+        data = json.loads(text)
+        # print(data['data']['list'][0])
+        # list_novel = data["data"]['recList']['bzlj']['list']
+        for novel in data['data']['list']:
+            # # print(novel["novel_id"],novel["novel_name"],novel["novel_allpopu"])
+            # all_pop.append(novel["novel_allpopu"])
+            # IDs.append(novel["novel_id"])
+            # names.append(novel["novel_name"])
+
+            url2 ='https://www.gongzicp.com/webapi/novel/novelInfo?id='+ str(novel["novel_id"]) +' HTTP/1.1'
+            response = requests.get(url2)
+            web_content = response.text
+            pre_novel = json.loads(web_content)['data']
+            novels.append({
+                "ID": novel["novel_id"],
+                "Name": novel["novel_name"],
+                "Popularity": novel["novel_allpopu"],
+                "Collection": novel.get("novel_allcoll", "N/A")
+            })
+    else:
+        print("Failed to retrieve data. Status code:", response.status_code)
+    with open("output_data.json", "w", encoding="utf-8") as file:
+        json.dump(novels, file, ensure_ascii=False, indent=4)
+
+      
 if __name__ == "__main__":
-    fetch_data()
+    get_recent_updates()
