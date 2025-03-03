@@ -61,7 +61,7 @@ def get_recent_updates():
                 "ID": novel["novel_id"],
                 "Name": novel["novel_name"],
                 "Popularity": novel["novel_allpopu"],
-                "Collection": novel.get("novel_allcoll", "N/A")
+                "Collection":  pre_novel["novel_allcoll"]
             })
     else:
         print("Failed to retrieve data. Status code:", response.status_code)
