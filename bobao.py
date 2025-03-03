@@ -1,5 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
+import requests 
+import json
 
 # URL of the webpage
 novels = []
