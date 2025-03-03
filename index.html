@@ -10,7 +10,7 @@
     <h1 class="mt-4">小说排行榜</h1>
 
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
-    <h2 class="mt-5 text-primary">📖 畅销热追 (每日更新)</h2>
+    <h2 class="mt-5 text-primary">📖 播报</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -20,11 +20,11 @@
                 <th>收藏</th>
             </tr>
         </thead>
-        <tbody id="best-sellers-table"></tbody>
+        <tbody id="broadcast"></tbody>
     </table>
 
     <!-- Weekly Data (New Releases) -->
-    <h2 class="mt-5 text-success">📚 新书推荐 (每周更新)</h2>
+    <h2 class="mt-5 text-success">📚 全站</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -34,22 +34,9 @@
                 <th>收藏</th>
             </tr>
         </thead>
-        <tbody id="new-releases-table"></tbody>
+        <tbody id="allbooks"></tbody>
     </table>
 
-    <!-- Weekly Data (Classics) -->
-    <h2 class="mt-5 text-warning">📙 经典好书 (每周更新)</h2>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>书名</th>
-                <th>热度</th>
-                <th>收藏</th>
-            </tr>
-        </thead>
-        <tbody id="classics-table"></tbody>
-    </table>
 
     <script>
         // Function to load and display dataset
@@ -74,9 +61,8 @@
         }
 
         // Load all datasets when the page loads
-        loadDataset("dataset_best_sellers.json", "best-sellers-table");  // Daily data on top
-        loadDataset("dataset_new_releases.json", "new-releases-table");  // Weekly data
-        loadDataset("dataset_classics.json", "classics-table");          // Weekly data
+        loadDataset("bobao.json", "broadcast");  // Daily data on top
+        loadDataset("output_data.json", "allbooks");  // Weekly data
     </script>
 </body>
 </html>
