@@ -2,8 +2,8 @@ name: Auto Update Data
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Runs every hour
-  workflow_dispatch:  # Allows manual trigger (button click)
+    - cron: "0 */6 * * *"  # Runs every 6 hours
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update_data:
