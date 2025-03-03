@@ -20,7 +20,7 @@ def fetch_data():
                 "ID": novel["novel_id"],
                 "Name": novel["novel_name"],
                 "Popularity": novel["novel_allpopu"],
-                "Collection": novel.get("novel_allcoll", "N/A")
+                "Collection": pre_novel["novel_allcoll"]
             })
 
         # Save data to JSON
