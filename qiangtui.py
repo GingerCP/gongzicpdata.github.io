@@ -1,7 +1,13 @@
 import requests 
 import json
-from datetime import datetime
-fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+from datetime import datetime, timedelta
+
+# Convert UTC time to China Standard Time (CST)
+def get_china_time():
+    return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S")
+
+fetch_time = get_china_time()
+
 # URL of the webpage
 novels = []
 for page in range(1,2):
