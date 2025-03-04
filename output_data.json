@@ -1,9 +1,423 @@
 [
     {
+        "ID": 1819621,
+        "Name": "里斯秦庄",
+        "Popularity": 489.67,
+        "Collection": 3
+    },
+    {
+        "ID": 1592626,
+        "Name": "破格",
+        "Popularity": 697881.66,
+        "Collection": 1035
+    },
+    {
+        "ID": 1435610,
+        "Name": " 玩物",
+        "Popularity": 255180.27,
+        "Collection": 1561
+    },
+    {
+        "ID": 1805245,
+        "Name": "妄恋共感",
+        "Popularity": 14981.91,
+        "Collection": 45
+    },
+    {
+        "ID": 1579001,
+        "Name": "剑上镖",
+        "Popularity": 729417.44,
+        "Collection": 1867
+    },
+    {
+        "ID": 1769046,
+        "Name": "杀死那支华尔兹",
+        "Popularity": 79198.25,
+        "Collection": 164
+    },
+    {
+        "ID": 1713824,
+        "Name": "杀死那个beta卧底",
+        "Popularity": 23704.59,
+        "Collection": 63
+    },
+    {
+        "ID": 1806238,
+        "Name": "东风恶",
+        "Popularity": 15235.75,
+        "Collection": 11
+    },
+    {
+        "ID": 1720205,
+        "Name": "美强惨男主拯救指南",
+        "Popularity": 1093283.28,
+        "Collection": 2581
+    },
+    {
+        "ID": 1797539,
+        "Name": "今夜有雪",
+        "Popularity": 3784.11,
+        "Collection": 2
+    },
+    {
+        "ID": 1819621,
+        "Name": "里斯秦庄",
+        "Popularity": 489.67,
+        "Collection": 3
+    },
+    {
+        "ID": 1592626,
+        "Name": "破格",
+        "Popularity": 697881.66,
+        "Collection": 1035
+    },
+    {
+        "ID": 1435610,
+        "Name": " 玩物",
+        "Popularity": 255180.27,
+        "Collection": 1561
+    },
+    {
+        "ID": 1805245,
+        "Name": "妄恋共感",
+        "Popularity": 14981.91,
+        "Collection": 45
+    },
+    {
+        "ID": 1579001,
+        "Name": "剑上镖",
+        "Popularity": 729417.44,
+        "Collection": 1867
+    },
+    {
+        "ID": 1769046,
+        "Name": "杀死那支华尔兹",
+        "Popularity": 79198.25,
+        "Collection": 164
+    },
+    {
+        "ID": 1713824,
+        "Name": "杀死那个beta卧底",
+        "Popularity": 23704.59,
+        "Collection": 63
+    },
+    {
+        "ID": 1806238,
+        "Name": "东风恶",
+        "Popularity": 15235.75,
+        "Collection": 11
+    },
+    {
+        "ID": 1720205,
+        "Name": "美强惨男主拯救指南",
+        "Popularity": 1093283.28,
+        "Collection": 2581
+    },
+    {
+        "ID": 1797539,
+        "Name": "今夜有雪",
+        "Popularity": 3784.11,
+        "Collection": 2
+    },
+    {
+        "ID": 1699123,
+        "Name": "负义",
+        "Popularity": 2712678.7,
+        "Collection": 5501
+    },
+    {
+        "ID": 1615817,
+        "Name": "游人指南",
+        "Popularity": 74160.25,
+        "Collection": 113
+    },
+    {
+        "ID": 1751484,
+        "Name": "残鸣不响",
+        "Popularity": 365120.92,
+        "Collection": 866
+    },
+    {
+        "ID": 1689773,
+        "Name": "长日飞光",
+        "Popularity": 146100.25,
+        "Collection": 141
+    },
+    {
+        "ID": 1815510,
+        "Name": "反派魔尊穿成师尊受后",
+        "Popularity": 7298,
+        "Collection": 13
+    },
+    {
+        "ID": 1809475,
+        "Name": "错位",
+        "Popularity": 15346.25,
+        "Collection": 43
+    },
+    {
+        "ID": 1800100,
+        "Name": "蝴蝶眨几次眼睛",
+        "Popularity": 546304.5,
+        "Collection": 1715
+    },
+    {
+        "ID": 1799091,
+        "Name": "我醉欲眠",
+        "Popularity": 29724.2,
+        "Collection": 17
+    },
+    {
+        "ID": 1791477,
+        "Name": "特聘道侣",
+        "Popularity": 3503,
+        "Collection": 1
+    },
+    {
+        "ID": 1782959,
+        "Name": "捕君心",
+        "Popularity": 117236,
+        "Collection": 217
+    },
+    {
+        "ID": 1781311,
+        "Name": "坠落返生",
+        "Popularity": 11457.66,
+        "Collection": 19
+    },
+    {
+        "ID": 1776695,
+        "Name": "声声",
+        "Popularity": 25646.75,
+        "Collection": 20
+    },
+    {
+        "ID": 1750204,
+        "Name": "真实遗愿清单",
+        "Popularity": 10719495,
+        "Collection": 38735
+    },
+    {
+        "ID": 1732769,
+        "Name": "劫神",
+        "Popularity": 1308211.5,
+        "Collection": 1458
+    },
+    {
+        "ID": 1732219,
+        "Name": "百雀煞",
+        "Popularity": 287741,
+        "Collection": 236
+    },
+    {
+        "ID": 1706518,
+        "Name": "给我抄抄",
+        "Popularity": 498335.29,
+        "Collection": 1907
+    },
+    {
+        "ID": 1698771,
+        "Name": "银行狗的春天",
+        "Popularity": 586522.78,
+        "Collection": 1092
+    },
+    {
+        "ID": 1599931,
+        "Name": "狂宴",
+        "Popularity": 81930.25,
+        "Collection": 28
+    },
+    {
+        "ID": 1553244,
+        "Name": "见春天树",
+        "Popularity": 487225,
+        "Collection": 1114
+    },
+    {
+        "ID": 1506220,
+        "Name": "兔比特",
+        "Popularity": 7332547.25,
+        "Collection": 8523
+    },
+    {
+        "ID": 1401463,
+        "Name": "离婚冷静期",
+        "Popularity": 707993.25,
+        "Collection": 3902
+    },
+    {
+        "ID": 1777278,
+        "Name": "致命鱿物",
+        "Popularity": 2987303.82,
+        "Collection": 4028
+    },
+    {
+        "ID": 853557,
+        "Name": "荔枝角曼波",
+        "Popularity": 5780486.77,
+        "Collection": 9870
+    },
+    {
+        "ID": 1715187,
+        "Name": "怎么会有神棍怕鬼啊",
+        "Popularity": 305471.68,
+        "Collection": 759
+    },
+    {
+        "ID": 1775802,
+        "Name": "坍塌太阳",
+        "Popularity": 29025.18,
+        "Collection": 12
+    },
+    {
+        "ID": 1401787,
+        "Name": "猎神游戏",
+        "Popularity": 262133.69,
+        "Collection": 628
+    },
+    {
+        "ID": 647886,
+        "Name": "规则是禁止私联",
+        "Popularity": 541726.75,
+        "Collection": 1992
+    },
+    {
+        "ID": 1745907,
+        "Name": "我是直男来着",
+        "Popularity": 241138.57,
+        "Collection": 593
+    },
+    {
+        "ID": 1785658,
+        "Name": "雨后闻腥",
+        "Popularity": 9395217.43,
+        "Collection": 25400
+    },
+    {
+        "ID": 1499589,
+        "Name": "候鸟与翠榴石",
+        "Popularity": 10885001.9,
+        "Collection": 9113
+    },
+    {
+        "ID": 1414867,
+        "Name": "假面之罪",
+        "Popularity": 8426210.62,
+        "Collection": 9193
+    },
+    {
+        "ID": 1368713,
+        "Name": "队长，让我吸一口",
+        "Popularity": 53905.04,
+        "Collection": 318
+    },
+    {
+        "ID": 1707256,
+        "Name": "笑话",
+        "Popularity": 233953.75,
+        "Collection": 777
+    },
+    {
+        "ID": 1451042,
+        "Name": "偏倚",
+        "Popularity": 26059.25,
+        "Collection": 31
+    },
+    {
+        "ID": 1728883,
+        "Name": "和死对头网恋后翻车了",
+        "Popularity": 698525.82,
+        "Collection": 2044
+    },
+    {
+        "ID": 1798488,
+        "Name": "山风遇惊鸟",
+        "Popularity": 28049.5,
+        "Collection": 14
+    },
+    {
+        "ID": 1748589,
+        "Name": "稳赔不赚",
+        "Popularity": 913720.78,
+        "Collection": 1306
+    },
+    {
+        "ID": 1732789,
+        "Name": "散尽残阳",
+        "Popularity": 331518.25,
+        "Collection": 817
+    },
+    {
+        "ID": 1363216,
+        "Name": "暗恋对象他非要跟我结婚",
+        "Popularity": 50489,
+        "Collection": 137
+    },
+    {
+        "ID": 1615367,
+        "Name": "到底是谁在觊觎我！",
+        "Popularity": 228706.36,
+        "Collection": 225
+    },
+    {
+        "ID": 1807829,
+        "Name": "ISO感光度",
+        "Popularity": 11947.77,
+        "Collection": 8
+    },
+    {
+        "ID": 1800757,
+        "Name": "楚楚可为",
+        "Popularity": 13714.79,
+        "Collection": 5
+    },
+    {
+        "ID": 1764589,
+        "Name": "春风对",
+        "Popularity": 38725.5,
+        "Collection": 36
+    },
+    {
+        "ID": 1558200,
+        "Name": "扰我清梦",
+        "Popularity": 78244.54,
+        "Collection": 4
+    },
+    {
+        "ID": 1815649,
+        "Name": "淬火效应",
+        "Popularity": 4814.25,
+        "Collection": 2
+    },
+    {
+        "ID": 1760441,
+        "Name": "爱有时差",
+        "Popularity": 50549.25,
+        "Collection": 53
+    },
+    {
+        "ID": 1752263,
+        "Name": "汪汪队立大功",
+        "Popularity": 14844.52,
+        "Collection": 25
+    },
+    {
+        "ID": 1735930,
+        "Name": "岁月知长夏",
+        "Popularity": 768256,
+        "Collection": 1488
+    },
+    {
+        "ID": 1683594,
+        "Name": "禁止天真",
+        "Popularity": 7590571.41,
+        "Collection": 9497
+    },
+    {
         "ID": 1768258,
         "Name": "空洞爱情",
-        "Popularity": 916654.7,
-        "Collection": 2154
+        "Popularity": 922655.2,
+        "Collection": 2157
     },
     {
         "ID": 1816301,
@@ -14,116 +428,56 @@
     {
         "ID": 1578920,
         "Name": "卤水点豆腐",
-        "Popularity": 11020983.57,
-        "Collection": 14920
+        "Popularity": 11111238.07,
+        "Collection": 15015
     },
     {
         "ID": 1170470,
         "Name": "缚春恩",
-        "Popularity": 10889989.4,
-        "Collection": 14743
+        "Popularity": 11034114.4,
+        "Collection": 14975
     },
     {
         "ID": 1812560,
         "Name": "IDUN漪瞳",
-        "Popularity": 3637.25,
+        "Popularity": 4147.25,
         "Collection": 10
     },
     {
         "ID": 1642838,
         "Name": "汹涌",
-        "Popularity": 389200.56,
-        "Collection": 1064
+        "Popularity": 389530.56,
+        "Collection": 1065
     },
     {
         "ID": 1761060,
         "Name": "师弟不知道",
-        "Popularity": 691312.02,
-        "Collection": 1569
+        "Popularity": 703210.58,
+        "Collection": 1604
     },
     {
         "ID": 1751111,
         "Name": "寻妖",
-        "Popularity": 47977.25,
+        "Popularity": 47987.25,
         "Collection": 51
     },
     {
         "ID": 1725415,
         "Name": "童养夫",
-        "Popularity": 401330.5,
+        "Popularity": 401367.5,
         "Collection": 1268
     },
     {
         "ID": 1719913,
         "Name": "高校教师生存日记",
-        "Popularity": 2610814.25,
-        "Collection": 10581
-    },
-    {
-        "ID": 1768258,
-        "Name": "空洞爱情",
-        "Popularity": 916654.7,
-        "Collection": 2154
-    },
-    {
-        "ID": 1816301,
-        "Name": "午夜爱人",
-        "Popularity": 6157.01,
-        "Collection": 4
-    },
-    {
-        "ID": 1578920,
-        "Name": "卤水点豆腐",
-        "Popularity": 11020983.57,
-        "Collection": 14920
-    },
-    {
-        "ID": 1170470,
-        "Name": "缚春恩",
-        "Popularity": 10889989.4,
-        "Collection": 14743
-    },
-    {
-        "ID": 1812560,
-        "Name": "IDUN漪瞳",
-        "Popularity": 3637.25,
-        "Collection": 10
-    },
-    {
-        "ID": 1642838,
-        "Name": "汹涌",
-        "Popularity": 389200.56,
-        "Collection": 1064
-    },
-    {
-        "ID": 1761060,
-        "Name": "师弟不知道",
-        "Popularity": 691312.02,
-        "Collection": 1569
-    },
-    {
-        "ID": 1751111,
-        "Name": "寻妖",
-        "Popularity": 47977.25,
-        "Collection": 51
-    },
-    {
-        "ID": 1725415,
-        "Name": "童养夫",
-        "Popularity": 401330.5,
-        "Collection": 1268
-    },
-    {
-        "ID": 1719913,
-        "Name": "高校教师生存日记",
-        "Popularity": 2610814.25,
-        "Collection": 10581
+        "Popularity": 2620938.75,
+        "Collection": 10611
     },
     {
         "ID": 1510047,
         "Name": "双向缺陷",
-        "Popularity": 484856,
-        "Collection": 1190
+        "Popularity": 485411,
+        "Collection": 1191
     },
     {
         "ID": 1816500,
@@ -146,32 +500,32 @@
     {
         "ID": 1326238,
         "Name": "星火不息",
-        "Popularity": 5864866.99,
-        "Collection": 10203
+        "Popularity": 5871891.99,
+        "Collection": 10208
     },
     {
         "ID": 1767547,
         "Name": "养嗔为患",
-        "Popularity": 53678.75,
+        "Popularity": 53679.25,
         "Collection": 47
     },
     {
         "ID": 1735105,
         "Name": "天岛效应",
-        "Popularity": 48143415.48,
-        "Collection": 54967
+        "Popularity": 48265422.98,
+        "Collection": 55002
     },
     {
         "ID": 1752024,
         "Name": "风月薄幸",
-        "Popularity": 220800.5,
-        "Collection": 538
+        "Popularity": 220955.5,
+        "Collection": 539
     },
     {
         "ID": 1616587,
         "Name": "鸣天的礼物",
-        "Popularity": 522451.52,
-        "Collection": 1079
+        "Popularity": 523081.52,
+        "Collection": 1077
     },
     {
         "ID": 1732956,
@@ -182,8 +536,8 @@
     {
         "ID": 1613747,
         "Name": "烂桃子",
-        "Popularity": 291031.33,
-        "Collection": 831
+        "Popularity": 294846.33,
+        "Collection": 833
     },
     {
         "ID": 1388451,
@@ -194,20 +548,20 @@
     {
         "ID": 1416499,
         "Name": "心软",
-        "Popularity": 7704799.42,
-        "Collection": 9102
+        "Popularity": 7720474.42,
+        "Collection": 9106
     },
     {
         "ID": 1638374,
         "Name": "渣受今天也想提分手",
-        "Popularity": 1020536.14,
+        "Popularity": 1021538.14,
         "Collection": 1042
     },
     {
         "ID": 1694869,
         "Name": "海上共潮生",
-        "Popularity": 18549139.01,
-        "Collection": 12011
+        "Popularity": 18582674.51,
+        "Collection": 12037
     },
     {
         "ID": 1785482,
@@ -218,14 +572,14 @@
     {
         "ID": 1652843,
         "Name": "不期",
-        "Popularity": 2976300.31,
-        "Collection": 2791
+        "Popularity": 2986096.35,
+        "Collection": 2796
     },
     {
         "ID": 1509532,
         "Name": "天意浮沉",
-        "Popularity": 910196.63,
-        "Collection": 1528
+        "Popularity": 911561.63,
+        "Collection": 1529
     },
     {
         "ID": 1768195,
@@ -236,8 +590,8 @@
     {
         "ID": 1751140,
         "Name": "春天见",
-        "Popularity": 4067467.76,
-        "Collection": 5622
+        "Popularity": 4071132.76,
+        "Collection": 5620
     },
     {
         "ID": 1712845,
@@ -248,38 +602,38 @@
     {
         "ID": 1592883,
         "Name": "神山上的宗宗格纳",
-        "Popularity": 47658.94,
-        "Collection": 73
+        "Popularity": 47808.94,
+        "Collection": 74
     },
     {
         "ID": 1801788,
         "Name": "刻舟爱河上",
-        "Popularity": 111541.65,
-        "Collection": 241
+        "Popularity": 112310.39,
+        "Collection": 246
     },
     {
         "ID": 1592602,
         "Name": "吞声",
-        "Popularity": 5302463.09,
-        "Collection": 10168
+        "Popularity": 5313463.09,
+        "Collection": 10182
     },
     {
         "ID": 1649448,
         "Name": "破坏欲",
-        "Popularity": 1434749.79,
-        "Collection": 4218
+        "Popularity": 1440025.29,
+        "Collection": 4226
     },
     {
         "ID": 1801929,
         "Name": "潮汐",
-        "Popularity": 86174.11,
-        "Collection": 73
+        "Popularity": 86474.11,
+        "Collection": 75
     },
     {
         "ID": 1590155,
         "Name": "言不由衷",
-        "Popularity": 1353830.74,
-        "Collection": 3467
+        "Popularity": 1353875.74,
+        "Collection": 3465
     },
     {
         "ID": 1814876,
@@ -290,8 +644,8 @@
     {
         "ID": 1775407,
         "Name": "回旋",
-        "Popularity": 641676.53,
-        "Collection": 1701
+        "Popularity": 645732.03,
+        "Collection": 1707
     },
     {
         "ID": 1811179,
@@ -302,8 +656,8 @@
     {
         "ID": 1530070,
         "Name": "金色柏树",
-        "Popularity": 11207035.96,
-        "Collection": 9799
+        "Popularity": 11228530.96,
+        "Collection": 9813
     },
     {
         "ID": 1328781,
@@ -314,32 +668,32 @@
     {
         "ID": 1740528,
         "Name": "错误治疗指南",
-        "Popularity": 115770.91,
-        "Collection": 246
+        "Popularity": 117925.91,
+        "Collection": 247
     },
     {
         "ID": 1426641,
         "Name": "恋爱序言",
-        "Popularity": 7629012.73,
+        "Popularity": 7630707.73,
         "Collection": 12587
     },
     {
         "ID": 1488111,
         "Name": "听说全世界都要拆散我们",
-        "Popularity": 113956.96,
-        "Collection": 193
+        "Popularity": 114116.96,
+        "Collection": 194
     },
     {
         "ID": 1814737,
         "Name": "1992摇滚与上学live",
-        "Popularity": 662083.24,
-        "Collection": 324
+        "Popularity": 663613.24,
+        "Collection": 330
     },
     {
         "ID": 1731402,
         "Name": "隐燃",
-        "Popularity": 4589158.98,
-        "Collection": 5808
+        "Popularity": 4605178.98,
+        "Collection": 5849
     },
     {
         "ID": 1782608,
@@ -350,14 +704,20 @@
     {
         "ID": 1520149,
         "Name": "重生回古代但只想当会计",
-        "Popularity": 2972719.86,
-        "Collection": 8445
+        "Popularity": 2973019.86,
+        "Collection": 8447
     },
     {
         "ID": 1609999,
         "Name": "月之暗面",
-        "Popularity": 838696.92,
-        "Collection": 2036
+        "Popularity": 839015.42,
+        "Collection": 2038
+    },
+    {
+        "ID": 1642822,
+        "Name": "心动不渝",
+        "Popularity": 118790.25,
+        "Collection": 210
     },
     {
         "ID": 1642822,
@@ -368,20 +728,20 @@
     {
         "ID": 1454325,
         "Name": "浪心朝圣",
-        "Popularity": 51287.18,
+        "Popularity": 50623.43,
         "Collection": 65
     },
     {
         "ID": 1803061,
         "Name": "什么我的房东竟是我的太太",
-        "Popularity": 47410,
-        "Collection": 134
+        "Popularity": 47575,
+        "Collection": 135
     },
     {
         "ID": 1574443,
         "Name": "夜跑别在雷雨天",
-        "Popularity": 16849948.73,
-        "Collection": 28294
+        "Popularity": 16952782.73,
+        "Collection": 28346
     },
     {
         "ID": 1808704,
@@ -392,20 +752,20 @@
     {
         "ID": 1725082,
         "Name": "劣质春日",
-        "Popularity": 495405.99,
-        "Collection": 984
+        "Popularity": 496850.99,
+        "Collection": 983
     },
     {
         "ID": 1786057,
         "Name": "海平面之上",
-        "Popularity": 20951.42,
+        "Popularity": 20953.65,
         "Collection": 9
     },
     {
         "ID": 1780640,
         "Name": "我们不是分手了吗",
-        "Popularity": 2854844.67,
-        "Collection": 6042
+        "Popularity": 2864310.67,
+        "Collection": 6060
     },
     {
         "ID": 1693166,
@@ -422,8 +782,8 @@
     {
         "ID": 1780172,
         "Name": "货不对版",
-        "Popularity": 163764.5,
-        "Collection": 469
+        "Popularity": 163914.5,
+        "Collection": 470
     },
     {
         "ID": 1770880,
@@ -434,56 +794,56 @@
     {
         "ID": 1756538,
         "Name": "爱神号沉没事件",
-        "Popularity": 860937.45,
-        "Collection": 1857
+        "Popularity": 865022.45,
+        "Collection": 1860
     },
     {
         "ID": 1734608,
         "Name": "谷雨时分",
-        "Popularity": 1700041.05,
-        "Collection": 5116
+        "Popularity": 1707901.05,
+        "Collection": 5122
     },
     {
         "ID": 1723981,
         "Name": "他怎么还不和我分手",
-        "Popularity": 13872515.75,
-        "Collection": 15729
+        "Popularity": 14412155.75,
+        "Collection": 16426
     },
     {
         "ID": 1569273,
         "Name": "溶解症",
-        "Popularity": 4543638.12,
-        "Collection": 9589
+        "Popularity": 4544493.12,
+        "Collection": 9590
     },
     {
         "ID": 1551150,
         "Name": "狗东西",
-        "Popularity": 165510.25,
-        "Collection": 347
+        "Popularity": 165660.25,
+        "Collection": 348
     },
     {
         "ID": 1467461,
         "Name": "他的玩臣",
-        "Popularity": 994450.5,
+        "Popularity": 997330.5,
         "Collection": 4058
     },
     {
         "ID": 1096501,
         "Name": "太太，不可以这样",
-        "Popularity": 3979123.75,
-        "Collection": 7241
+        "Popularity": 3980883.75,
+        "Collection": 7242
     },
     {
         "ID": 859336,
         "Name": "工号068",
-        "Popularity": 9584303.96,
+        "Popularity": 9584575.22,
         "Collection": 9045
     },
     {
         "ID": 1470371,
         "Name": "无人管束",
-        "Popularity": 8496492.58,
-        "Collection": 8506
+        "Popularity": 8496942.58,
+        "Collection": 8507
     },
     {
         "ID": 1442932,
@@ -494,20 +854,20 @@
     {
         "ID": 1706695,
         "Name": "留人不住",
-        "Popularity": 9348028.59,
-        "Collection": 12667
+        "Popularity": 9370743.59,
+        "Collection": 12698
     },
     {
         "ID": 1732562,
         "Name": "迷神道",
-        "Popularity": 6474887.03,
-        "Collection": 11436
+        "Popularity": 6489165.03,
+        "Collection": 11455
     },
     {
         "ID": 1780671,
         "Name": "也不是很有素质",
-        "Popularity": 61545.95,
-        "Collection": 104
+        "Popularity": 64250.95,
+        "Collection": 122
     },
     {
         "ID": 1653015,
@@ -518,14 +878,14 @@
     {
         "ID": 1745048,
         "Name": "我当松树那些年",
-        "Popularity": 764972.33,
-        "Collection": 1366
+        "Popularity": 767087.33,
+        "Collection": 1370
     },
     {
         "ID": 1507716,
         "Name": "冬禧民宿",
-        "Popularity": 3285764.31,
-        "Collection": 6790
+        "Popularity": 3288114.31,
+        "Collection": 6802
     },
     {
         "ID": 199513,
@@ -536,14 +896,14 @@
     {
         "ID": 1303212,
         "Name": "折金枝",
-        "Popularity": 4292617.17,
-        "Collection": 7764
+        "Popularity": 4293802.17,
+        "Collection": 7761
     },
     {
         "ID": 1679774,
         "Name": "求佛",
-        "Popularity": 303810.78,
-        "Collection": 626
+        "Popularity": 304110.78,
+        "Collection": 628
     },
     {
         "ID": 1773521,
@@ -566,26 +926,26 @@
     {
         "ID": 1784654,
         "Name": "裸色",
-        "Popularity": 802725.83,
-        "Collection": 2127
+        "Popularity": 803990.83,
+        "Collection": 2132
     },
     {
         "ID": 1292091,
         "Name": "悬鸟",
-        "Popularity": 36190971.14,
-        "Collection": 36660
+        "Popularity": 36456424.17,
+        "Collection": 37039
     },
     {
         "ID": 1702053,
         "Name": "见不得光的",
-        "Popularity": 2310406.36,
-        "Collection": 3481
+        "Popularity": 2316386.36,
+        "Collection": 3482
     },
     {
         "ID": 1773122,
         "Name": "好命",
-        "Popularity": 75303.59,
-        "Collection": 201
+        "Popularity": 75603.59,
+        "Collection": 203
     },
     {
         "ID": 1762732,
@@ -596,44 +956,50 @@
     {
         "ID": 1619780,
         "Name": "欺骗游戏",
-        "Popularity": 303612.54,
-        "Collection": 1358
+        "Popularity": 304217.54,
+        "Collection": 1362
+    },
+    {
+        "ID": 1619780,
+        "Name": "欺骗游戏",
+        "Popularity": 304217.54,
+        "Collection": 1362
     },
     {
         "ID": 1777089,
         "Name": "对五个渣攻始乱终弃后",
-        "Popularity": 199009.02,
+        "Popularity": 199051.52,
         "Collection": 239
     },
     {
         "ID": 1799711,
         "Name": "去南加",
-        "Popularity": 60130.98,
-        "Collection": 56
+        "Popularity": 61030.25,
+        "Collection": 57
     },
     {
         "ID": 1501904,
         "Name": "好梦发生",
-        "Popularity": 936767.14,
-        "Collection": 1792
+        "Popularity": 937607.14,
+        "Collection": 1796
     },
     {
         "ID": 1470260,
         "Name": "落星",
-        "Popularity": 3262147.92,
-        "Collection": 7798
+        "Popularity": 3269532.92,
+        "Collection": 7810
     },
     {
         "ID": 1725720,
         "Name": "谎话仙",
-        "Popularity": 118449.6,
-        "Collection": 165
+        "Popularity": 118749.6,
+        "Collection": 167
     },
     {
         "ID": 1586495,
         "Name": "沉柯",
-        "Popularity": 5724695.9,
-        "Collection": 6711
+        "Popularity": 5726715.9,
+        "Collection": 6712
     },
     {
         "ID": 1739326,
@@ -644,13 +1010,13 @@
     {
         "ID": 1142976,
         "Name": "反派和狙击手",
-        "Popularity": 13903460.29,
-        "Collection": 50152
+        "Popularity": 13904215.29,
+        "Collection": 50157
     },
     {
         "ID": 1511831,
         "Name": "限定暧昧",
-        "Popularity": 563247.03,
+        "Popularity": 563767.03,
         "Collection": 1168
     },
     {
@@ -668,8 +1034,8 @@
     {
         "ID": 1632354,
         "Name": "所以尸体会自己系鞋带吗",
-        "Popularity": 596317.76,
-        "Collection": 1898
+        "Popularity": 596167.76,
+        "Collection": 1897
     },
     {
         "ID": 1254218,
@@ -692,37 +1058,37 @@
     {
         "ID": 1626628,
         "Name": "夏日戒断",
-        "Popularity": 286986.19,
-        "Collection": 519
+        "Popularity": 288336.19,
+        "Collection": 528
     },
     {
         "ID": 1795135,
         "Name": "溯流",
-        "Popularity": 14369.12,
+        "Popularity": 16907.12,
         "Collection": 12
     },
     {
         "ID": 1315188,
         "Name": "与我沉溺",
-        "Popularity": 992364.61,
-        "Collection": 3105
+        "Popularity": 1010464.61,
+        "Collection": 3206
     },
     {
         "ID": 1502126,
         "Name": "全校传我们不合",
-        "Popularity": 3882992.66,
-        "Collection": 7533
+        "Popularity": 3891612.66,
+        "Collection": 7545
     },
     {
         "ID": 1786307,
         "Name": "楔桃",
-        "Popularity": 144872.5,
-        "Collection": 376
+        "Popularity": 145027.5,
+        "Collection": 377
     },
     {
         "ID": 1470310,
         "Name": "从一而终",
-        "Popularity": 52948.02,
+        "Popularity": 52949.02,
         "Collection": 174
     },
     {
@@ -734,14 +1100,14 @@
     {
         "ID": 1368673,
         "Name": "君臣不相安",
-        "Popularity": 8517287.44,
-        "Collection": 9897
+        "Popularity": 8540062.44,
+        "Collection": 9962
     },
     {
         "ID": 1743725,
         "Name": "拯救恋爱脑计划",
-        "Popularity": 120985.89,
-        "Collection": 255
+        "Popularity": 121144.89,
+        "Collection": 256
     },
     {
         "ID": 1749187,
@@ -752,20 +1118,20 @@
     {
         "ID": 619707,
         "Name": "疾走千极骑",
-        "Popularity": 1632615.77,
-        "Collection": 3415
+        "Popularity": 1632835.77,
+        "Collection": 3416
     },
     {
         "ID": 1565269,
         "Name": "重启一下",
-        "Popularity": 72161.11,
+        "Popularity": 72161.25,
         "Collection": 105
     },
     {
         "ID": 1695489,
         "Name": "我在恐怖游戏中一心求死",
-        "Popularity": 471766.6,
-        "Collection": 1264
+        "Popularity": 472366.6,
+        "Collection": 1268
     },
     {
         "ID": 1815483,
@@ -782,80 +1148,80 @@
     {
         "ID": 1724471,
         "Name": "水杉枝",
-        "Popularity": 1478.25,
-        "Collection": 4
+        "Popularity": 1778.25,
+        "Collection": 6
     },
     {
         "ID": 1524917,
         "Name": "别猜了，我弯的",
-        "Popularity": 1431869.44,
-        "Collection": 6253
+        "Popularity": 1434739.44,
+        "Collection": 6255
     },
     {
         "ID": 1517079,
         "Name": "晨与晖",
-        "Popularity": 1061086.96,
-        "Collection": 1186
+        "Popularity": 1061236.96,
+        "Collection": 1187
     },
     {
         "ID": 1456750,
         "Name": "职业拾荒",
-        "Popularity": 148371.5,
-        "Collection": 316
+        "Popularity": 148521.5,
+        "Collection": 317
     },
     {
         "ID": 1785820,
         "Name": "刺猬饲养法则",
-        "Popularity": 76940.82,
-        "Collection": 209
+        "Popularity": 76790.82,
+        "Collection": 208
     },
     {
         "ID": 1672452,
         "Name": "镁光灯与机械臂",
-        "Popularity": 220691.6,
+        "Popularity": 220749.1,
         "Collection": 268
     },
     {
         "ID": 1592326,
         "Name": "荒原囚徒",
-        "Popularity": 2459390.4,
-        "Collection": 3942
+        "Popularity": 2467545.4,
+        "Collection": 3945
     },
     {
         "ID": 1772407,
         "Name": "奸党",
-        "Popularity": 179718.08,
-        "Collection": 89
+        "Popularity": 179864.71,
+        "Collection": 90
     },
     {
         "ID": 1724886,
         "Name": "劣质真心",
-        "Popularity": 4095817.53,
-        "Collection": 6198
+        "Popularity": 4104307.53,
+        "Collection": 6214
     },
     {
         "ID": 1728462,
         "Name": "开太平",
-        "Popularity": 54316.7,
-        "Collection": 47
+        "Popularity": 54466.7,
+        "Collection": 48
     },
     {
         "ID": 929879,
         "Name": "丹青为鉴",
-        "Popularity": 587807.65,
-        "Collection": 1043
+        "Popularity": 587722.65,
+        "Collection": 1042
     },
     {
         "ID": 1715113,
         "Name": "他们都说我该死",
-        "Popularity": 1640216.25,
-        "Collection": 2905
+        "Popularity": 1641946.25,
+        "Collection": 2907
     },
     {
         "ID": 742172,
         "Name": "定风波",
-        "Popularity": 217770.63,
-        "Collection": 290
+        "Popularity": 217470.63,
+        "Collection": 288
     },
     {
         "ID": 1815534,
@@ -866,8 +1232,8 @@
     {
         "ID": 1755248,
         "Name": "禁锢日出",
-        "Popularity": 174767.25,
-        "Collection": 435
+        "Popularity": 178992.75,
+        "Collection": 443
     },
     {
         "ID": 1753992,
@@ -878,20 +1244,20 @@
     {
         "ID": 1691939,
         "Name": "渡灵",
-        "Popularity": 59782.62,
-        "Collection": 69
+        "Popularity": 59932.62,
+        "Collection": 70
     },
     {
         "ID": 1640384,
         "Name": "和死对头一起穿到了ABO",
-        "Popularity": 2247577.78,
-        "Collection": 5175
+        "Popularity": 2249987.78,
+        "Collection": 5174
     },
     {
         "ID": 1498628,
         "Name": "贪心无厌",
-        "Popularity": 522153.5,
-        "Collection": 1261
+        "Popularity": 536798.5,
+        "Collection": 1304
     },
     {
         "ID": 457888,
@@ -902,7 +1268,7 @@
     {
         "ID": 1614876,
         "Name": "嗅觉依赖",
-        "Popularity": 1953639.04,
+        "Popularity": 1954099.04,
         "Collection": 4884
     },
     {
@@ -914,20 +1280,20 @@
     {
         "ID": 1752341,
         "Name": "爱情过滤理论",
-        "Popularity": 52564.5,
+        "Popularity": 52569.5,
         "Collection": 63
     },
     {
         "ID": 1453512,
         "Name": "漂亮死对头反攻我",
-        "Popularity": 3227270.83,
-        "Collection": 5758
+        "Popularity": 3233285.83,
+        "Collection": 5772
     },
     {
         "ID": 1779018,
         "Name": "极端天气",
-        "Popularity": 59533.5,
-        "Collection": 169
+        "Popularity": 59833.5,
+        "Collection": 171
     },
     {
         "ID": 1785541,
@@ -938,8 +1304,8 @@
     {
         "ID": 1807169,
         "Name": "做你的梦",
-        "Popularity": 12785.02,
-        "Collection": 71
+        "Popularity": 13395.02,
+        "Collection": 75
     },
     {
         "ID": 1736761,
@@ -950,8 +1316,8 @@
     {
         "ID": 1644976,
         "Name": "强制匹配",
-        "Popularity": 243065.75,
-        "Collection": 486
+        "Popularity": 243215.75,
+        "Collection": 487
     },
     {
         "ID": 1721641,
@@ -962,8 +1328,8 @@
     {
         "ID": 1747881,
         "Name": "直到他想杀死我",
-        "Popularity": 1220283.37,
-        "Collection": 4446
+        "Popularity": 1223469.87,
+        "Collection": 4467
     },
     {
         "ID": 1799810,
@@ -974,20 +1340,20 @@
     {
         "ID": 1554296,
         "Name": "全能悖论",
-        "Popularity": 3941924.64,
-        "Collection": 8205
+        "Popularity": 3947404.64,
+        "Collection": 8208
     },
     {
         "ID": 1004738,
         "Name": "今夜不言",
-        "Popularity": 316180.67,
-        "Collection": 932
+        "Popularity": 316350.67,
+        "Collection": 933
     },
     {
         "ID": 1351332,
         "Name": "彩虹连接",
-        "Popularity": 2793360.93,
-        "Collection": 3696
+        "Popularity": 2814516.43,
+        "Collection": 3728
     },
     {
         "ID": 1518112,
@@ -998,20 +1364,14 @@
     {
         "ID": 1786615,
         "Name": "永夜调",
-        "Popularity": 38374.11,
-        "Collection": 6
-    },
-    {
-        "ID": 647886,
-        "Name": "规则是禁止私联",
-        "Popularity": 531127,
-        "Collection": 1925
+        "Popularity": 38525.11,
+        "Collection": 7
     },
     {
         "ID": 1810775,
         "Name": "如火止沸",
-        "Popularity": 67562.15,
-        "Collection": 96
+        "Popularity": 67712.15,
+        "Collection": 97
     },
     {
         "ID": 1693366,
@@ -1022,8 +1382,8 @@
     {
         "ID": 1739413,
         "Name": "他的择偶标准是会捡破烂",
-        "Popularity": 3440825.93,
-        "Collection": 4212
+        "Popularity": 3444835.93,
+        "Collection": 4215
     },
     {
         "ID": 1807261,
@@ -1034,14 +1394,14 @@
     {
         "ID": 1805238,
         "Name": "小月亮",
-        "Popularity": 410369.75,
-        "Collection": 1026
+        "Popularity": 412824.75,
+        "Collection": 1039
     },
     {
         "ID": 1805203,
         "Name": "真爱价码",
-        "Popularity": 29879.5,
-        "Collection": 50
+        "Popularity": 30029.5,
+        "Collection": 51
     },
     {
         "ID": 1785928,
@@ -1052,8 +1412,8 @@
     {
         "ID": 1774807,
         "Name": "点痣",
-        "Popularity": 138715,
-        "Collection": 118
+        "Popularity": 139015,
+        "Collection": 120
     },
     {
         "ID": 1768791,
@@ -1064,20 +1424,20 @@
     {
         "ID": 1755823,
         "Name": "我带钥匙有用吗",
-        "Popularity": 19879867.33,
-        "Collection": 17540
+        "Popularity": 19920012.33,
+        "Collection": 17568
     },
     {
         "ID": 1743123,
         "Name": "斗鲨",
-        "Popularity": 2378539.43,
-        "Collection": 3512
+        "Popularity": 2387784.43,
+        "Collection": 3538
     },
     {
         "ID": 1688759,
         "Name": "论直男是如何掰弯自己的",
-        "Popularity": 128784.5,
-        "Collection": 207
+        "Popularity": 129234.5,
+        "Collection": 210
     },
     {
         "ID": 1619249,
@@ -1088,20 +1448,20 @@
     {
         "ID": 1584483,
         "Name": "绝命胶片",
-        "Popularity": 961699.25,
-        "Collection": 1785
+        "Popularity": 963862.25,
+        "Collection": 1792
     },
     {
         "ID": 1526569,
         "Name": "金瓯重圆",
-        "Popularity": 4032056.08,
-        "Collection": 4042
+        "Popularity": 4035456.08,
+        "Collection": 4043
     },
     {
         "ID": 1522798,
         "Name": "为时已晚",
-        "Popularity": 220243,
-        "Collection": 1096
+        "Popularity": 220553,
+        "Collection": 1098
     },
     {
         "ID": 1470596,
@@ -1112,8 +1472,8 @@
     {
         "ID": 1464040,
         "Name": "狐宠",
-        "Popularity": 545678,
-        "Collection": 1467
+        "Popularity": 545533,
+        "Collection": 1466
     },
     {
         "ID": 1374045,
@@ -1124,8 +1484,8 @@
     {
         "ID": 1346127,
         "Name": "王者",
-        "Popularity": 620546.5,
-        "Collection": 1676
+        "Popularity": 621326.5,
+        "Collection": 1680
     },
     {
         "ID": 1326635,
@@ -1136,20 +1496,20 @@
     {
         "ID": 693794,
         "Name": "月老的冥婚业务",
-        "Popularity": 249867,
-        "Collection": 1135
+        "Popularity": 250322,
+        "Collection": 1138
     },
     {
         "ID": 1543878,
         "Name": "上错坟",
-        "Popularity": 209301.59,
-        "Collection": 506
+        "Popularity": 209751.59,
+        "Collection": 509
     },
     {
         "ID": 1660495,
         "Name": "尘芥之境",
-        "Popularity": 72211.31,
-        "Collection": 101
+        "Popularity": 72511.31,
+        "Collection": 103
     },
     {
         "ID": 1788739,
@@ -1160,14 +1520,14 @@
     {
         "ID": 1686348,
         "Name": "看到你了",
-        "Popularity": 553898.45,
-        "Collection": 2216
+        "Popularity": 554509.95,
+        "Collection": 2220
     },
     {
         "ID": 1646891,
         "Name": "休想",
-        "Popularity": 6268156.17,
-        "Collection": 10203
+        "Popularity": 6302645.67,
+        "Collection": 10301
     },
     {
         "ID": 1761778,
@@ -1184,26 +1544,26 @@
     {
         "ID": 1727217,
         "Name": "如果今夜不下雨",
-        "Popularity": 6050163.71,
-        "Collection": 7049
+        "Popularity": 6102413.71,
+        "Collection": 7129
     },
     {
         "ID": 1634084,
         "Name": "冷冰冰和哭唧唧",
-        "Popularity": 3643142.24,
-        "Collection": 7234
+        "Popularity": 3658182.24,
+        "Collection": 7247
     },
     {
         "ID": 1584377,
         "Name": "温柔的利用金手指的方法",
-        "Popularity": 1001502.96,
-        "Collection": 1797
+        "Popularity": 1001652.96,
+        "Collection": 1798
     },
     {
         "ID": 1518857,
         "Name": "酩酊不醒",
-        "Popularity": 12354518.78,
-        "Collection": 23667
+        "Popularity": 12396331.28,
+        "Collection": 23731
     },
     {
         "ID": 1352214,
@@ -1218,112 +1578,100 @@
         "Collection": 350
     },
     {
-        "ID": 1797539,
-        "Name": "今夜有雪",
-        "Popularity": 3729.62,
-        "Collection": 2
-    },
-    {
         "ID": 1719852,
         "Name": "引火安身",
-        "Popularity": 53687.44,
-        "Collection": 134
+        "Popularity": 53837.44,
+        "Collection": 135
     },
     {
         "ID": 1755760,
         "Name": "焉知",
-        "Popularity": 342077.25,
-        "Collection": 842
+        "Popularity": 342747.25,
+        "Collection": 844
     },
     {
         "ID": 1650377,
         "Name": "祈愿碑",
-        "Popularity": 1697388.89,
-        "Collection": 4235
+        "Popularity": 1710768.89,
+        "Collection": 4316
     },
     {
         "ID": 1801257,
         "Name": "衔青",
-        "Popularity": 16045.75,
-        "Collection": 5
+        "Popularity": 16195.75,
+        "Collection": 6
     },
     {
         "ID": 1693488,
         "Name": "沧浪君",
-        "Popularity": 9390.67,
-        "Collection": 21
+        "Popularity": 9541.17,
+        "Collection": 22
     },
     {
         "ID": 1807614,
         "Name": "逆转明日梦",
-        "Popularity": 5408835.75,
-        "Collection": 10440
+        "Popularity": 5410045.75,
+        "Collection": 10448
     },
     {
         "ID": 1782012,
         "Name": "牵线飞鸟",
-        "Popularity": 64067.75,
-        "Collection": 116
+        "Popularity": 64220.25,
+        "Collection": 117
     },
     {
         "ID": 1748353,
         "Name": "兜圈",
-        "Popularity": 214115,
-        "Collection": 273
+        "Popularity": 214415,
+        "Collection": 275
     },
     {
         "ID": 1744894,
         "Name": "扑街偶像剧指北",
-        "Popularity": 1118879.19,
+        "Popularity": 1119434.19,
         "Collection": 1133
     },
     {
         "ID": 1744374,
         "Name": "野心勃勃",
-        "Popularity": 152580,
-        "Collection": 321
+        "Popularity": 152740,
+        "Collection": 322
     },
     {
         "ID": 1637585,
         "Name": "庶子生存法则",
-        "Popularity": 2442529.46,
-        "Collection": 4810
+        "Popularity": 2442679.46,
+        "Collection": 4811
     },
     {
         "ID": 1579289,
         "Name": "缺觉",
-        "Popularity": 7284727.5,
-        "Collection": 11061
+        "Popularity": 7339577.5,
+        "Collection": 11193
     },
     {
         "ID": 1641250,
         "Name": "门客",
-        "Popularity": 377519.4,
-        "Collection": 767
+        "Popularity": 378584.4,
+        "Collection": 770
     },
     {
         "ID": 1804722,
         "Name": "臣服斯文",
-        "Popularity": 206321.29,
-        "Collection": 601
+        "Popularity": 207254.29,
+        "Collection": 607
     },
     {
         "ID": 1766993,
         "Name": "接吻三分钟",
-        "Popularity": 291807.25,
-        "Collection": 1171
+        "Popularity": 294552.25,
+        "Collection": 1189
     },
     {
         "ID": 1694775,
         "Name": "通感预报",
-        "Popularity": 97035.68,
-        "Collection": 137
-    },
-    {
-        "ID": 1732219,
-        "Name": "百雀煞",
-        "Popularity": 283678,
-        "Collection": 236
+        "Popularity": 97185.68,
+        "Collection": 138
     },
     {
         "ID": 1287285,
@@ -1334,20 +1682,20 @@
     {
         "ID": 1768751,
         "Name": "被死后的竹马探班了",
-        "Popularity": 124751.15,
-        "Collection": 454
+        "Popularity": 125351.15,
+        "Collection": 458
     },
     {
         "ID": 1809008,
         "Name": "关于我喜欢你这件小事",
-        "Popularity": 15602.29,
+        "Popularity": 15609.79,
         "Collection": 12
     },
     {
         "ID": 1591490,
         "Name": "万竞霜不想干了",
-        "Popularity": 1011207.35,
-        "Collection": 2860
+        "Popularity": 1013512.35,
+        "Collection": 2863
     },
     {
         "ID": 1282243,
@@ -1362,46 +1710,28 @@
         "Collection": 9
     },
     {
-        "ID": 1805245,
-        "Name": "妄恋共感",
-        "Popularity": 14935.48,
-        "Collection": 45
-    },
-    {
-        "ID": 1775802,
-        "Name": "坍塌太阳",
-        "Popularity": 28855.09,
-        "Collection": 11
-    },
-    {
         "ID": 1578825,
         "Name": "碧色荒漠",
-        "Popularity": 1255352.47,
-        "Collection": 2673
+        "Popularity": 1255502.47,
+        "Collection": 2672
     },
     {
         "ID": 1731681,
         "Name": "枝上蔷薇",
-        "Popularity": 140640.42,
-        "Collection": 256
-    },
-    {
-        "ID": 1615367,
-        "Name": "到底是谁在觊觎我！",
-        "Popularity": 227764.61,
-        "Collection": 224
+        "Popularity": 140790.42,
+        "Collection": 257
     },
     {
         "ID": 117268,
         "Name": "尘霜微凉",
-        "Popularity": 74114054.02,
-        "Collection": 26460
+        "Popularity": 74146892.02,
+        "Collection": 26465
     },
     {
         "ID": 1699185,
         "Name": "善养",
-        "Popularity": 2042116.28,
-        "Collection": 3423
+        "Popularity": 2046606.28,
+        "Collection": 3427
     },
     {
         "ID": 1101179,
@@ -1428,40 +1758,16 @@
         "Collection": 116
     },
     {
-        "ID": 1815510,
-        "Name": "反派魔尊穿成师尊受后",
-        "Popularity": 6448.25,
-        "Collection": 13
-    },
-    {
         "ID": 1798393,
         "Name": "酹酒",
         "Popularity": 11243.25,
         "Collection": 4
     },
     {
-        "ID": 1791477,
-        "Name": "特聘道侣",
-        "Popularity": 2710.25,
-        "Collection": 1
-    },
-    {
-        "ID": 1782959,
-        "Name": "捕君心",
-        "Popularity": 116727.5,
-        "Collection": 217
-    },
-    {
-        "ID": 1750204,
-        "Name": "真实遗愿清单",
-        "Popularity": 10611530.75,
-        "Collection": 38259
-    },
-    {
         "ID": 1742897,
         "Name": "鸢尾王座",
-        "Popularity": 140537.5,
-        "Collection": 151
+        "Popularity": 140992.5,
+        "Collection": 154
     },
     {
         "ID": 1739813,
@@ -1470,52 +1776,22 @@
         "Collection": 125
     },
     {
-        "ID": 1732769,
-        "Name": "劫神",
-        "Popularity": 1306597.75,
-        "Collection": 1456
-    },
-    {
         "ID": 1704451,
         "Name": "我就不行么",
-        "Popularity": 811922.82,
-        "Collection": 1507
+        "Popularity": 813577.82,
+        "Collection": 1510
     },
     {
         "ID": 1647451,
         "Name": "明日心想事成",
-        "Popularity": 2243381.5,
-        "Collection": 4594
-    },
-    {
-        "ID": 1599931,
-        "Name": "狂宴",
-        "Popularity": 81176,
-        "Collection": 28
-    },
-    {
-        "ID": 1553244,
-        "Name": "见春天树",
-        "Popularity": 236177.5,
-        "Collection": 1113
-    },
-    {
-        "ID": 1506220,
-        "Name": "兔比特",
-        "Popularity": 7282522,
-        "Collection": 8483
-    },
-    {
-        "ID": 1401463,
-        "Name": "离婚冷静期",
-        "Popularity": 701555.25,
-        "Collection": 3899
+        "Popularity": 2250206.5,
+        "Collection": 4598
     },
     {
         "ID": 1346880,
         "Name": "头七见魂",
-        "Popularity": 2735644.93,
-        "Collection": 5132
+        "Popularity": 2744179.93,
+        "Collection": 5145
     },
     {
         "ID": 276793,
@@ -1526,32 +1802,20 @@
     {
         "ID": 1573878,
         "Name": "双向驯服",
-        "Popularity": 190628.13,
-        "Collection": 456
+        "Popularity": 191978.13,
+        "Collection": 465
     },
     {
         "ID": 1367690,
         "Name": "未晚",
-        "Popularity": 3999175.73,
-        "Collection": 6620
+        "Popularity": 4003920.73,
+        "Collection": 6621
     },
     {
         "ID": 1605586,
         "Name": "崇西长眠",
-        "Popularity": 95263.5,
+        "Popularity": 95268.5,
         "Collection": 262
-    },
-    {
-        "ID": 1806238,
-        "Name": "东风恶",
-        "Popularity": 14627.25,
-        "Collection": 11
-    },
-    {
-        "ID": 1785658,
-        "Name": "雨后闻腥",
-        "Popularity": 9290851.25,
-        "Collection": 25315
     },
     {
         "ID": 1483031,
@@ -1562,8 +1826,8 @@
     {
         "ID": 1444053,
         "Name": "一衿香",
-        "Popularity": 3074567.75,
-        "Collection": 4305
+        "Popularity": 3086264.75,
+        "Collection": 4343
     },
     {
         "ID": 1790802,
@@ -1574,14 +1838,14 @@
     {
         "ID": 1687556,
         "Name": "尸人说梦",
-        "Popularity": 77555116.98,
-        "Collection": 47320
+        "Popularity": 77670120.48,
+        "Collection": 47366
     },
     {
         "ID": 1673072,
         "Name": "老攻的食用攻略",
-        "Popularity": 500474.25,
-        "Collection": 1090
+        "Popularity": 500324.25,
+        "Collection": 1089
     },
     {
         "ID": 1785103,
@@ -1592,14 +1856,14 @@
     {
         "ID": 1747916,
         "Name": "未定义与命名",
-        "Popularity": 197437.25,
-        "Collection": 262
+        "Popularity": 197587.25,
+        "Collection": 263
     },
     {
         "ID": 1623062,
         "Name": "在无限游戏惨成大佬",
-        "Popularity": 373363.25,
-        "Collection": 806
+        "Popularity": 374393.75,
+        "Collection": 808
     },
     {
         "ID": 1808495,
@@ -1608,16 +1872,10 @@
         "Collection": 4
     },
     {
-        "ID": 1800757,
-        "Name": "楚楚可为",
-        "Popularity": 13527.5,
-        "Collection": 4
-    },
-    {
         "ID": 1301220,
         "Name": "碾压",
-        "Popularity": 212870.25,
-        "Collection": 377
+        "Popularity": 213480.25,
+        "Collection": 381
     },
     {
         "ID": 1787635,
@@ -1628,20 +1886,8 @@
     {
         "ID": 1750739,
         "Name": "试情",
-        "Popularity": 46359.5,
-        "Collection": 220
-    },
-    {
-        "ID": 1815649,
-        "Name": "淬火效应",
-        "Popularity": 3970,
-        "Collection": 2
-    },
-    {
-        "ID": 1735930,
-        "Name": "岁月知长夏",
-        "Popularity": 755919.25,
-        "Collection": 1469
+        "Popularity": 46509.5,
+        "Collection": 221
     },
     {
         "ID": 1771968,
@@ -1652,14 +1898,14 @@
     {
         "ID": 1781351,
         "Name": "深渊回响",
-        "Popularity": 362939.75,
-        "Collection": 721
+        "Popularity": 363949.75,
+        "Collection": 725
     },
     {
         "ID": 1642596,
         "Name": "孔雀饲养指南",
-        "Popularity": 397419.25,
-        "Collection": 864
+        "Popularity": 406134.25,
+        "Collection": 922
     },
     {
         "ID": 1619320,
@@ -1676,8 +1922,8 @@
     {
         "ID": 1759146,
         "Name": "旧恩",
-        "Popularity": 248454,
-        "Collection": 514
+        "Popularity": 249054,
+        "Collection": 517
     },
     {
         "ID": 1768678,
@@ -1688,62 +1934,62 @@
     {
         "ID": 1814538,
         "Name": "深海狩猎",
-        "Popularity": 25767.25,
-        "Collection": 33
+        "Popularity": 25917.25,
+        "Collection": 34
     },
     {
         "ID": 1304884,
         "Name": "夏日感冒",
-        "Popularity": 407220.64,
-        "Collection": 1594
+        "Popularity": 407680.64,
+        "Collection": 1597
     },
     {
         "ID": 1727727,
         "Name": "樊青",
-        "Popularity": 4224157.5,
-        "Collection": 5831
+        "Popularity": 4229932.5,
+        "Collection": 5834
     },
     {
         "ID": 988484,
         "Name": "三千零一夜",
-        "Popularity": 783578.5,
-        "Collection": 1713
+        "Popularity": 784063.5,
+        "Collection": 1714
     },
     {
         "ID": 1601770,
         "Name": "不死鸟的终末",
-        "Popularity": 1013035.25,
-        "Collection": 2073
+        "Popularity": 1013335.25,
+        "Collection": 2075
     },
     {
         "ID": 145179,
         "Name": "残响",
-        "Popularity": 324714,
-        "Collection": 949
+        "Popularity": 324869,
+        "Collection": 950
     },
     {
         "ID": 1659167,
         "Name": "无根之罪",
-        "Popularity": 190908,
-        "Collection": 824
+        "Popularity": 191208,
+        "Collection": 826
     },
     {
         "ID": 1713326,
         "Name": "降雪时分",
-        "Popularity": 439777,
-        "Collection": 764
+        "Popularity": 440237,
+        "Collection": 765
     },
     {
         "ID": 1712177,
         "Name": "献我",
-        "Popularity": 127012409.25,
-        "Collection": 123028
+        "Popularity": 127185640.75,
+        "Collection": 123164
     },
     {
         "ID": 1181686,
         "Name": "踏雾来",
-        "Popularity": 297036.25,
-        "Collection": 1257
+        "Popularity": 297186.25,
+        "Collection": 1258
     },
     {
         "ID": 1247532,
@@ -1754,8 +2000,8 @@
     {
         "ID": 1808954,
         "Name": "于心有愧",
-        "Popularity": 107901.23,
-        "Collection": 143
+        "Popularity": 108206.23,
+        "Collection": 145
     },
     {
         "ID": 1511418,
@@ -1766,68 +2012,68 @@
     {
         "ID": 1667642,
         "Name": "溶金",
-        "Popularity": 7049833.75,
-        "Collection": 6818
+        "Popularity": 7057058.75,
+        "Collection": 6830
     },
     {
         "ID": 1460157,
         "Name": "虫族之冷漠无情的白月光",
-        "Popularity": 411530.75,
+        "Popularity": 411535.75,
         "Collection": 631
     },
     {
         "ID": 1771425,
         "Name": "他在日暮之西",
-        "Popularity": 177818.25,
-        "Collection": 299
+        "Popularity": 177968.25,
+        "Collection": 300
     },
     {
         "ID": 1586092,
         "Name": "漫长雨季",
-        "Popularity": 7133121.04,
-        "Collection": 9348
+        "Popularity": 7168456.04,
+        "Collection": 9403
     },
     {
         "ID": 1680563,
         "Name": "德老大今天喝酸奶了吗",
-        "Popularity": 1286664.75,
-        "Collection": 2919
+        "Popularity": 1297574.75,
+        "Collection": 2931
     },
     {
         "ID": 1669288,
         "Name": "你才不是我爹！",
-        "Popularity": 54591.86,
+        "Popularity": 54605.44,
         "Collection": 40
     },
     {
         "ID": 232341,
         "Name": "明知做戏",
-        "Popularity": 474860.5,
-        "Collection": 937
+        "Popularity": 475160.5,
+        "Collection": 939
     },
     {
         "ID": 231705,
         "Name": "大逃杀",
-        "Popularity": 3126470.25,
-        "Collection": 5163
+        "Popularity": 3140690.25,
+        "Collection": 5207
     },
     {
         "ID": 1767788,
         "Name": "此间禁止飞行",
-        "Popularity": 114446.25,
+        "Popularity": 114446.75,
         "Collection": 61
     },
     {
         "ID": 1672755,
         "Name": "无限大学城",
-        "Popularity": 687155.75,
-        "Collection": 1676
+        "Popularity": 687305.75,
+        "Collection": 1677
     },
     {
         "ID": 1274556,
         "Name": "两人三恋",
-        "Popularity": 352721.5,
-        "Collection": 1828
+        "Popularity": 353021.5,
+        "Collection": 1830
     },
     {
         "ID": 1448266,
@@ -1844,14 +2090,14 @@
     {
         "ID": 1704555,
         "Name": "离婚快乐",
-        "Popularity": 2651027.55,
-        "Collection": 4382
+        "Popularity": 2661597.55,
+        "Collection": 4402
     },
     {
         "ID": 1739607,
         "Name": "骑驴列过孤独星球",
-        "Popularity": 1344263,
-        "Collection": 1330
+        "Popularity": 1345203,
+        "Collection": 1331
     },
     {
         "ID": 1379391,
@@ -1862,68 +2108,62 @@
     {
         "ID": 311953,
         "Name": "早去早回",
-        "Popularity": 2704254,
-        "Collection": 3619
+        "Popularity": 2705179.01,
+        "Collection": 3623
     },
     {
         "ID": 1755450,
         "Name": "连理枝",
-        "Popularity": 3462742,
-        "Collection": 7011
+        "Popularity": 3468837,
+        "Collection": 7029
     },
     {
         "ID": 1211785,
         "Name": "岁陈楠下",
-        "Popularity": 441029.75,
-        "Collection": 1326
+        "Popularity": 441534.75,
+        "Collection": 1328
     },
     {
         "ID": 1756518,
         "Name": "贝勃定律",
-        "Popularity": 1535512.25,
-        "Collection": 2910
-    },
-    {
-        "ID": 1699123,
-        "Name": "负义",
-        "Popularity": 2709240.5,
-        "Collection": 5496
+        "Popularity": 1537902.25,
+        "Collection": 2924
     },
     {
         "ID": 1377840,
         "Name": "榻上臣",
-        "Popularity": 227355.5,
-        "Collection": 957
+        "Popularity": 228555.5,
+        "Collection": 965
     },
     {
         "ID": 1789549,
         "Name": "迟早还债",
-        "Popularity": 85093.25,
-        "Collection": 196
+        "Popularity": 85543.25,
+        "Collection": 199
     },
     {
         "ID": 1767687,
         "Name": "先吃饭吧",
-        "Popularity": 149140.25,
-        "Collection": 227
+        "Popularity": 149290.25,
+        "Collection": 228
     },
     {
         "ID": 1670671,
         "Name": "戒烟",
-        "Popularity": 3921537.65,
-        "Collection": 9456
+        "Popularity": 3939967.65,
+        "Collection": 9536
     },
     {
         "ID": 1552289,
         "Name": "回南天",
-        "Popularity": 404667.75,
-        "Collection": 1819
+        "Popularity": 407517.75,
+        "Collection": 1838
     },
     {
         "ID": 1488525,
         "Name": "长仙",
-        "Popularity": 173930.75,
-        "Collection": 375
+        "Popularity": 174080.75,
+        "Collection": 376
     },
     {
         "ID": 1760075,
@@ -1934,20 +2174,20 @@
     {
         "ID": 1214363,
         "Name": "水母游过夏天",
-        "Popularity": 9073482.25,
-        "Collection": 10607
+        "Popularity": 9094602.25,
+        "Collection": 10642
     },
     {
         "ID": 1282129,
         "Name": "亡魂飞鸟",
-        "Popularity": 1684184.25,
-        "Collection": 3357
+        "Popularity": 1686794.25,
+        "Collection": 3361
     },
     {
         "ID": 1751307,
         "Name": "灰羽衣仙子",
-        "Popularity": 443650.25,
-        "Collection": 603
+        "Popularity": 444250.25,
+        "Collection": 607
     },
     {
         "ID": 1492742,
@@ -1958,38 +2198,38 @@
     {
         "ID": 1685775,
         "Name": "不当大哥",
-        "Popularity": 296020.5,
-        "Collection": 546
+        "Popularity": 295870.5,
+        "Collection": 545
     },
     {
         "ID": 1772035,
         "Name": "我心昭昭",
-        "Popularity": 11600.75,
-        "Collection": 23
+        "Popularity": 11750.75,
+        "Collection": 24
     },
     {
         "ID": 1511025,
         "Name": "月渡平野",
-        "Popularity": 1471093.75,
-        "Collection": 3060
+        "Popularity": 1470853.75,
+        "Collection": 3058
     },
     {
         "ID": 1629274,
         "Name": "碎玉劫",
-        "Popularity": 2115387.5,
+        "Popularity": 2115402.5,
         "Collection": 2362
     },
     {
         "ID": 1222324,
         "Name": "折骨为臣",
-        "Popularity": 9575832.25,
-        "Collection": 13033
+        "Popularity": 9609610.75,
+        "Collection": 13066
     },
     {
         "ID": 1411759,
         "Name": "我们分手了",
-        "Popularity": 780766,
-        "Collection": 1384
+        "Popularity": 782121,
+        "Collection": 1388
     },
     {
         "ID": 1750711,
@@ -2000,14 +2240,14 @@
     {
         "ID": 1722423,
         "Name": "问山",
-        "Popularity": 132069,
-        "Collection": 243
+        "Popularity": 132669,
+        "Collection": 247
     },
     {
         "ID": 1128765,
         "Name": "虽然是爸爸的朋友但没关系",
-        "Popularity": 658412.75,
-        "Collection": 1509
+        "Popularity": 664472.75,
+        "Collection": 1534
     },
     {
         "ID": 1183716,
@@ -2018,14 +2258,14 @@
     {
         "ID": 1729264,
         "Name": "我和储备粮的赛博童话",
-        "Popularity": 22146.5,
-        "Collection": 22
+        "Popularity": 22296.5,
+        "Collection": 23
     },
     {
         "ID": 1773542,
         "Name": "惹眼",
-        "Popularity": 157369.25,
-        "Collection": 410
+        "Popularity": 157839.75,
+        "Collection": 412
     },
     {
         "ID": 1770935,
@@ -2036,26 +2276,20 @@
     {
         "ID": 1706847,
         "Name": "他怎么可能暗恋我",
-        "Popularity": 6059502,
-        "Collection": 7644
-    },
-    {
-        "ID": 1379278,
-        "Name": "双面人生",
-        "Popularity": 616993.75,
-        "Collection": 1691
+        "Popularity": 6063382,
+        "Collection": 7648
     },
     {
         "ID": 1547194,
         "Name": "八卦",
-        "Popularity": 727586.28,
+        "Popularity": 727646.28,
         "Collection": 1489
     },
     {
         "ID": 1721631,
         "Name": "私相受受",
-        "Popularity": 16065253.25,
-        "Collection": 11752
+        "Popularity": 16094223.25,
+        "Collection": 11773
     },
     {
         "ID": 1570989,
@@ -2078,14 +2312,14 @@
     {
         "ID": 1735608,
         "Name": "半进口热恋",
-        "Popularity": 73224.75,
+        "Popularity": 73224.73,
         "Collection": 59
     },
     {
         "ID": 1692606,
         "Name": "佛头青",
-        "Popularity": 6363895,
-        "Collection": 11018
+        "Popularity": 6369531,
+        "Collection": 11029
     },
     {
         "ID": 1747364,
@@ -2096,8 +2330,8 @@
     {
         "ID": 1571047,
         "Name": "计青仪",
-        "Popularity": 167613.5,
-        "Collection": 174
+        "Popularity": 167913.5,
+        "Collection": 176
     },
     {
         "ID": 1604456,
@@ -2112,12 +2346,6 @@
         "Collection": 259
     },
     {
-        "ID": 1751484,
-        "Name": "残鸣不响",
-        "Popularity": 364631,
-        "Collection": 863
-    },
-    {
         "ID": 1672640,
         "Name": "论饲养一只蛟的正确方式",
         "Popularity": 609098.25,
@@ -2126,8 +2354,8 @@
     {
         "ID": 1402559,
         "Name": "攻不可貌相",
-        "Popularity": 25437302.75,
-        "Collection": 20166
+        "Popularity": 25448042.25,
+        "Collection": 20173
     },
     {
         "ID": 1762548,
@@ -2136,16 +2364,10 @@
         "Collection": 31
     },
     {
-        "ID": 1807829,
-        "Name": "ISO感光度",
-        "Popularity": 11906.62,
-        "Collection": 8
-    },
-    {
         "ID": 1492028,
         "Name": "脏东西",
-        "Popularity": 36578930.5,
-        "Collection": 27819
+        "Popularity": 36633649,
+        "Collection": 27870
     },
     {
         "ID": 1775047,
@@ -2156,14 +2378,8 @@
     {
         "ID": 1665113,
         "Name": "瘾欲",
-        "Popularity": 7988117,
-        "Collection": 7684
-    },
-    {
-        "ID": 1713824,
-        "Name": "杀死那个beta卧底",
-        "Popularity": 23514.93,
-        "Collection": 62
+        "Popularity": 8005437,
+        "Collection": 7699
     },
     {
         "ID": 1640225,
@@ -2174,8 +2390,8 @@
     {
         "ID": 1503434,
         "Name": "跟竹马穿越到蔷薇游戏",
-        "Popularity": 391684.25,
-        "Collection": 794
+        "Popularity": 391536.25,
+        "Collection": 793
     },
     {
         "ID": 1637579,
@@ -2186,8 +2402,8 @@
     {
         "ID": 1640943,
         "Name": "焰炽",
-        "Popularity": 62247762,
-        "Collection": 54764
+        "Popularity": 62863061,
+        "Collection": 55170
     },
     {
         "ID": 1739290,
@@ -2198,20 +2414,20 @@
     {
         "ID": 1507017,
         "Name": "失控心跳",
-        "Popularity": 179632.25,
-        "Collection": 332
+        "Popularity": 179482.25,
+        "Collection": 331
     },
     {
         "ID": 1424203,
         "Name": "世人拜我",
-        "Popularity": 853239.25,
+        "Popularity": 853244.25,
         "Collection": 2573
     },
     {
         "ID": 1639754,
         "Name": "野色蔓延",
-        "Popularity": 529842.75,
-        "Collection": 1028
+        "Popularity": 535357.75,
+        "Collection": 1030
     },
     {
         "ID": 1445804,
@@ -2222,14 +2438,14 @@
     {
         "ID": 1768607,
         "Name": "十米之内",
-        "Popularity": 2829745.75,
-        "Collection": 7081
+        "Popularity": 2845163.75,
+        "Collection": 7137
     },
     {
         "ID": 1628226,
         "Name": "八声甘州",
-        "Popularity": 309128.78,
-        "Collection": 475
+        "Popularity": 310329.12,
+        "Collection": 483
     },
     {
         "ID": 1474363,
@@ -2240,13 +2456,13 @@
     {
         "ID": 1212455,
         "Name": "替嫁之将",
-        "Popularity": 41427397.75,
-        "Collection": 21072
+        "Popularity": 41438267.75,
+        "Collection": 21078
     },
     {
         "ID": 969721,
         "Name": "恋爱脑他重生了",
-        "Popularity": 12500930,
+        "Popularity": 12501685,
         "Collection": 8938
     },
     {
@@ -2264,7 +2480,7 @@
     {
         "ID": 1309776,
         "Name": "刻板印象",
-        "Popularity": 30263.49,
+        "Popularity": 30263.48,
         "Collection": 69
     },
     {
@@ -2276,37 +2492,31 @@
     {
         "ID": 1747322,
         "Name": "一吻之遥",
-        "Popularity": 213156.25,
+        "Popularity": 213161.25,
         "Collection": 360
-    },
-    {
-        "ID": 1799091,
-        "Name": "我醉欲眠",
-        "Popularity": 28990.45,
-        "Collection": 16
     },
     {
         "ID": 1715089,
         "Name": "痛觉失常",
-        "Popularity": 326576.5,
-        "Collection": 1027
+        "Popularity": 328581.5,
+        "Collection": 1035
     },
     {
         "ID": 1679682,
         "Name": "蝴蝶扑不过天涯",
-        "Popularity": 1512739.25,
-        "Collection": 2609
+        "Popularity": 1514344.25,
+        "Collection": 2613
     },
     {
         "ID": 1667764,
         "Name": "冷幻觉",
-        "Popularity": 27500923.75,
-        "Collection": 26473
+        "Popularity": 27550130.25,
+        "Collection": 26528
     },
     {
         "ID": 1654840,
         "Name": "阮阮",
-        "Popularity": 610725.25,
+        "Popularity": 610925.25,
         "Collection": 1788
     },
     {
@@ -2318,8 +2528,8 @@
     {
         "ID": 1710145,
         "Name": "空降男团后",
-        "Popularity": 1494031.25,
-        "Collection": 3944
+        "Popularity": 1495566.25,
+        "Collection": 3946
     },
     {
         "ID": 242680,
@@ -2336,8 +2546,8 @@
     {
         "ID": 1759363,
         "Name": "蒙太奇",
-        "Popularity": 138389,
-        "Collection": 273
+        "Popularity": 138842.5,
+        "Collection": 276
     },
     {
         "ID": 1748361,
@@ -2348,26 +2558,26 @@
     {
         "ID": 1681098,
         "Name": "相爱困难综合征",
-        "Popularity": 773826.5,
-        "Collection": 1397
+        "Popularity": 774576.5,
+        "Collection": 1402
     },
     {
         "ID": 1627315,
         "Name": "我爱你是在今天",
-        "Popularity": 655762.75,
-        "Collection": 1318
+        "Popularity": 657537.75,
+        "Collection": 1320
     },
     {
         "ID": 1609944,
         "Name": "KA",
-        "Popularity": 263771,
-        "Collection": 672
+        "Popularity": 263921,
+        "Collection": 673
     },
     {
         "ID": 1586081,
         "Name": "被迫公开",
-        "Popularity": 1285768.75,
-        "Collection": 3323
+        "Popularity": 1287268.75,
+        "Collection": 3333
     },
     {
         "ID": 1581652,
@@ -2378,14 +2588,14 @@
     {
         "ID": 1486177,
         "Name": "挚爱错落",
-        "Popularity": 985884.75,
+        "Popularity": 985994.75,
         "Collection": 1901
     },
     {
         "ID": 1033252,
         "Name": "凶地实拍现场",
-        "Popularity": 5677538.75,
-        "Collection": 7877
+        "Popularity": 5683018.75,
+        "Collection": 7881
     },
     {
         "ID": 207295,
@@ -2396,8 +2606,8 @@
     {
         "ID": 1406952,
         "Name": "白痴",
-        "Popularity": 534952.75,
-        "Collection": 1343
+        "Popularity": 535252.75,
+        "Collection": 1345
     },
     {
         "ID": 1599881,
@@ -2408,14 +2618,14 @@
     {
         "ID": 1699668,
         "Name": "stop！停止发癫",
-        "Popularity": 1756288.75,
-        "Collection": 5803
+        "Popularity": 1759608.75,
+        "Collection": 5825
     },
     {
         "ID": 1632263,
         "Name": "累赘",
-        "Popularity": 456308.5,
-        "Collection": 1286
+        "Popularity": 456608.5,
+        "Collection": 1288
     },
     {
         "ID": 1179654,
@@ -2426,8 +2636,8 @@
     {
         "ID": 1787728,
         "Name": "野海不行舟",
-        "Popularity": 20946,
-        "Collection": 28
+        "Popularity": 21096,
+        "Collection": 29
     },
     {
         "ID": 1661424,
@@ -2438,26 +2648,26 @@
     {
         "ID": 345712,
         "Name": "至死不渝",
-        "Popularity": 214282690.5,
-        "Collection": 88577
+        "Popularity": 215739765.5,
+        "Collection": 89197
     },
     {
         "ID": 1525587,
         "Name": "当年神明见桃花",
-        "Popularity": 348989.75,
+        "Popularity": 349404.75,
         "Collection": 715
     },
     {
         "ID": 1413844,
         "Name": "灿烂烈阳",
-        "Popularity": 127418.25,
-        "Collection": 393
+        "Popularity": 127268.25,
+        "Collection": 392
     },
     {
         "ID": 1814174,
         "Name": "欺弱",
-        "Popularity": 3667,
-        "Collection": 7
+        "Popularity": 3817,
+        "Collection": 8
     },
     {
         "ID": 1785221,
@@ -2468,68 +2678,56 @@
     {
         "ID": 1809336,
         "Name": "膝盖之下",
-        "Popularity": 11875.5,
-        "Collection": 56
+        "Popularity": 12025.5,
+        "Collection": 57
     },
     {
         "ID": 1805481,
         "Name": "蝴蝶坠地",
-        "Popularity": 18548.75,
-        "Collection": 28
+        "Popularity": 18728.25,
+        "Collection": 29
     },
     {
         "ID": 1706366,
         "Name": "我与狸奴不出门",
-        "Popularity": 870913.25,
-        "Collection": 2774
+        "Popularity": 871518.25,
+        "Collection": 2778
     },
     {
         "ID": 1479210,
         "Name": "湾北街还在排队吗",
-        "Popularity": 692766.75,
-        "Collection": 558
+        "Popularity": 692991.75,
+        "Collection": 559
     },
     {
         "ID": 1475757,
         "Name": "不要吸我啦！",
-        "Popularity": 1626221.75,
-        "Collection": 4175
+        "Popularity": 1632631.75,
+        "Collection": 4182
     },
     {
         "ID": 1032827,
         "Name": "灰色香调",
-        "Popularity": 437475.25,
+        "Popularity": 437490.25,
         "Collection": 1203
     },
     {
         "ID": 1443583,
         "Name": "热恋基地",
-        "Popularity": 267765.25,
-        "Collection": 443
+        "Popularity": 268815.25,
+        "Collection": 450
     },
     {
         "ID": 1691196,
         "Name": "谋杀黄昏",
-        "Popularity": 1071946,
-        "Collection": 3564
-    },
-    {
-        "ID": 1592626,
-        "Name": "破格",
-        "Popularity": 694002.38,
-        "Collection": 1028
+        "Popularity": 1073907,
+        "Collection": 3577
     },
     {
         "ID": 1762820,
         "Name": "失落赤道",
-        "Popularity": 448218.5,
-        "Collection": 1286
-    },
-    {
-        "ID": 1698771,
-        "Name": "银行狗的春天",
-        "Popularity": 583523.25,
-        "Collection": 1089
+        "Popularity": 449353.5,
+        "Collection": 1289
     },
     {
         "ID": 1772030,
@@ -2540,14 +2738,14 @@
     {
         "ID": 1564321,
         "Name": "玻璃贴纸",
-        "Popularity": 36728.75,
-        "Collection": 142
+        "Popularity": 37028.75,
+        "Collection": 144
     },
     {
         "ID": 1712415,
         "Name": "许老师移情实录",
-        "Popularity": 130780,
-        "Collection": 224
+        "Popularity": 131680,
+        "Collection": 230
     },
     {
         "ID": 1248905,
@@ -2558,26 +2756,26 @@
     {
         "ID": 1723487,
         "Name": "以次充好",
-        "Popularity": 91487.25,
-        "Collection": 251
+        "Popularity": 91947.25,
+        "Collection": 254
     },
     {
         "ID": 1796423,
         "Name": "兀兀",
-        "Popularity": 47960.5,
-        "Collection": 82
+        "Popularity": 48115.5,
+        "Collection": 83
     },
     {
         "ID": 1512891,
         "Name": "封井",
-        "Popularity": 2329134.25,
-        "Collection": 6865
+        "Popularity": 2329944.25,
+        "Collection": 6870
     },
     {
         "ID": 1790212,
         "Name": "作对",
-        "Popularity": 105821.25,
-        "Collection": 268
+        "Popularity": 106121.25,
+        "Collection": 270
     },
     {
         "ID": 1806212,
@@ -2600,8 +2798,8 @@
     {
         "ID": 1736357,
         "Name": "别在难堪时伸手",
-        "Popularity": 266379.75,
-        "Collection": 722
+        "Popularity": 266234.75,
+        "Collection": 721
     },
     {
         "ID": 987171,
@@ -2612,8 +2810,8 @@
     {
         "ID": 1744857,
         "Name": "他与月亮的距离",
-        "Popularity": 1273010.59,
-        "Collection": 1746
+        "Popularity": 1278600.59,
+        "Collection": 1754
     },
     {
         "ID": 1804248,
@@ -2622,21 +2820,15 @@
         "Collection": 7
     },
     {
-        "ID": 1720205,
-        "Name": "美强惨男主拯救指南",
-        "Popularity": 1092320.75,
-        "Collection": 2578
-    },
-    {
         "ID": 1740643,
         "Name": "入山海",
-        "Popularity": 2612261.5,
+        "Popularity": 2613046.5,
         "Collection": 4130
     },
     {
         "ID": 1658382,
         "Name": "我有一台挖掘机",
-        "Popularity": 688434,
+        "Popularity": 688559,
         "Collection": 925
     },
     {
@@ -2648,20 +2840,20 @@
     {
         "ID": 1771334,
         "Name": "切掉良心换野心",
-        "Popularity": 232604.75,
-        "Collection": 561
+        "Popularity": 232454.75,
+        "Collection": 560
     },
     {
         "ID": 1665468,
         "Name": "伴青",
-        "Popularity": 3193095.25,
-        "Collection": 5579
+        "Popularity": 3195715.25,
+        "Collection": 5584
     },
     {
         "ID": 1697889,
         "Name": "落魄不偶",
-        "Popularity": 2460534,
-        "Collection": 3092
+        "Popularity": 2524866,
+        "Collection": 3197
     },
     {
         "ID": 1274746,
@@ -2672,20 +2864,14 @@
     {
         "ID": 1764436,
         "Name": "教授，您的外卖",
-        "Popularity": 67985.75,
-        "Collection": 87
-    },
-    {
-        "ID": 1800100,
-        "Name": "蝴蝶眨几次眼睛",
-        "Popularity": 540501,
-        "Collection": 1706
+        "Popularity": 68135.75,
+        "Collection": 88
     },
     {
         "ID": 1611995,
         "Name": "我进村的那些日子",
-        "Popularity": 512262,
-        "Collection": 878
+        "Popularity": 512922,
+        "Collection": 879
     },
     {
         "ID": 1571147,
@@ -2696,32 +2882,26 @@
     {
         "ID": 1266262,
         "Name": "予你玫瑰",
-        "Popularity": 1146863.5,
-        "Collection": 2038
+        "Popularity": 1147484.5,
+        "Collection": 2042
     },
     {
         "ID": 1754177,
         "Name": "刻不容缓",
-        "Popularity": 42832.5,
-        "Collection": 74
+        "Popularity": 42987.5,
+        "Collection": 75
     },
     {
         "ID": 1416779,
         "Name": "殿下为我两肋插刀",
-        "Popularity": 253086,
-        "Collection": 496
-    },
-    {
-        "ID": 1777278,
-        "Name": "致命鱿物",
-        "Popularity": 2952101.75,
-        "Collection": 4010
+        "Popularity": 254736,
+        "Collection": 507
     },
     {
         "ID": 1585699,
         "Name": "Alpha是用来钓的",
-        "Popularity": 616588.75,
-        "Collection": 1905
+        "Popularity": 616198.75,
+        "Collection": 1902
     },
     {
         "ID": 211741,
@@ -2732,14 +2912,14 @@
     {
         "ID": 1732612,
         "Name": "特罗姆瑟雪夜",
-        "Popularity": 197806,
-        "Collection": 810
+        "Popularity": 197966,
+        "Collection": 811
     },
     {
         "ID": 1615989,
         "Name": "遗咎",
-        "Popularity": 102027.77,
-        "Collection": 228
+        "Popularity": 102332.77,
+        "Collection": 230
     },
     {
         "ID": 1447536,
@@ -2750,56 +2930,44 @@
     {
         "ID": 1751161,
         "Name": "去了汪星的金毛",
-        "Popularity": 692581.25,
-        "Collection": 1506
+        "Popularity": 693842.25,
+        "Collection": 1514
     },
     {
         "ID": 1766776,
         "Name": "离奇游戏",
-        "Popularity": 62215.25,
-        "Collection": 69
+        "Popularity": 62365.25,
+        "Collection": 70
     },
     {
         "ID": 1438567,
         "Name": "我和我的杠精朋友",
-        "Popularity": 56304.75,
+        "Popularity": 56306.25,
         "Collection": 134
-    },
-    {
-        "ID": 1764589,
-        "Name": "春风对",
-        "Popularity": 38687.5,
-        "Collection": 36
-    },
-    {
-        "ID": 1752263,
-        "Name": "汪汪队立大功",
-        "Popularity": 10989.75,
-        "Collection": 25
     },
     {
         "ID": 1728889,
         "Name": "重启日",
-        "Popularity": 135657,
-        "Collection": 125
+        "Popularity": 135807,
+        "Collection": 126
     },
     {
         "ID": 1639836,
         "Name": "什刹海是海吗",
-        "Popularity": 363189.25,
-        "Collection": 1154
+        "Popularity": 364627.74,
+        "Collection": 1160
     },
     {
         "ID": 1797208,
         "Name": "半岛飞雪十二天",
-        "Popularity": 36352.5,
-        "Collection": 67
+        "Popularity": 37157.5,
+        "Collection": 69
     },
     {
         "ID": 1701837,
         "Name": "人生三喜",
-        "Popularity": 574770.75,
-        "Collection": 849
+        "Popularity": 575070.75,
+        "Collection": 851
     },
     {
         "ID": 1423861,
@@ -2816,8 +2984,8 @@
     {
         "ID": 1345016,
         "Name": "作古",
-        "Popularity": 36100489.75,
-        "Collection": 27302
+        "Popularity": 36161549.75,
+        "Collection": 27338
     },
     {
         "ID": 1209840,
@@ -2828,175 +2996,7 @@
     {
         "ID": 1325748,
         "Name": "释春秋",
-        "Popularity": 11287632.25,
-        "Collection": 15254
-    },
-    {
-        "ID": 1616002,
-        "Name": "失忆症",
-        "Popularity": 11650667,
-        "Collection": 14522
-    },
-    {
-        "ID": 1495567,
-        "Name": "定制好梦",
-        "Popularity": 42792,
-        "Collection": 23
-    },
-    {
-        "ID": 1756262,
-        "Name": "倒悬时",
-        "Popularity": 68958,
-        "Collection": 47
-    },
-    {
-        "ID": 1104877,
-        "Name": "傀儡师",
-        "Popularity": 42374043.5,
-        "Collection": 31598
-    },
-    {
-        "ID": 1653254,
-        "Name": "徽影重重",
-        "Popularity": 94440,
-        "Collection": 110
-    },
-    {
-        "ID": 1340487,
-        "Name": "离景",
-        "Popularity": 53722.75,
-        "Collection": 25
-    },
-    {
-        "ID": 1736785,
-        "Name": "金台逝水",
-        "Popularity": 1014140.25,
-        "Collection": 2852
-    },
-    {
-        "ID": 1525391,
-        "Name": "遗愿催债人",
-        "Popularity": 11079395.5,
-        "Collection": 8053
-    },
-    {
-        "ID": 1650109,
-        "Name": "盛夏有喜",
-        "Popularity": 287211.25,
-        "Collection": 494
-    },
-    {
-        "ID": 1569146,
-        "Name": "落日之下",
-        "Popularity": 148983.5,
-        "Collection": 352
-    },
-    {
-        "ID": 1647363,
-        "Name": "暗杀对象他总撩我怎么办",
-        "Popularity": 427855.25,
-        "Collection": 1151
-    },
-    {
-        "ID": 1754565,
-        "Name": "凶犬",
-        "Popularity": 119052.75,
-        "Collection": 177
-    },
-    {
-        "ID": 1809882,
-        "Name": "窗户里的男人",
-        "Popularity": 53681.25,
-        "Collection": 117
-    },
-    {
-        "ID": 802128,
-        "Name": "营业尴尬期",
-        "Popularity": 452013.95,
-        "Collection": 1690
-    },
-    {
-        "ID": 1756145,
-        "Name": "双重心事",
-        "Popularity": 254981.25,
-        "Collection": 366
-    },
-    {
-        "ID": 1673437,
-        "Name": "孤潜2201",
-        "Popularity": 519454,
-        "Collection": 937
-    },
-    {
-        "ID": 1191852,
-        "Name": "伏雨",
-        "Popularity": 123019.25,
-        "Collection": 330
-    },
-    {
-        "ID": 1506396,
-        "Name": "这简直是噩梦",
-        "Popularity": 43577.75,
-        "Collection": 190
-    },
-    {
-        "ID": 1678810,
-        "Name": "翅果",
-        "Popularity": 70232,
-        "Collection": 20
-    },
-    {
-        "ID": 1716878,
-        "Name": "袭夺",
-        "Popularity": 552128490.25,
-        "Collection": 263424
-    },
-    {
-        "ID": 1613383,
-        "Name": "潮湿乐园",
-        "Popularity": 30505634,
-        "Collection": 29200
-    },
-    {
-        "ID": 1171345,
-        "Name": "慢慢",
-        "Popularity": 219468.75,
-        "Collection": 999
-    },
-    {
-        "ID": 1806322,
-        "Name": "1324公里",
-        "Popularity": 55832.5,
-        "Collection": 84
-    },
-    {
-        "ID": 1499589,
-        "Name": "候鸟与翠榴石",
-        "Popularity": 10856475.5,
-        "Collection": 9104
-    },
-    {
-        "ID": 1109344,
-        "Name": "亲爱的穆川",
-        "Popularity": 36480.5,
-        "Collection": 101
-    },
-    {
-        "ID": 1734767,
-        "Name": "非梧不栖",
-        "Popularity": 33036.5,
-        "Collection": 5
-    },
-    {
-        "ID": 1414867,
-        "Name": "假面之罪",
-        "Popularity": 8409633.5,
-        "Collection": 9184
-    },
-    {
-        "ID": 1173557,
-        "Name": "短篇",
-        "Popularity": 1320099.75,
-        "Collection": 2359
+        "Popularity": 11290997.25,
+        "Collection": 15262
     }
 ]
