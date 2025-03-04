@@ -37,7 +37,7 @@
             loadDataset("output_data.json", "allbooks");  
         }
 
-        // 用户输入数字后查找 JSON 关键信息
+        // 用户输入小说ID后查找 JSON 数据
         async function searchData() {
             try {
                 const response = await fetch("search_data.json"); // JSON文件存放查询数据
@@ -47,16 +47,22 @@
                 let resultTable = document.getElementById("result-body");
                 resultTable.innerHTML = ""; // 清空旧数据
 
-                if (jsonData[userInput]) {
+                // 只允许用户输入数字
+                if (!/^\d+$/.test(userInput)) {
+                    alert("请输入有效的数字 ID！");
+                    return;
+                }
+
+                let found = jsonData.find(item => item.ID.toString() === userInput);
+                if (found) {
                     let newRow = document.createElement("tr");
-                    jsonData[userInput].forEach(value => {
-                        let cell = document.createElement("td");
-                        cell.textContent = value;
-                        newRow.appendChild(cell);
-                    });
+                    newRow.innerHTML = `<td>${found.ID}</td>
+                                        <td>${found.Name}</td>
+                                        <td>${found.Popularity}</td>
+                                        <td>${found.Collection}</td>`;
                     resultTable.appendChild(newRow);
                 } else {
-                    alert("未找到匹配的数据！");
+                    alert("未找到匹配的小说 ID！");
                 }
             } catch (error) {
                 console.error("Error loading JSON:", error);
@@ -82,10 +88,10 @@
     <p>如果遇到问题，请发送邮件至 <a href="mailto:jingerfish.stories@gmail.com">jingerfish.stories@gmail.com</a></p>
 
     <!-- **搜索框** -->
-    <h2 class="mt-5 text-secondary">🔍 数据查询</h2>
-    <p>输入一串数字，查询对应的小说信息：</p>
+    <h2 class="mt-5 text-secondary">🔍 小说 ID 查询</h2>
+    <p>输入小说 ID，查询对应的小说信息：</p>
     <div class="mb-3">
-        <input type="text" class="form-control" id="search-input" placeholder="请输入小说ID">
+        <input type="text" class="form-control" id="search-input" placeholder="请输入小说 ID">
     </div>
     <button class="btn btn-primary" onclick="searchData()">查询</button>
 
@@ -94,20 +100,17 @@
     <table class="table table-striped">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>书名</th>
-                <th>作者</th>
-                <th>类别</th>
                 <th>热度</th>
                 <th>收藏</th>
-                <th>评分</th>
-                <th>推荐指数</th>
             </tr>
         </thead>
         <tbody id="result-body">
         </tbody>
     </table>
 
-    <!-- 各类数据表 -->
+    <!-- 数据表 -->
     <h2 class="mt-5 text-primary">📖 播报</h2>
     <table class="table table-striped">
         <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
