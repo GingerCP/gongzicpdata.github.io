@@ -2,8 +2,8 @@ name: Scheduled Python Scripts
 
 on:
   schedule:
-    - cron: "5 16 * * *"  # Runs script.py every day at 00:05 Beijing Time (UTC 16:05)
-    - cron: "5 16 * * 5"  # Runs script2.py every Friday at 00:05 Beijing Time (UTC 16:05)
+    - cron: "5 16 * * *"  # Runs bobao.py & bidu.py every day at 00:05 Beijing Time (UTC 16:05)
+    - cron: "5 16 * * 5"  # Runs scrape_and_update.py every Friday at 00:05 Beijing Time (UTC 16:05)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -29,16 +29,20 @@ jobs:
       - name: Run bidu.py (Daily)
         run: python bidu.py
 
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+      - name: Pull latest changes to avoid conflicts
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
-          git add bobao.json  # Modify this if your script updates a different file
-          git add bidu.json  # Modify this if your script updates a different file
-          git commit -m "Daily update from bobao.py" || echo "No changes to commit"
+          git pull --rebase origin main || echo "No changes to pull"
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git add bobao.json
+          git add bidu.json
+          git commit -m "Daily update from bobao.py & bidu.py" || echo "No changes to commit"
           git push origin main
 
   run_weekly_script:
@@ -60,13 +64,17 @@ jobs:
       - name: Run scrape_and_update.py (Weekly)
         run: python scrape_and_update.py
 
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+      - name: Pull latest changes to avoid conflicts
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
-          git add output_data.json  # Modify this if script2 updates a different file
-          git commit -m "Weekly update from crape_and_update.py" || echo "No changes to commit"
+          git pull --rebase origin main || echo "No changes to pull"
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git add output_data.json
+          git commit -m "Weekly update from scrape_and_update.py" || echo "No changes to commit"
           git push origin main
