@@ -1,7 +1,13 @@
 import requests
 import json
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
+
+# Convert UTC time to China Standard Time (CST)
+def get_china_time():
+    return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S")
+
+
 
 def fetch_data():
     url = "https://www.gongzicp.com/webapi/novel/novelGetList?page=1&size=10&tid=75&field=4&order=0"
@@ -55,7 +61,7 @@ def get_recent_updates():
             # names.append(novel["novel_name"])
 
             url2 ='https://www.gongzicp.com/webapi/novel/novelInfo?id='+ str(novel["novel_id"]) +' HTTP/1.1'
-            fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            fetch_time = get_china_time()
             response = requests.get(url2)
             web_content = response.text
             pre_novel = json.loads(web_content)['data']
