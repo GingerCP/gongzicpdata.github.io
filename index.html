@@ -69,7 +69,7 @@
     </table>
 
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
-    <h2 class="mt-5 text-primary">📖 强推</h2>
+    <h2 class="mt-5 text-primary">📖 纯爱淘金</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -82,6 +82,22 @@
         <tbody id="catj"></tbody>
     </table>
 
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 人气佳作</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="rqjz"></tbody>
+    </table>
+
+    
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
     <table class="table table-striped">
@@ -123,7 +139,9 @@
         loadDataset("bidu.json", "bidu");  // Daily data on top
         loadDataset("benzhouqiangtui.json", "qiangtui");  // Daily data on top
         loadDataset("chuanaitaojin.json", "catj");  // Weekly data
+        loadDataset("renqijiazuo.json", "rqjz");  // Weekly data
         loadDataset("output_data.json", "allbooks");  // Weekly data
+        
     </script>
 </body>
 </html>
