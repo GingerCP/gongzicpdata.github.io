@@ -8,6 +8,7 @@ def get_china_time():
 # URL of the webpage
 novels = []
 fetch_time = get_china_time()
+for page in range(0,4):
   url = 'https://gongzicp.com/webapi/home/recommend?page_id='+str(page)+'&tid=0&p'
   headers = {"User-Agent": "Mozilla/5.0"}
   fetch_time = get_china_time()
