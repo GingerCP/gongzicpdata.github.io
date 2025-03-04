@@ -1,6 +1,7 @@
 import requests
 import json
 import pandas as pd
+from datetime import datetime
 
 def fetch_data():
     url = "https://www.gongzicp.com/webapi/novel/novelGetList?page=1&size=10&tid=75&field=4&order=0"
@@ -54,6 +55,7 @@ def get_recent_updates():
             # names.append(novel["novel_name"])
 
             url2 ='https://www.gongzicp.com/webapi/novel/novelInfo?id='+ str(novel["novel_id"]) +' HTTP/1.1'
+            fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             response = requests.get(url2)
             web_content = response.text
             pre_novel = json.loads(web_content)['data']
@@ -61,7 +63,8 @@ def get_recent_updates():
                 "ID": novel["novel_id"],
                 "Name": novel["novel_name"],
                 "Popularity": novel["novel_allpopu"],
-                "Collection":  pre_novel["novel_allcoll"]
+                "Collection":  pre_novel["novel_allcoll"]，
+                "Timestamp": fetch_time  # Store fetch time
             })
     else:
         print("Failed to retrieve data. Status code:", response.status_code)
