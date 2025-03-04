@@ -1,6 +1,6 @@
 import requests 
 import json
-
+import datetime
 # URL of the webpage
 novels = []
 fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -30,6 +30,7 @@ for page in range(1,2):
               "Name": novel["novel_name"],
               "Popularity": novel["novel_allpopu"],
               "Collection": novel["novel_allcoll"],
+              "Timestamp": fetch_time  # Store fetch time
           })
           print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
       with open('bidu.json', "w", encoding="utf-8") as file:
