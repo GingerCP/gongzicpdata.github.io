@@ -3,7 +3,7 @@ name: Scheduled Python Scripts
 on:
   schedule:
     - cron: "5 6 * * *"  # Runs bobao.py & bidu.py every day at 00:05 Beijing Time (UTC 16:05)
-    - cron: "5 6 * * 2"  # Runs scrape_and_update.py every Friday at 00:05 Beijing Time (UTC 16:05)
+    - cron: "30 7 * * 2"  # Runs scrape_and_update.py every Friday at 00:05 Beijing Time (UTC 16:05)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
