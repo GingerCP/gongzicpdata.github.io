@@ -2,12 +2,13 @@ name: Scheduled Python Scripts
 
 on:
   schedule:
-    - cron: "02 19 * * *"  # Runs bobao.py & bidu.py every day at 00:05 Beijing Time (UTC 16:05)
-    - cron: "00 17 * * 5"  # Runs scrape_and_update.py every Friday at 00:05 Beijing Time (UTC 16:05)
+    - cron: "2 20 * * *"  # Runs daily at 19:02 UTC (3:02 AM CST)
+    - cron: "7 16 * * 4"  # Runs weekly at 16:05 UTC (Friday 00:05 CST)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
   run_daily_script:
+    if: github.event.schedule == '2 20 * * *'  # Only runs for the daily schedule
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -30,8 +31,6 @@ jobs:
       - name: Run bidu.py (Daily)
         run: python bidu.py
 
-
-
       - name: Pull latest changes to avoid conflicts
         run: |
           git config --global user.name "GitHub Actions"
@@ -48,6 +47,7 @@ jobs:
           git push origin main || (git pull --rebase origin main && git push origin main)
 
   run_weekly_script:
+    if: github.event.schedule == '7 16 * * 4'  # Only runs for the weekly schedule
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
