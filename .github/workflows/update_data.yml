@@ -2,20 +2,20 @@ name: Scheduled Python Scripts
 
 on:
   schedule:
-    - cron: "2 20 * * *"  # Runs daily at 19:02 UTC (3:02 AM CST)
-    - cron: "7 16 * * 4"  # Runs weekly at 16:05 UTC (Friday 00:05 CST)
+    - cron: "40 15 * * *"  # Runs at 15:40 UTC (23:40 CST) daily
+    - cron: "40 15 * * 4"  # Runs at 15:40 UTC (23:40 CST) on Thursday (for weekly job)
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
   run_daily_script:
-    if: github.event.schedule == '2 20 * * *'  # Only runs for the daily schedule
     runs-on: ubuntu-latest
+    if: github.event.schedule == '40 15 * * *'  # ✅ Ensures only the daily job runs
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           persist-credentials: false
-          fetch-depth: 0  # Ensures full history is pulled to prevent conflicts
+          fetch-depth: 0
 
       - name: Set Up Python
         uses: actions/setup-python@v3
@@ -23,13 +23,28 @@ jobs:
           python-version: "3.x"
 
       - name: Install Dependencies
-        run: pip install requests pandas  # Add any other dependencies
+        run: pip install requests pandas
 
-      - name: Run bobao.py (Daily)
-        run: python bobao.py
+      - name: Wait Until 00:05 CST Before Running
+        run: |
+          CURRENT_HOUR=$(date -u +"%H")
+          CURRENT_MINUTE=$(date -u +"%M")
+          TARGET_HOUR=16  # 00:05 CST is 16:05 UTC
+          TARGET_MINUTE=5
 
-      - name: Run bidu.py (Daily)
-        run: python bidu.py
+          echo "⏳ Current UTC Time: $CURRENT_HOUR:$CURRENT_MINUTE"
+          if [ "$CURRENT_HOUR" -gt "$TARGET_HOUR" ] || ([ "$CURRENT_HOUR" -eq "$TARGET_HOUR" ] && [ "$CURRENT_MINUTE" -ge "$TARGET_MINUTE" ]); then
+            echo "✅ It's already past 00:05 CST. Running scripts immediately..."
+          else
+            SLEEP_TIME=$(( (TARGET_HOUR - CURRENT_HOUR) * 3600 + (TARGET_MINUTE - CURRENT_MINUTE) * 60 ))
+            echo "⏳ Sleeping for $SLEEP_TIME seconds until 00:05 CST..."
+            sleep $SLEEP_TIME
+          fi
+
+      - name: Run Daily Scripts
+        run: |
+          python bobao.py
+          python bidu.py
 
       - name: Pull latest changes to avoid conflicts
         run: |
@@ -47,14 +62,14 @@ jobs:
           git push origin main || (git pull --rebase origin main && git push origin main)
 
   run_weekly_script:
-    if: github.event.schedule == '7 16 * * 4'  # Only runs for the weekly schedule
     runs-on: ubuntu-latest
+    if: github.event.schedule == '40 15 * * 4'  # ✅ Ensures only the weekly job runs
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           persist-credentials: false
-          fetch-depth: 0  # Ensures full history is pulled to prevent conflicts
+          fetch-depth: 0
 
       - name: Set Up Python
         uses: actions/setup-python@v3
@@ -62,19 +77,30 @@ jobs:
           python-version: "3.x"
 
       - name: Install Dependencies
-        run: pip install requests pandas  # Add any other dependencies
+        run: pip install requests pandas
 
-      - name: Run scrape_and_update.py (Weekly)
-        run: python scrape_and_update.py
+      - name: Wait Until 00:05 CST Before Running
+        run: |
+          CURRENT_HOUR=$(date -u +"%H")
+          CURRENT_MINUTE=$(date -u +"%M")
+          TARGET_HOUR=16  # 00:05 CST is 16:05 UTC
+          TARGET_MINUTE=5
 
-      - name: Run qiangtui.py (Weekly)
-        run: python qiangtui.py
+          echo "⏳ Current UTC Time: $CURRENT_HOUR:$CURRENT_MINUTE"
+          if [ "$CURRENT_HOUR" -gt "$TARGET_HOUR" ] || ([ "$CURRENT_HOUR" -eq "$TARGET_HOUR" ] && [ "$CURRENT_MINUTE" -ge "$TARGET_MINUTE" ]); then
+            echo "✅ It's already past 00:05 CST. Running scripts immediately..."
+          else
+            SLEEP_TIME=$(( (TARGET_HOUR - CURRENT_HOUR) * 3600 + (TARGET_MINUTE - CURRENT_MINUTE) * 60 ))
+            echo "⏳ Sleeping for $SLEEP_TIME seconds until 00:05 CST..."
+            sleep $SLEEP_TIME
+          fi
 
-      - name: Run renqijiazuo.py (Weekly)
-        run: python renqijiazuo.py
-
-      - name: Run chunaitaojin.py (Weekly)
-        run: python chunaitaojin.py
+      - name: Run Weekly Scripts
+        run: |
+          python scrape_and_update.py
+          python qiangtui.py
+          python renqijiazuo.py
+          python chunaitaojin.py
 
       - name: Pull latest changes to avoid conflicts
         run: |
@@ -87,9 +113,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git add output_data.json
-          git add benzhouqiangtui.json
-          git add renqijiazuo.json
-          git add chunaitaojin.json
+          git add output_data.json benzhouqiangtui.json renqijiazuo.json chunaitaojin.json
           git commit -m "Weekly update from scrape_and_update.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
