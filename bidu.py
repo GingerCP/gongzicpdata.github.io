@@ -1,6 +1,6 @@
 import requests 
 import json
-import datetime
+from datetime import datetime
 # URL of the webpage
 novels = []
 fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
