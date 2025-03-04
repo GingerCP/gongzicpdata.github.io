@@ -1,6 +1,7 @@
 import requests 
 import json
-
+from datetime import datetime
+fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 # URL of the webpage
 novels = []
 for page in range(1,2):
@@ -29,6 +30,7 @@ for page in range(1,2):
               "Name": novel["novel_name"],
               "Popularity": novel["novel_allpopu"],
               "Collection": novel["novel_allcoll"],
+              "Timestamp": fetch_time  # Store fetch time
           })
           print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
       with open('benzhouqiangtui.json', "w", encoding="utf-8") as file:
