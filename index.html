@@ -39,6 +39,20 @@
         <tbody id="broadcast"></tbody>
     </table>
 
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 必读</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="bidu"></tbody>
+    </table>
+
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
     <table class="table table-striped">
@@ -77,6 +91,7 @@
 
         // Load all datasets when the page loads
         loadDataset("bobao.json", "broadcast");  // Daily data on top
+        loadDataset("bidu.json", "bidu");  // Daily data on top
         loadDataset("output_data.json", "allbooks");  // Weekly data
     </script>
 </body>
