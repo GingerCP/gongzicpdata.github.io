@@ -5,14 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>长佩数据更新</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <h1 class="mt-4">📚 长佩数据更新</h1>
+
+    <!-- Description Section -->
+    <p class="lead">
+        本页面展示了最新的小说数据，包括：
+    </p>
+    <ul>
+        <li><strong>📖 播报：</strong> 每日00：05更新数据。</li>
+        <li><strong>📖 必读：</strong> 每日00：05更新数据。</li>
+        <li><strong>📖 强推、纯爱淘金、人气佳作：</strong> 每周五00:05更新数据。</li>
+        <li><strong>📚 全站书籍：</strong> 每周五00:05更新数据，更新至榜单截止日期时全站耽美连载小说500条更新数据。可根据该数据库查找书架线。注意：本数据库抓取时间有十分钟延误</li>
+    </ul>
+    <p class="text-danger">
+        数据会根据更新时间自动刷新（测试中……）。
+    </p>
+    <p>
+        本站正在测试中，属实是被长佩气到了一怒之下怒了一下的工作。 所有功能都在调试。【不保证稳定，不保证更新】。后续会把可以加上的database都加上。如有问题，敬请发送邮件至：
+        <a href="mailto:jingerfish.stories@gmail.com">jingerfish.stories@gmail.com</a>
+    </p>   
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 播报</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="broadcast"></tbody>
+    </table>
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 必读</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="bidu"></tbody>
+    </table>
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 强推</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="qiangtui"></tbody>
+    </table>
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 纯爱淘金</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="catj"></tbody>
+    </table>
+
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 人气佳作</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="rqjz"></tbody>
+    </table>
+
+    
+    <!-- Weekly Data (New Releases) -->
+    <h2 class="mt-5 text-success">📚 全站</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+            </tr>
+        </thead>
+        <tbody id="allbooks"></tbody>
+    </table>
+
     <script>
-        // 加载 JSON 数据并填充表格
+        // Function to load and display dataset
         async function loadDataset(jsonFile, tableId) {
             try {
                 const response = await fetch(jsonFile);
                 const data = await response.json();
                 let tableBody = document.getElementById(tableId);
-                tableBody.innerHTML = "";  // 清空现有数据
+                tableBody.innerHTML = "";  // Clear previous data
 
                 data.forEach(row => {
                     let tr = document.createElement("tr");
@@ -27,124 +135,14 @@
             }
         }
 
-        // 载入所有数据集
-        function loadAllData() {
-            loadDataset("bobao.json", "broadcast");  
-            loadDataset("bidu.json", "bidu");  
-            loadDataset("benzhouqiangtui.json", "qiangtui");  
-            loadDataset("chunaitaojin.json", "catj");  
-            loadDataset("renqijiazuo.json", "rqjz");  
-            loadDataset("output_data.json", "allbooks");  
-        }
-
-        // 用户输入小说ID后查找 JSON 数据
-        async function searchData() {
-            try {
-                const response = await fetch("output_data.json"); // JSON文件存放查询数据
-                const jsonData = await response.json();
-
-                let userInput = document.getElementById("search-input").value.trim();
-                let resultTable = document.getElementById("result-body");
-                resultTable.innerHTML = ""; // 清空旧数据
-
-                // 只允许用户输入数字
-                if (!/^\d+$/.test(userInput)) {
-                    alert("请输入有效的数字 ID！");
-                    return;
-                }
-
-                let found = jsonData.find(item => item.ID.toString() === userInput);
-                if (found) {
-                    let newRow = document.createElement("tr");
-                    newRow.innerHTML = `<td>${found.ID}</td>
-                                        <td>${found.Name}</td>
-                                        <td>${found.Popularity}</td>
-                                        <td>${found.Collection}</td>`;
-                    resultTable.appendChild(newRow);
-                } else {
-                    alert("未找到匹配的小说 ID！");
-                }
-            } catch (error) {
-                console.error("Error loading JSON:", error);
-            }
-        }
-
-        // 页面加载时执行
-        window.onload = loadAllData;
+        // Load all datasets when the page loads
+        loadDataset("bobao.json", "broadcast");  // Daily data on top
+        loadDataset("bidu.json", "bidu");  // Daily data on top
+        loadDataset("benzhouqiangtui.json", "qiangtui");  // Daily data on top
+        loadDataset("chunaitaojin.json", "catj");  // Weekly data
+        loadDataset("renqijiazuo.json", "rqjz");  // Weekly data
+        loadDataset("output_data.json", "allbooks");  // Weekly data
+        
     </script>
-</head>
-<body class="container">
-    <h1 class="mt-4">📚 长佩数据更新</h1>
-
-    <!-- 说明 -->
-    <p class="lead">本页面展示了最新的小说数据，包括：</p>
-    <ul>
-        <li><strong>📖 播报：</strong> 每日00:05更新数据。</li>
-        <li><strong>📖 必读：</strong> 每日00:05更新数据。</li>
-        <li><strong>📖 强推、纯爱淘金、人气佳作：</strong> 每周五00:05更新数据。</li>
-        <li><strong>📚 全站书籍：</strong> 每周五00:05更新数据，更新至榜单截止日期时全站耽美连载小说500条数据。</li>
-    </ul>
-    <p class="text-danger">数据会根据更新时间自动刷新（测试中……）。</p>
-    <p>如果遇到问题，请发送邮件至 <a href="mailto:jingerfish.stories@gmail.com">jingerfish.stories@gmail.com</a></p>
-
-    <!-- **搜索框** -->
-    <h2 class="mt-5 text-secondary">🔍 小说 ID 查询</h2>
-    <p>输入小说 ID，查询对应的小说信息：</p>
-    <div class="mb-3">
-        <input type="text" class="form-control" id="search-input" placeholder="请输入小说 ID">
-    </div>
-    <button class="btn btn-primary" onclick="searchData()">查询</button>
-
-    <!-- 查询结果 -->
-    <h2 class="mt-4">📋 查询结果</h2>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>书名</th>
-                <th>热度</th>
-                <th>收藏</th>
-            </tr>
-        </thead>
-        <tbody id="result-body">
-        </tbody>
-    </table>
-
-    <!-- 数据表 -->
-    <h2 class="mt-5 text-primary">📖 播报</h2>
-    <table class="table table-striped">
-        <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
-        <tbody id="broadcast"></tbody>
-    </table>
-
-    <h2 class="mt-5 text-primary">📖 必读</h2>
-    <table class="table table-striped">
-        <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
-        <tbody id="bidu"></tbody>
-    </table>
-
-    <h2 class="mt-5 text-primary">📖 强推</h2>
-    <table class="table table-striped">
-        <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
-        <tbody id="qiangtui"></tbody>
-    </table>
-
-    <h2 class="mt-5 text-primary">📖 纯爱淘金</h2>
-    <table class="table table-striped">
-        <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
-        <tbody id="catj"></tbody>
-    </table>
-
-    <h2 class="mt-5 text-primary">📖 人气佳作</h2>
-    <table class="table table-striped">
-        <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
-        <tbody id="rqjz"></tbody>
-    </table>
-
-    <h2 class="mt-5 text-success">📚 全站</h2>
-    <table class="table table-striped">
-        <thead><tr><th>ID</th><th>书名</th><th>热度</th><th>收藏</th></tr></thead>
-        <tbody id="allbooks"></tbody>
-    </table>
 </body>
 </html>
