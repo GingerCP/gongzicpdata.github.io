@@ -1,12 +1,12 @@
 import requests 
 import json
-
+from datetime import datetime
 # URL of the webpage
 novels = []
 for page in range(0,4):
   url = 'https://gongzicp.com/webapi/home/recommend?page_id='+str(page)+'&tid=0&p'
   headers = {"User-Agent": "Mozilla/5.0"}
-
+  fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   response = requests.get(url, headers=headers)
   if response.status_code == 200:
       text = response.text
@@ -29,6 +29,7 @@ for page in range(0,4):
               "Name": novel["novel_name"],
               "Popularity": novel["novel_allpopu"],
               "Collection": novel["novel_allcoll"],
+              "Timestamp": fetch_time 
           })
           print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
       with open('bobao.json', "w", encoding="utf-8") as file:
