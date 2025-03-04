@@ -63,7 +63,7 @@ def get_recent_updates():
                 "ID": novel["novel_id"],
                 "Name": novel["novel_name"],
                 "Popularity": novel["novel_allpopu"],
-                "Collection":  pre_novel["novel_allcoll"]，
+                "Collection":  pre_novel["novel_allcoll"],
                 "Timestamp": fetch_time  # Store fetch time
             })
     else:
