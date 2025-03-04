@@ -42,7 +42,7 @@ def fetch_data():
 
 def get_recent_updates():
   novels = []
-  for page in range(0,1):
+  for page in range(0,50):
     print(page/50)
     url = "https://gongzicp.com/webapi/novel/novelGetList?page="+str(page)+"&size=10&tid=75&field=4&order=0"
     headers = {
