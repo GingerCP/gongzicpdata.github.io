@@ -3,6 +3,7 @@ import json
 
 # URL of the webpage
 novels = []
+fetch_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 for page in range(1,2):
   url = 'https://gongzicp.com/webapi/home/recommend?page_id='+str(page)+'&tid=1&p=0'
   headers = {"User-Agent": "Mozilla/5.0"}
