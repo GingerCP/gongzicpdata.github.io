@@ -40,7 +40,7 @@
         // 用户输入小说ID后查找 JSON 数据
         async function searchData() {
             try {
-                const response = await fetch("search_data.json"); // JSON文件存放查询数据
+                const response = await fetch("output_data.json"); // JSON文件存放查询数据
                 const jsonData = await response.json();
 
                 let userInput = document.getElementById("search-input").value.trim();
