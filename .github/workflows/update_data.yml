@@ -30,6 +30,9 @@ jobs:
       - name: Run bidu.py (Daily)
         run: python bidu.py
 
+      - name: Run qiangtui.py (Daily)
+        run: python qiangtui.py
+
       - name: Pull latest changes to avoid conflicts
         run: |
           git config --global user.name "GitHub Actions"
