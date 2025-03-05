@@ -10,9 +10,6 @@ def get_china_time():
 # URL of the webpage
 
 
-with open('syxy.json', "w", encoding="utf-8") as file:
-      json.dump(novels, file, ensure_ascii=False, indent=4)
-
 novels = []
 url = 'https://gongzicp.com/webapi/home/recommendList?identifier=zyyc&tid=75&swap=1&style_id=7'
 headers = {"User-Agent": "Mozilla/5.0"}
