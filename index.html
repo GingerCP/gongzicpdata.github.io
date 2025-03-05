@@ -141,8 +141,8 @@
                 <th>书名</th>
                 <th>热度</th>
                 <th>收藏</th>
-                <th>数据更新时间</th>
                 <th>更新日</th>
+                <th>数据更新时间</th>        
             </tr>
         </thead>
         <tbody id="bobaolishi"></tbody>
@@ -187,7 +187,8 @@
                                     <td>${row.Name}</td>
                                     <td>${row.Popularity}</td>
                                     <td>${row.Collection}</td>
-                                    ${displayColumn}`;  // Show Weekday OR Timestamp
+                                    ${displayColumn}
+                                    <td>${row.Timestamp}</td>`;  // Show Weekday OR Timestamp
                     tableBody.appendChild(tr);
                 });
             } catch (error) {
