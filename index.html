@@ -435,10 +435,10 @@
     function createQueryTable() {
         const table = document.getElementById("queryTable");
 
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 10; i++) {
             let tr = document.createElement("tr");
 
-            for (let j = 0; j < 10; j++) {
+            for (let j = 0; j < 7; j++) {
                 let index = i * 10 + j; // Unique index for each cell
                 tr.innerHTML += `<td class="p-2">
                                     <div class="input-group">
