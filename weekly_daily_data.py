@@ -83,12 +83,6 @@ def update_json(new_entries, filename_hishtory):
     data = [
         entry for entry in data if last_friday_dt <= datetime.strptime(entry["Timestamp"], "%Y-%m-%d %H:%M:%S") <= this_thursday_dt
     ]
-    for entry in data:
-        weekday_name, weekday_number = get_weekday_from_timestamp(entry["Timestamp"])
-        entry["Timestamp"] =  weekday_name
-        # print(entry["Timestamp"], weekday_name, weekday_number)
-    # get_weekday_from_timestamp
-    # Keep only data from last Friday to this Thursday
 
     # print(len(data))
     data = remove_duplicates(data)
