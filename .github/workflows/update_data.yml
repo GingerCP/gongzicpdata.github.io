@@ -9,7 +9,7 @@ on:
 jobs:
   run_daily_script:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '40 15 * * *'  # ✅ Ensures only the daily job runs
+    if: github.event.schedule == '45 15 * * *'  # ✅ Ensures only the daily job runs
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -66,7 +66,7 @@ jobs:
 
   run_weekly_script:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '40 15 * * 4'  # ✅ Ensures only the weekly job runs
+    if: github.event.schedule == '45 15 * * 4'  # ✅ Ensures only the weekly job runs
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
