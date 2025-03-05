@@ -417,9 +417,10 @@
     </script>
 
 <script>
-    let novelData = []; // Store JSON data
+    let novelData = []; // Store novel JSON data
+    let savedQueries = {}; // Store queries in localStorage
 
-    // ✅ Fetch JSON Data on Page Load
+    // ✅ Fetch Novel Data on Page Load
     async function fetchNovelData() {
         try {
             const response = await fetch("output_data.json");
@@ -430,44 +431,74 @@
         }
     }
 
-    // ✅ Create a 7-row × 10-column Table
+    // ✅ Load Previously Saved Queries from localStorage
+    function loadSavedQueries() {
+        let storedData = localStorage.getItem("savedQueries");
+        savedQueries = storedData ? JSON.parse(storedData) : {};
+    }
+
+    // ✅ Save Queries to localStorage
+    function saveQueries() {
+        localStorage.setItem("savedQueries", JSON.stringify(savedQueries));
+    }
+
+    // ✅ Create a 10-row × 7-column Table
     function createQueryTable() {
         const table = document.getElementById("queryTable");
 
         for (let i = 0; i < 10; i++) {
-            let tr = document.createElement("tr");
+            let trInput = document.createElement("tr");
+            let trOutput = document.createElement("tr");
+
+            trInput.innerHTML = `<th class="text-center">${i + 1}</th>`; // Row index
+            trOutput.innerHTML = `<td class="text-center table-light"><strong>🔎 结果</strong></td>`; // Row header for results
 
             for (let j = 0; j < 7; j++) {
-                let index = i * 10 + j; // Unique index for each cell
-                tr.innerHTML += `<td class="p-2">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID">
-                                        <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})">🔍</button>
-                                    </div>
-                                    <div id="novel-output-${index}" class="mt-1 text-success small"></div>
-                                </td>`;
+                let index = i * 7 + j; // Unique index for each cell
+                let savedID = savedQueries[`input-${index}`] || ""; // Load stored ID if available
+                let savedResult = savedQueries[`output-${index}`] || "NULL"; // Load stored result if available
+
+                // Row 1: Input Fields & Buttons
+                trInput.innerHTML += `<td class="p-2">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID" value="${savedID}">
+                                            <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})">🔍</button>
+                                        </div>
+                                    </td>`;
+
+                // Row 2: Query Output
+                trOutput.innerHTML += `<td id="novel-output-${index}" class="text-danger small p-2">${savedResult}</td>`;
             }
-            table.appendChild(tr);
+
+            table.appendChild(trInput);
+            table.appendChild(trOutput);
         }
     }
 
-    // ✅ Search for ID and Update Only the Current Cell
+    // ✅ Search for ID and Update the Current Cell Only
     function queryNovelID(index) {
-        let inputID = document.getElementById(`novel-input-${index}`).value.trim();
+        let inputElement = document.getElementById(`novel-input-${index}`);
         let outputCell = document.getElementById(`novel-output-${index}`);
+        let inputID = inputElement.value.trim();
 
-        outputCell.innerHTML = ""; // ✅ Clear previous results
+        outputCell.innerHTML = "NULL"; // Default to "NULL"
 
-        if (!inputID) return; // ✅ If no input, do nothing
+        if (!inputID) return; // Do nothing if input is empty
 
         let foundItem = novelData.find(item => item.ID == inputID);
 
         if (foundItem) {
             outputCell.innerHTML = `📂 收藏: ${foundItem.Collection} | 🔥 热度: ${foundItem.Popularity}`;
         }
+
+        // ✅ Save Input and Output to localStorage
+        savedQueries[`input-${index}`] = inputID;
+        savedQueries[`output-${index}`] = outputCell.innerHTML;
+        saveQueries();
     }
 
-    // ✅ Initialize Table and Load Data
+    // ✅ Initialize Table, Load Data, and Restore Previous Searches
+    loadSavedQueries(); // Load previous queries
     createQueryTable();
     fetchNovelData();
 </script>
