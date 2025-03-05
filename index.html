@@ -57,6 +57,23 @@
         <tbody id="broadcast"></tbody>
     </table>
 
+        <h2 class="mt-5 text-success">📌 播报历史数据</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>更新日</th>
+                <th>数据更新时间</th>        
+            </tr>
+        </thead>
+        <tbody id="bobaolishi"></tbody>
+    </table>
+
+
+    
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
     <h2 class="mt-5 text-primary">📖 必读</h2>
     <table class="table table-striped">
@@ -72,8 +89,24 @@
         <tbody id="bidu"></tbody>
     </table>
 
+        <h2 class="mt-5 text-success">📌 必读历史数据</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>更新日</th>
+                <th>更新日</th>
+                <th>数据更新时间</th>        
+            </tr>
+        </thead>
+        <tbody id="bidulishi"></tbody>
+    </table>
+
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
-    <h2 class="mt-5 text-primary">📖 强推</h2>
+    <h2 class="mt-5 text-primary">📖 本周强推</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -119,7 +152,7 @@
     </table>
 
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
-    <h2 class="mt-5 text-primary">📖 纯爱首页</h2>
+    <h2 class="mt-5 text-primary">📖 纯爱首页 - 现代</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -130,10 +163,10 @@
                 <th>数据更新时间</th>
             </tr>
         </thead>
-        <tbody id="casy"></tbody>
+        <tbody id="casyxd"></tbody>
     </table>
 
-    <h2 class="mt-5 text-success">📌 播报历史数据</h2>
+    <h2 class="mt-5 text-primary">📖 纯爱首页 - 古代</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -141,14 +174,13 @@
                 <th>书名</th>
                 <th>热度</th>
                 <th>收藏</th>
-                <th>更新日</th>
-                <th>数据更新时间</th>        
+                <th>数据更新时间</th>
             </tr>
         </thead>
-        <tbody id="bobaolishi"></tbody>
+        <tbody id="casygd"></tbody>
     </table>
 
-    <h2 class="mt-5 text-success">📌 必读历史数据</h2>
+    <h2 class="mt-5 text-primary">📖 纯爱首页 - 悬疑</h2>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -156,12 +188,38 @@
                 <th>书名</th>
                 <th>热度</th>
                 <th>收藏</th>
-                <th>更新日</th>
-                <th>更新日</th>
-                <th>数据更新时间</th>        
+                <th>数据更新时间</th>
             </tr>
         </thead>
-        <tbody id="bidulishi"></tbody>
+        <tbody id="casyxy"></tbody>
+    </table>
+
+    <h2 class="mt-5 text-primary">📖 纯爱首页 - 架空</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>数据更新时间</th>
+            </tr>
+        </thead>
+        <tbody id="casyjk"></tbody>
+    </table>
+
+    <h2 class="mt-5 text-primary">📖 纯爱首页 - 幻想</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>数据更新时间</th>
+            </tr>
+        </thead>
+        <tbody id="casyhx"></tbody>
     </table>
     
     <!-- Weekly Data (New Releases) -->
@@ -220,7 +278,11 @@
         loadDataset("benzhouqiangtui.json", "qiangtui");  // Daily data on top
         loadDataset("chunaitaojin.json", "catj");  // Weekly data
         loadDataset("renqijiazuo.json", "rqjz");  // Weekly data
-        loadDataset("chunaishouye.json", "casy");  // Weekly data
+        loadDataset("chunaishouye.json", "casyxd");  // Weekly data
+        loadDataset("chunaishouye.json", "casyjk");  // Weekly data
+        loadDataset("chunaishouye.json", "casyhx");  // Weekly data
+        loadDataset("chunaishouye.json", "casygd");  // Weekly data
+        loadDataset("chunaishouye.json", "casyjk");  // Weekly data
         loadDataset("bobao_weekly.json", "bobaolishi", true);  // Weekly data
         loadDataset("bidu_weekly.json", "bidulishi", true);  // Weekly data
         loadDataset("output_data.json", "allbooks");  // Weekly data
