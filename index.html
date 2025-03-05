@@ -147,6 +147,21 @@
         </thead>
         <tbody id="bobaolishi"></tbody>
     </table>
+
+    <h2 class="mt-5 text-success">📌 必读历史数据</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>更新日</th>
+                <th>数据更新时间</th>        
+            </tr>
+        </thead>
+        <tbody id="bidulishi"></tbody>
+    </table>
     
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
@@ -204,6 +219,7 @@
         loadDataset("renqijiazuo.json", "rqjz");  // Weekly data
         loadDataset("chunaishouye.json", "casy");  // Weekly data
         loadDataset("bobao_weekly.json", "bobaolishi", true);  // Weekly data
+        loadDataset("bidu_weekly.json", "bidulishi", true);  // Weekly data
         loadDataset("output_data.json", "allbooks");  // Weekly data
         
         
