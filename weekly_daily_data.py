@@ -104,3 +104,7 @@ def update_json(new_entries, filename_hishtory):
 new_data =  load_json('bobao.json')
 # Run the update function
 update_json(new_data, 'bobao_weekly.json')
+
+new_data =  load_json('bidu.json')
+# Run the update function
+update_json(new_data, 'bidu_weekly.json')
