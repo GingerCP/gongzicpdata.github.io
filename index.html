@@ -332,7 +332,7 @@
             const response = await fetch(jsonFile);
             const data = await response.json();
             let tableBody = document.getElementById(tableId);
-            tableBody.innerHTML = "";  // Clear previous data
+            tableBody.innerHTML = "NULL";  // Clear previous data
     
             data.forEach(row => {    
                 let tr = document.createElement("tr");
