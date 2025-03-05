@@ -2,8 +2,8 @@ name: Scheduled Python Scripts
 
 on:
   schedule:
-    - cron: "40 15 * * *"  # Runs at 15:40 UTC (23:40 CST) daily
-    - cron: "40 15 * * 4"  # Runs at 15:40 UTC (23:40 CST) on Thursday (for weekly job)
+    - cron: "45 15 * * *"  # Runs at 15:40 UTC (23:40 CST) daily
+    - cron: "45 15 * * 4"  # Runs at 15:40 UTC (23:40 CST) on Thursday (for weekly job)
   workflow_dispatch:  # ✅ Allows manual trigger
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
           CURRENT_HOUR=$(date -u +"%H")
           CURRENT_MINUTE=$(date -u +"%M")
           TARGET_HOUR=16  # 00:05 CST is 16:05 UTC
-          TARGET_MINUTE=5
+          TARGET_MINUTE=10
 
           echo "⏳ Current UTC Time: $CURRENT_HOUR:$CURRENT_MINUTE"
           if [ "$CURRENT_HOUR" -gt "$TARGET_HOUR" ] || ([ "$CURRENT_HOUR" -eq "$TARGET_HOUR" ] && [ "$CURRENT_MINUTE" -ge "$TARGET_MINUTE" ]); then
@@ -87,7 +87,7 @@ jobs:
           CURRENT_HOUR=$(date -u +"%H")
           CURRENT_MINUTE=$(date -u +"%M")
           TARGET_HOUR=16  # 00:05 CST is 16:05 UTC
-          TARGET_MINUTE=5
+          TARGET_MINUTE=10
 
           echo "⏳ Current UTC Time: $CURRENT_HOUR:$CURRENT_MINUTE"
           if [ "$CURRENT_HOUR" -gt "$TARGET_HOUR" ] || ([ "$CURRENT_HOUR" -eq "$TARGET_HOUR" ] && [ "$CURRENT_MINUTE" -ge "$TARGET_MINUTE" ]); then
