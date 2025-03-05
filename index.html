@@ -16,7 +16,7 @@
     <ul>
         <li><strong>📖 播报：</strong> 每日00：10更新数据。</li>
         <li><strong>📖 必读：</strong> 每日00：10更新数据。</li>
-        <li><strong>📖 强推、纯爱淘金、人气佳作、纯爱首页：</strong> 每周五00:05更新数据。</li>
+        <li><strong>📖 首页所有数据、纯爱内页榜单数据：</strong> 每周五00:05更新数据。</li>
         <li><strong>📚 全站书籍：</strong> 每周五00:05更新数据，更新至榜单截止日期时全站耽美连载小说500条更新数据。可根据该数据库查找书架线。注意：本数据库抓取时间有十分钟延误</li>
         
     </ul>
@@ -264,6 +264,28 @@
                                 <td>${row.Popularity}</td>
                                 <td>${row.Collection}</td>
                                 ${displayColumn}`;
+                tableBody.appendChild(tr);
+            });
+        } catch (error) {
+            console.error(`Error loading ${jsonFile}:`, error);
+        }
+    }
+
+    async function loadDataset_ny(jsonFile, tableId) {
+        try {
+            const response = await fetch(jsonFile);
+            const data = await response.json();
+            let tableBody = document.getElementById(tableId);
+            tableBody.innerHTML = "";  // Clear previous data
+    
+            data.forEach(row => {    
+                let tr = document.createElement("tr");
+                tr.innerHTML = `<td>${row.rank_name}</td>
+                                <td>${row.ID}</td>
+                                <td>${row.Name}</td>
+                                <td>${row.Popularity}</td>
+                                <td>${row.Collection}</td>
+                                `;
                 tableBody.appendChild(tr);
             });
         } catch (error) {
