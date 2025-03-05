@@ -482,14 +482,14 @@
         let outputCell = document.getElementById(`novel-output-${index}`);
         let inputID = inputElement.value.trim();
 
-        outputCell.innerHTML = "NULL"; // Default to "NULL"
+        outputCell.innerHTML = " "; // Default to "NULL"
 
         if (!inputID) return; // Do nothing if input is empty
 
         let foundItem = novelData.find(item => item.ID == inputID);
 
         if (foundItem) {
-            outputCell.innerHTML = `📂 收藏: ${foundItem.Collection} | 🔥 热度: ${foundItem.Popularity}`;
+            outputCell.innerHTML = `📖书名： ${foundItem.Name} | 📂 收藏: ${foundItem.Collection} | 🔥 热度: ${foundItem.Popularity}`;
         }
 
         // ✅ Save Input and Output to localStorage
