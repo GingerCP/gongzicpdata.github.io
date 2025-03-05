@@ -53,6 +53,10 @@ def get_weekday_from_timestamp(timestamp_str):
 # Function to add new data while keeping only last Friday to this Thursday’s data
 def update_json(new_entries, filename_hishtory):
     # print(len(new_entries))
+    if load_json(filename_hishtory) == []:
+      save_json(new_entries, filename_hishtory)
+      print(f"✅ Updated  with {len(new_entries)} new records. Total records: {len(new_entries)}")
+      return
     data = load_json(filename_hishtory)
     data = remove_duplicates(data)
     # print(len(data))
@@ -97,6 +101,6 @@ def update_json(new_entries, filename_hishtory):
     print(f"✅ Updated  with {len(new_entries)} new records. Total records: {len(data)}")
 
 # Example: New data to add
-new_data =  load_json('chunaishouye.json')
+new_data =  load_json('bobao.json')
 # Run the update function
-update_json(new_data, 'chunaitaojin.json')
+update_json(new_data, 'bobao_weekly.json')
