@@ -265,8 +265,15 @@
 
 
 <h2 class="mt-5 text-primary">🔍 查询书架信息 (7行×10列)</h2>
-<!-- 7x10 Query Table -->
+<!-- Query Table (10 rows × 7 columns) -->
 <table class="table table-bordered">
+    <thead>
+        <tr class="table-light text-center">
+            <th>#</th> <!-- Row index -->
+            <th>星期一</th> <th>星期二</th> <th>星期三</th> <th>星期四</th>
+            <th>星期五</th> <th>星期六</th> <th>星期日</th>
+        </tr>
+    </thead>
     <tbody id="queryTable"></tbody>
 </table>
 
@@ -428,11 +435,12 @@
     function createQueryTable() {
         const table = document.getElementById("queryTable");
 
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 10; i++) {
             let tr = document.createElement("tr");
+            tr.innerHTML = `<th class="text-center">${i + 1}</th>`; // Row index
 
-            for (let j = 0; j < 10; j++) {
-                let index = i * 10 + j; // Unique index for each cell
+            for (let j = 0; j < 7; j++) {
+                let index = i * 7 + j; // Unique index for each cell
                 tr.innerHTML += `<td class="p-2">
                                     <div class="input-group">
                                         <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID">
