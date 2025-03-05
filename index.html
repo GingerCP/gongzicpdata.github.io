@@ -265,6 +265,11 @@
 
 
 <h2 class="mt-5 text-primary">🔍 查询书架信息 (7行×10列)</h2>
+<!-- Edit Controls -->
+<div class="mb-3">
+    <button class="btn btn-success" onclick="unlockEditing()">🔓 开始修改书架</button>
+    <button class="btn btn-danger" onclick="lockEditing()">🔒 书架修改完成</button>
+</div>
 <!-- Query Table (10 rows × 7 columns) -->
 <table class="table table-bordered">
     <thead>
@@ -420,6 +425,7 @@
 <script>
     let novelData = []; // Store novel JSON data
     let savedQueries = {}; // Store queries in localStorage
+    let isEditingEnabled = false; // Flag for edit mode
 
     // ✅ Fetch Novel Data on Page Load
     async function fetchNovelData() {
@@ -459,11 +465,11 @@
                 let savedID = savedQueries[`input-${index}`] || ""; // Load stored ID if available
                 let savedResult = savedQueries[`output-${index}`] || "NULL"; // Load stored result if available
 
-                // Row 1: Input Fields & Buttons
+                // Row 1: Input Fields & Buttons (Initially Disabled)
                 trInput.innerHTML += `<td class="p-2">
                                         <div class="input-group">
-                                            <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID" value="${savedID}">
-                                            <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})">🔍</button>
+                                            <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID" value="${savedID}" disabled>
+                                            <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})" disabled>🔍</button>
                                         </div>
                                     </td>`;
 
@@ -482,20 +488,50 @@
         let outputCell = document.getElementById(`novel-output-${index}`);
         let inputID = inputElement.value.trim();
 
-        outputCell.innerHTML = " "; // Default to "NULL"
+        outputCell.innerHTML = "NULL"; // Default to "NULL"
 
         if (!inputID) return; // Do nothing if input is empty
 
         let foundItem = novelData.find(item => item.ID == inputID);
 
         if (foundItem) {
-            outputCell.innerHTML = `📖书名： ${foundItem.Name} | 📂 收藏: ${foundItem.Collection} | 🔥 热度: ${foundItem.Popularity}`;
+            outputCell.innerHTML = `<strong>📖 ${foundItem.Name}</strong><br>📂 收藏: ${foundItem.Collection} | 🔥 热度: ${foundItem.Popularity}`;
         }
 
         // ✅ Save Input and Output to localStorage
         savedQueries[`input-${index}`] = inputID;
         savedQueries[`output-${index}`] = outputCell.innerHTML;
         saveQueries();
+    }
+
+    // ✅ Unlock Editing Mode (Requires Password)
+    function unlockEditing() {
+        let password = prompt("🔑 请输入密码:");
+        if (password !== "changpeijintiandaobilema") {
+            alert("❌ 密码错误!");
+            return;
+        }
+
+        isEditingEnabled = true;
+        let inputs = document.querySelectorAll('input[type="text"]');
+        let buttons = document.querySelectorAll('button.btn-outline-primary');
+
+        inputs.forEach(input => input.removeAttribute("disabled"));
+        buttons.forEach(button => button.removeAttribute("disabled"));
+
+        alert("✅ 你现在可以编辑表格!");
+    }
+
+    // ✅ Lock Editing Mode (Prevent Further Changes)
+    function lockEditing() {
+        isEditingEnabled = false;
+        let inputs = document.querySelectorAll('input[type="text"]');
+        let buttons = document.querySelectorAll('button.btn-outline-primary');
+
+        inputs.forEach(input => input.setAttribute("disabled", true));
+        buttons.forEach(button => button.setAttribute("disabled", true));
+
+        alert("🔒 表格已锁定!");
     }
 
     // ✅ Initialize Table, Load Data, and Restore Previous Searches
