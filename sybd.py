@@ -95,5 +95,5 @@ for identifier in identifiers:
                         "Collection": novel["Collection"],
                         "Timestamp": novel['Timestamp']})
   
-with open('canybd.json', "w", encoding="utf-8") as file:
+with open('sybd.json', "w", encoding="utf-8") as file:
       json.dump(novel_rank, file, ensure_ascii=False, indent=4)
