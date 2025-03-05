@@ -251,7 +251,17 @@
         <tbody id="casyhx"></tbody>
     </table>
     
+    
+    <h2 class="mt-5 text-primary">🔍 查询小说信息</h2>
+    <div class="mb-3">
+        <label for="searchInput" class="form-label">输入小说ID:</label>
+        <input type="text" id="searchInput" class="form-control" placeholder="输入ID后点击查询">
+        <button class="btn btn-primary mt-2" onclick="searchID()">🔍 查询</button>
+    </div>
 
+    <!-- Display Search Result -->
+    <h3 class="mt-4">📖 查询结果:</h3>
+    <div id="searchResult" class="alert alert-info" style="display:none;"></div>
     
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
@@ -342,9 +352,54 @@
         loadDataset("bidu_weekly.json", "bidulishi", true);  // Weekly data
         loadDataset_ny("canybd.json", "canybd");  // Weekly data
         loadDataset_ny("sybd.json", "sybd");  // Weekly data
-        loadDataset("output_data.json", "allbooks");  // Weekly data
-        
-        
+        loadDataset("output_data.json", "allbooks");  // Weekly data    
+    </script>
+
+    <script>
+        let jsonData = [];
+
+        // ✅ Load data.json when the page loads
+        async function loadData() {
+            try {
+                const response = await fetch("output_data.json");
+                jsonData = await response.json();
+            } catch (error) {
+                console.error("❌ 数据加载失败:", error);
+            }
+        }
+
+        // ✅ Function to search for ID
+        function searchID() {
+            const inputID = document.getElementById("searchInput").value.trim();
+            const resultDiv = document.getElementById("searchResult");
+
+            // ❌ If input is empty
+            if (!inputID) {
+                resultDiv.style.display = "block";
+                resultDiv.innerHTML = "⚠️ 请输入一个 ID 进行查询!";
+                return;
+            }
+
+            // 🔎 Search for the ID
+            const foundItem = jsonData.find(item => item.ID == inputID);
+
+            // ✅ Show result or error message
+            if (foundItem) {
+                resultDiv.style.display = "block";
+                resultDiv.innerHTML = `
+                    <strong>📚 书名:</strong> ${foundItem.Name} <br>
+                    <strong>🔥 热度:</strong> ${foundItem.Popularity} <br>
+                    <strong>📂 收藏:</strong> ${foundItem.Collection} <br>
+                    <strong>📅 更新时间:</strong>${foundItem.Timestamp}<br> 
+                `;
+            } else {
+                resultDiv.style.display = "block";
+                resultDiv.innerHTML = "❌ 未找到匹配的 ID!";
+            }
+        }
+
+        // ✅ Load JSON on startup
+        loadData();
     </script>
 </body>
 </html>
