@@ -52,6 +52,7 @@
                 <th>热度</th>
                 <th>收藏</th>
                 <th>数据更新时间</th>
+                <th>更新日</th>
             </tr>
         </thead>
         <tbody id="broadcast"></tbody>
@@ -150,8 +151,15 @@
     </table>
 
     <script>
+        function getWeekday(timestamp) {
+            let date = new Date(timestamp); // Convert timestamp to Date object
+            let weekdays = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+            return weekdays[date.getDay()]; // Get the weekday in Chinese
+        }
+
+        
         // Function to load and display dataset
-        async function loadDataset(jsonFile, tableId) {
+        async function loadDataset(jsonFile, tableId, showWeekday = false) {
             try {
                 const response = await fetch(jsonFile);
                 const data = await response.json();
@@ -160,20 +168,23 @@
 
                 data.forEach(row => {
                     let tr = document.createElement("tr");
-                tr.innerHTML = `<td>${row.ID}</td>
-                                <td>${row.Name}</td>
-                                <td>${row.Popularity}</td>
-                                <td>${row.Collection}</td>
-                                <td>${row.Timestamp}</td>`;
+                    let weekdayColumn = showWeekday ? `<td>${getWeekday(row.Timestamp)}</td>` : ""; // Only show weekday for bobao
+
+                    tr.innerHTML = `<td>${row.ID}</td>
+                                    <td>${row.Name}</td>
+                                    <td>${row.Popularity}</td>
+                                    <td>${row.Collection}</td>
+                                    <td>${row.Timestamp}</td>
+                                    ${weekdayColumn}`;  
                     tableBody.appendChild(tr);
                 });
             } catch (error) {
                 console.error(`Error loading ${jsonFile}:`, error);
             }
         }
-
+        
         // Load all datasets when the page loads
-        loadDataset("bobao.json", "broadcast");  // Daily data on top
+        loadDataset("bobao.json", "broadcast", true);  // Daily data on top
         loadDataset("bidu.json", "bidu");  // Daily data on top
         loadDataset("benzhouqiangtui.json", "qiangtui");  // Daily data on top
         loadDataset("chunaitaojin.json", "catj");  // Weekly data
