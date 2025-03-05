@@ -448,8 +448,8 @@
                 // Row 1: Input Fields & Buttons
                 trInput.innerHTML += `<td class="p-2">
                                         <div class="input-group">
-                                            <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID" disabled>
-                                            <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})" disabled>🔍</button>
+                                            <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID">
+                                            <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})">🔍</button>
                                         </div>
                                     </td>`;
 
@@ -461,7 +461,6 @@
             table.appendChild(trOutput);
         }
     }
-
 
     // ✅ Search for ID and Update Only the Current Cell
     function queryID(index) {
