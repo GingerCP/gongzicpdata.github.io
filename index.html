@@ -167,15 +167,14 @@
                 tableBody.innerHTML = "";  // Clear previous data
 
                 data.forEach(row => {
+                    let displayColumn = showWeekday ? `<td>${getWeekday(row.Timestamp)}</td>` : `<td>${row.Timestamp}</td>`; 
                     let tr = document.createElement("tr");
-                    let weekdayColumn = showWeekday ? `<td>${getWeekday(row.Timestamp)}</td>` : ""; // Only show weekday for bobao
 
                     tr.innerHTML = `<td>${row.ID}</td>
                                     <td>${row.Name}</td>
                                     <td>${row.Popularity}</td>
                                     <td>${row.Collection}</td>
-                                    <td>${row.Timestamp}</td>
-                                    ${weekdayColumn}`;  
+                                    ${displayColumn}`;  // Show Weekday OR Timestamp
                     tableBody.appendChild(tr);
                 });
             } catch (error) {
