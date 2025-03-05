@@ -221,6 +221,21 @@
         <tbody id="casyhx"></tbody>
     </table>
     
+    <h2 class="mt-5 text-primary">📖 纯爱内页榜单 </h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>榜单名称</th>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>数据更新时间</th>
+            </tr>
+        </thead>
+        <tbody id="canybd"></tbody>
+    </table>
+    
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
     <table class="table table-striped">
@@ -306,6 +321,7 @@
         loadDataset("syjk.json", "casyjk");  // Weekly data
         loadDataset("bobao_weekly.json", "bobaolishi", true);  // Weekly data
         loadDataset("bidu_weekly.json", "bidulishi", true);  // Weekly data
+        loadDataset_ny("canybd.json", "canybd");  // Weekly data
         loadDataset("output_data.json", "allbooks");  // Weekly data
         
         
