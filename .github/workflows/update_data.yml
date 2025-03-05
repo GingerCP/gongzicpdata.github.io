@@ -99,12 +99,12 @@ jobs:
           fi
 
       - name: Run Weekly Scripts
-        run: |
-          python scrape_and_update.py
+        run: |  
           python qiangtui.py
           python renqijiazuo.py
           python chunaitaojin.py
           python shouyechunai.py
+          python scrape_and_update.py
 
       - name: Pull latest changes to avoid conflicts
         run: |
