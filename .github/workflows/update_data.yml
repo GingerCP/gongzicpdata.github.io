@@ -138,7 +138,7 @@ jobs:
       - name: Run Test for chunaitaojin.py
         run: |
           echo "🚀 Running test script chunaitaojin.py..."
-          python chunaishouye.py
+          python shouyechunai.py
 
       - name: Pull latest changes to avoid conflicts
         run: |
@@ -151,6 +151,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git add shouyechunai.json || echo "No changes in chunaishouye.json"
+          git add chunaishouye.json || echo "No changes in chunaishouye.json"
           git commit -m "🚀 Manual test run for chunaitaojin.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
