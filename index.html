@@ -433,15 +433,18 @@
 
             for (let j = 0; j < 10; j++) {
                 let index = i * 10 + j; // Unique index for each cell
-                tr.innerHTML += `<td>
-                                    <input type="text" class="form-control mb-1" id="novel-input-${index}" placeholder="输入ID">
-                                    <button class="btn btn-primary btn-sm" onclick="queryID(${index})">🔍</button>
-                                    <div id="novel-output-${index}" class="mt-1 text-success"></div>
+                tr.innerHTML += `<td class="p-2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID">
+                                        <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})">🔍</button>
+                                    </div>
+                                    <div id="novel-output-${index}" class="mt-1 text-success small"></div>
                                 </td>`;
             }
             table.appendChild(tr);
         }
     }
+
 
     // ✅ Search for ID and Update Only the Current Cell
     function queryID(index) {
