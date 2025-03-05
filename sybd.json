@@ -1,0 +1,90 @@
+[
+    {
+        "rank_name": "本周力荐",
+        "ID": 1646891,
+        "Name": "休想",
+        "Popularity": 6586696,
+        "Collection": 10900,
+        "Timestamp": "2025-03-06 00:28:48"
+    },
+    {
+        "rank_name": "畅销热追",
+        "ID": 1478102,
+        "Name": "你听话点",
+        "Popularity": 2287364,
+        "Collection": 4185,
+        "Timestamp": "2025-03-06 00:28:51"
+    },
+    {
+        "rank_name": "人气飙升",
+        "ID": 1777278,
+        "Name": "致命鱿物",
+        "Popularity": 3131690,
+        "Collection": 4169,
+        "Timestamp": "2025-03-06 00:28:53"
+    },
+    {
+        "rank_name": "纯爱淘金",
+        "ID": 1234980,
+        "Name": "欺君",
+        "Popularity": 15997516,
+        "Collection": 19881,
+        "Timestamp": "2025-03-06 00:28:54"
+    },
+    {
+        "rank_name": "人气佳作",
+        "ID": 1704555,
+        "Name": "离婚快乐",
+        "Popularity": 2746935,
+        "Collection": 4520,
+        "Timestamp": "2025-03-06 00:28:55"
+    },
+    {
+        "rank_name": "新秀强推",
+        "ID": 1744374,
+        "Name": "野心勃勃",
+        "Popularity": 155147,
+        "Collection": 327,
+        "Timestamp": "2025-03-06 00:28:56"
+    },
+    {
+        "rank_name": "首页分屏1",
+        "ID": 1664240,
+        "Name": "我真没装0",
+        "Popularity": 896740,
+        "Collection": 3046,
+        "Timestamp": "2025-03-06 00:28:57"
+    },
+    {
+        "rank_name": "首页分屏2",
+        "ID": 1235778,
+        "Name": "鹊踏枝",
+        "Popularity": 865989,
+        "Collection": 1994,
+        "Timestamp": "2025-03-06 00:28:59"
+    },
+    {
+        "rank_name": "首页分屏3",
+        "ID": 1549440,
+        "Name": "亡灵管理局头号钉子户",
+        "Popularity": 372559,
+        "Collection": 1064,
+        "Timestamp": "2025-03-06 00:28:59"
+    },
+    {
+        "rank_name": "首页分屏4",
+        "ID": 1744815,
+        "Name": "春日以北",
+        "Popularity": 206012,
+        "Collection": 399,
+        "Timestamp": "2025-03-06 00:29:00"
+    },
+    {
+        "rank_name": "首页分屏5",
+        "ID": 1762572,
+        "Name": "惯性反应",
+        "Popularity": 467473,
+        "Collection": 1103,
+        "Timestamp": "2025-03-06 00:29:02"
+    }
+]
