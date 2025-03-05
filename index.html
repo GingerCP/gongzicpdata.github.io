@@ -52,7 +52,6 @@
                 <th>热度</th>
                 <th>收藏</th>
                 <th>数据更新时间</th>
-                <th>更新日</th>
             </tr>
         </thead>
         <tbody id="broadcast"></tbody>
@@ -134,6 +133,20 @@
         <tbody id="casy"></tbody>
     </table>
 
+    <h2 class="mt-5 text-success">📌 播报历史数据</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>热度</th>
+                <th>收藏</th>
+                <th>数据更新时间</th>
+                <th>更新日</th>
+            </tr>
+        </thead>
+        <tbody id="bobaolishi"></tbody>
+    </table>
     
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
@@ -183,12 +196,13 @@
         }
         
         // Load all datasets when the page loads
-        loadDataset("bobao.json", "broadcast", true);  // Daily data on top
+        loadDataset("bobao.json", "broadcast", false);  // Daily data on top
         loadDataset("bidu.json", "bidu");  // Daily data on top
         loadDataset("benzhouqiangtui.json", "qiangtui");  // Daily data on top
         loadDataset("chunaitaojin.json", "catj");  // Weekly data
         loadDataset("renqijiazuo.json", "rqjz");  // Weekly data
         loadDataset("chunaishouye.json", "casy");  // Weekly data
+        loadDataset("bobao.json", "bobaolishi", true);  // Weekly data
         loadDataset("output_data.json", "allbooks");  // Weekly data
         
         
