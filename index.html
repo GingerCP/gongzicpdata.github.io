@@ -262,6 +262,85 @@
     <!-- Display Search Result -->
     <h3 class="mt-4">📖 查询结果:</h3>
     <div id="searchResult" class="alert alert-info" style="display:none;"></div>
+
+    <h2 class="mt-5 text-primary">🔍 批量查询小说信息 (7天×10条数据)</h2>
+
+<!-- Password Protection -->
+<div class="mb-3">
+    <label for="passwordInput" class="form-label">🔑 请输入密码以编辑表格:</label>
+    <input type="password" id="passwordInput" class="form-control" placeholder="输入密码后点击解锁">
+    <button class="btn btn-primary mt-2" onclick="unlockTable()">🔓 解锁</button>
+</div>
+
+<!-- 10x14 Query Table -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th colspan="2">星期一</th>
+            <th colspan="2">星期二</th>
+            <th colspan="2">星期三</th>
+            <th colspan="2">星期四</th>
+            <th colspan="2">星期五</th>
+            <th colspan="2">星期六</th>
+            <th colspan="2">星期日</th>
+        </tr>
+        <tr>
+            <th>Row</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+        </tr>
+    </thead>
+    <tbody id="queryTable"></tbody>
+</table>
+
+<!-- Query Button -->
+<button class="btn btn-success" onclick="searchIDs()">🔍 查询</button>
+
+<h2 class="mt-5 text-primary">🔍 批量查询小说信息 (7天×10条数据)</h2>
+
+<!-- Password Protection -->
+<div class="mb-3">
+    <label for="passwordInput" class="form-label">🔑 请输入密码以编辑表格:</label>
+    <input type="password" id="passwordInput" class="form-control" placeholder="输入密码后点击解锁">
+    <button class="btn btn-primary mt-2" onclick="unlockTable()">🔓 解锁</button>
+</div>
+
+<!-- 10x14 Query Table -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th colspan="2">星期一</th>
+            <th colspan="2">星期二</th>
+            <th colspan="2">星期三</th>
+            <th colspan="2">星期四</th>
+            <th colspan="2">星期五</th>
+            <th colspan="2">星期六</th>
+            <th colspan="2">星期日</th>
+        </tr>
+        <tr>
+            <th>Row</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+            <th>ID</th> <th>结果</th>
+        </tr>
+    </thead>
+    <tbody id="queryTable"></tbody>
+</table>
+
+<!-- Query Button -->
+<button class="btn btn-success" onclick="searchIDs()">🔍 查询</button>
+    
     
     <!-- Weekly Data (New Releases) -->
     <h2 class="mt-5 text-success">📚 全站</h2>
@@ -401,5 +480,80 @@
         // ✅ Load JSON on startup
         loadData();
     </script>
+
+<script>
+    let jsonData = [];  // Store JSON data
+
+    // ✅ Load JSON Data on Page Load
+    async function loadData() {
+        try {
+            const response = await fetch("output_data.json");
+            jsonData = await response.json();
+            console.log("✅ 数据加载成功!");
+        } catch (error) {
+            console.error("❌ 数据加载失败:", error);
+        }
+    }
+
+    // ✅ Create a 20-row x 14-column Table
+    function createQueryTable() {
+        const table = document.getElementById("queryTable");
+
+        for (let i = 0; i < 20; i++) {
+            let tr = document.createElement("tr");
+
+            let rowHTML = `<td>${i + 1}</td>`;
+
+            for (let j = 0; j < 7; j++) {
+                if (i % 2 === 0) {  
+                    // Odd Rows: Input Fields for ID
+                    rowHTML += `<td><input type="text" class="form-control" id="input-${i}-${j}" disabled></td><td></td>`;
+                } else {  
+                    // Even Rows: Display Results for Popularity & Collection
+                    rowHTML += `<td></td><td id="output-${i}-${j}"></td>`;
+                }
+            }
+
+            tr.innerHTML = rowHTML;
+            table.appendChild(tr);
+        }
+    }
+
+    // ✅ Unlock the Table for Editing (Password Required)
+    function unlockTable() {
+        const password = document.getElementById("passwordInput").value;
+        if (password === "changpeijintiandaobilema") {
+            document.querySelectorAll("input").forEach(input => input.removeAttribute("disabled"));
+            alert("🔓 成功解锁! 现在可以输入ID.");
+        } else {
+            alert("❌ 密码错误!");
+        }
+    }
+
+    // ✅ Search for IDs in JSON and Display Results
+    function searchIDs() {
+        for (let i = 0; i < 20; i += 2) {  
+            for (let j = 0; j < 7; j++) {  
+                let inputField = document.getElementById(`input-${i}-${j}`);
+                let outputField = document.getElementById(`output-${i + 1}-${j}`);
+
+                if (inputField && outputField) {
+                    let inputID = inputField.value.trim();
+                    let foundItem = jsonData.find(item => item.ID == inputID);
+
+                    if (foundItem) {
+                        outputField.innerHTML = `📂 收藏: ${foundItem.Collection} | 🔥 热度: ${foundItem.Popularity}`;
+                    } else {
+                        outputField.innerHTML = ""; // No data found
+                    }
+                }
+            }
+        }
+    }
+
+    // ✅ Initialize Table and Load Data
+    createQueryTable();
+    loadData();
+</script>
 </body>
 </html>
