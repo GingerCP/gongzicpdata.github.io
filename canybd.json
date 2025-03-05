@@ -1,0 +1,98 @@
+[
+    {
+        "rank_name": "新书精选",
+        "ID": 1798488,
+        "Name": "山风遇惊鸟",
+        "Popularity": 28589,
+        "Collection": 14,
+        "Timestamp": "2025-03-05 14:40:10"
+    },
+    {
+        "rank_name": "鱼宝赞赏",
+        "ID": 1728889,
+        "Name": "重启日",
+        "Popularity": 136162,
+        "Collection": 127,
+        "Timestamp": "2025-03-05 14:40:11"
+    },
+    {
+        "rank_name": "长篇热读",
+        "ID": 1512928,
+        "Name": "上京赶考",
+        "Popularity": 597777,
+        "Collection": 1467,
+        "Timestamp": "2025-03-05 14:40:12"
+    },
+    {
+        "rank_name": "纯爱古代",
+        "ID": 1377840,
+        "Name": "榻上臣",
+        "Popularity": 234336,
+        "Collection": 980,
+        "Timestamp": "2025-03-05 14:40:13"
+    },
+    {
+        "rank_name": "纯爱都市",
+        "ID": 1211785,
+        "Name": "岁陈楠下",
+        "Popularity": 442934,
+        "Collection": 1330,
+        "Timestamp": "2025-03-05 14:40:14"
+    },
+    {
+        "rank_name": "纯爱幻想",
+        "ID": 1379391,
+        "Name": "触底反弹",
+        "Popularity": 136707,
+        "Collection": 346,
+        "Timestamp": "2025-03-05 14:40:15"
+    },
+    {
+        "rank_name": "纯爱悬疑",
+        "ID": 1768751,
+        "Name": "被死后的竹马探班了",
+        "Popularity": 129221,
+        "Collection": 470,
+        "Timestamp": "2025-03-05 14:40:16"
+    },
+    {
+        "rank_name": "纯爱架空",
+        "ID": 1032827,
+        "Name": "灰色香调",
+        "Popularity": 440075,
+        "Collection": 1208,
+        "Timestamp": "2025-03-05 14:40:16"
+    },
+    {
+        "rank_name": "勤更热追",
+        "ID": 1782959,
+        "Name": "捕君心",
+        "Popularity": 118729,
+        "Collection": 220,
+        "Timestamp": "2025-03-05 14:40:17"
+    },
+    {
+        "rank_name": "本周寻宝",
+        "ID": 1488525,
+        "Name": "长仙",
+        "Popularity": 177845,
+        "Collection": 380,
+        "Timestamp": "2025-03-05 14:40:18"
+    },
+    {
+        "rank_name": "纯爱综合",
+        "ID": 734192,
+        "Name": "郎贝为奸",
+        "Popularity": 396534,
+        "Collection": 1224,
+        "Timestamp": "2025-03-05 14:40:19"
+    },
+    {
+        "rank_name": "纯爱青春",
+        "ID": 1785820,
+        "Name": "刺猬饲养法则",
+        "Popularity": 77673,
+        "Collection": 210,
+        "Timestamp": "2025-03-05 14:40:20"
+    }
+]
