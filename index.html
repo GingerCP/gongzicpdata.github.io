@@ -263,8 +263,6 @@
     <h3 class="mt-4">📖 查询结果:</h3>
     <div id="searchResult" class="alert alert-info" style="display:none;"></div>
 
-    <h2 class="mt-5 text-primary">🔍 批量查询小说信息 (7天×10条数据)</h2>
-
 <!-- Password Protection -->
 <div class="mb-3">
     <label for="passwordInput" class="form-label">🔑 请输入密码以编辑表格:</label>
@@ -272,23 +270,11 @@
     <button class="btn btn-primary mt-2" onclick="unlockTable()">🔓 解锁</button>
 </div>
 
-<!-- 10x14 Query Table -->
+<!-- 7x10 Query Table -->
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>#</th>
-            <th colspan="2">星期一</th>
-            <th colspan="2">星期二</th>
-            <th colspan="2">星期三</th>
-            <th colspan="2">星期四</th>
-            <th colspan="2">星期五</th>
-            <th colspan="2">星期六</th>
-            <th colspan="2">星期日</th>
-        </tr>
-        <tr>
-            <th>Row</th>
-            <th>ID</th> <th>结果</th>
-            <th>ID</th> <th>结果</th>
             <th>ID</th> <th>结果</th>
             <th>ID</th> <th>结果</th>
             <th>ID</th> <th>结果</th>
@@ -301,16 +287,6 @@
 
 <!-- Query Button -->
 <button class="btn btn-success" onclick="searchIDs()">🔍 查询</button>
-
-<h2 class="mt-5 text-primary">🔍 批量查询小说信息 (7天×10条数据)</h2>
-
-<!-- Password Protection -->
-<div class="mb-3">
-    <label for="passwordInput" class="form-label">🔑 请输入密码以编辑表格:</label>
-    <input type="password" id="passwordInput" class="form-control" placeholder="输入密码后点击解锁">
-    <button class="btn btn-primary mt-2" onclick="unlockTable()">🔓 解锁</button>
-</div>
-
     
     
     <!-- Weekly Data (New Releases) -->
@@ -456,7 +432,7 @@
     let jsonData = [];  // Store JSON data
 
     // ✅ Load JSON Data on Page Load
-    async function loadData() {
+    async function loadDat_bookshelf() {
         try {
             const response = await fetch("output_data.json");
             jsonData = await response.json();
@@ -524,7 +500,7 @@
 
     // ✅ Initialize Table and Load Data
     createQueryTable();
-    loadData();
+    loadData_bookshelf();
 </script>
 </body>
 </html>
