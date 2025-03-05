@@ -436,20 +436,29 @@
         const table = document.getElementById("queryTable");
 
         for (let i = 0; i < 10; i++) {
-            let tr = document.createElement("tr");
-            tr.innerHTML = `<th class="text-center">${i + 1}</th>`; // Row index
+            let trInput = document.createElement("tr");
+            let trOutput = document.createElement("tr");
+
+            trInput.innerHTML = `<th class="text-center">${i + 1}</th>`; // Row index
+            trOutput.innerHTML = `<td class="text-center table-light"><strong>🔎 结果</strong></td>`; // Row header for results
 
             for (let j = 0; j < 7; j++) {
                 let index = i * 7 + j; // Unique index for each cell
-                tr.innerHTML += `<td class="p-2">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID">
-                                        <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})">🔍</button>
-                                    </div>
-                                    <div id="novel-output-${index}" class="mt-1 text-success small"></div>
-                                </td>`;
+
+                // Row 1: Input Fields & Buttons
+                trInput.innerHTML += `<td class="p-2">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" id="novel-input-${index}" placeholder="输入ID" disabled>
+                                            <button class="btn btn-outline-primary btn-sm" onclick="queryNovelID(${index})" disabled>🔍</button>
+                                        </div>
+                                    </td>`;
+
+                // Row 2: Query Output
+                trOutput.innerHTML += `<td id="novel-output-${index}" class="text-success small p-2"></td>`;
             }
-            table.appendChild(tr);
+
+            table.appendChild(trInput);
+            table.appendChild(trOutput);
         }
     }
 
