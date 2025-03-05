@@ -6,8 +6,8 @@ def get_china_time():
     return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S")
 headers = {"User-Agent": "Mozilla/5.0"}    
 novel_rank = []
-identifiers = ['xsjxyc', 'ybzsyc', 'yccqs', 'ycgd' ,'ycxdds','ychx','ycxy', 'ycjk','qgrzyc','bzxbyc','ycxdzh','ycxdqc']
-names = ['新书精选','鱼宝赞赏','长篇热读','纯爱古代','纯爱都市','纯爱幻想','纯爱悬疑','纯爱架空','勤更热追','本周寻宝','纯爱综合','纯爱青春']
+identifiers = ['bzqtyc','xsjxyc', 'ybzsyc', 'yccqs', 'ycgd' ,'ycxdds','ychx','ycxy', 'ycjk','qgrzyc','bzxbyc','ycxdzh','ycxdqc']
+names = ['本周强推','新书精选','鱼宝赞赏','长篇热读','纯爱古代','纯爱都市','纯爱幻想','纯爱悬疑','纯爱架空','勤更热追','本周寻宝','纯爱综合','纯爱青春']
 for identifier in identifiers:
   if identifier in ['ycxdzh', 'ycxdds','ycxdqc']:
     tid = 1
