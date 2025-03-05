@@ -45,6 +45,7 @@ jobs:
         run: |
           python bobao.py
           python bidu.py
+          python weekly_daily_data.py
 
       - name: Pull latest changes to avoid conflicts
         run: |
@@ -58,6 +59,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git add bobao.json bidu.json
+          git add bobao_weekly.json
+          git add bidu_weekly.json
           git commit -m "Daily update from bobao.py & bidu.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
 
