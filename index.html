@@ -354,30 +354,34 @@
             console.error(`Error loading ${jsonFile}:`, error);
         }
     }
+    async function loadDataset_increase(jsonFile, tableId, showBoth = false) {
+    try {
+        const response = await fetch(jsonFile);
+        const data = await response.json();
+        let tableBody = document.getElementById(tableId);
+        tableBody.innerHTML = "";  // Clear previous data
 
-    async function loadDataset_increase(jsonFile, tableId) {
-        try {
-            const response = await fetch(jsonFile);
-            const data = await response.json();
-            let tableBody = document.getElementById(tableId);
-            tableBody.innerHTML = "NULL";  // Clear previous data
-    
-            data.forEach(row => {    
-                let tr = document.createElement("tr");
-                tr.innerHTML = `<td>${row.ID}</td>
-                                <td>${row.Name}</td>
-                                <td>${row.Popularity}</td>
-                                <td>${row.Collection}</td>
-                                 <td>${row.DeltaPopularity}</td>
-                                <td>${row.DeltaCollection}</td>
-                                <td?${row.Timestamp}</td>
-                                `;
-                tableBody.appendChild(tr);
-            });
-        } catch (error) {
-            console.error(`Error loading ${jsonFile}:`, error);
-        }
+        data.forEach(row => {
+            let weekday = getWeekday(row.Timestamp); // Convert timestamp to weekday
+            let displayColumn = showBoth 
+                ? `<td>${weekday}</td><td>${row.Timestamp}</td>`  // ✅ Show both weekday & timestamp
+                : `<td>${row.Timestamp}</td>`;  // ✅ Show only timestamp
+
+            let tr = document.createElement("tr");
+            tr.innerHTML = `<td>${row.ID}</td>
+                            <td>${row.Name}</td>
+                            <td>${row.Popularity}</td>
+                            <td>${row.Collection}</td>
+                             <td>${row.DeltaPopularity}</td>
+                            <td>${row.DeltaCollection}</td>
+                            ${displayColumn}`;
+            tableBody.appendChild(tr);
+        });
+    } catch (error) {
+        console.error(`Error loading ${jsonFile}:`, error);
     }
+}
+
         // Load all datasets when the page loads
         loadDataset("bobao.json", "broadcast");  // Daily data on top
         loadDataset("bidu.json", "bidu");  // Daily data on top
