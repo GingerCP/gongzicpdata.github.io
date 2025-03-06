@@ -1,6 +1,11 @@
 import requests
 import json
 from datetime import datetime, timedelta
+# Convert UTC time to China Standard Time (CST)
+def get_china_time():
+    return (datetime.utcnow() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S")
+
+fetch_time = get_china_time()
 
 # data_old =json.loads('chunaitaojin.json')
 with open('chunaitaojin.json', 'r', encoding='utf-8') as f:
