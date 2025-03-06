@@ -174,7 +174,8 @@
                 <th>当前收藏</th>
                 <th>增加热度</th>
                 <th>增加收藏</th>
-                <th>数据更新时间</th>
+                <th>初始时间</th>
+                <th>截止时间</th>
             </tr>
         </thead>
         <tbody id="catj_delta"></tbody>
@@ -365,7 +366,10 @@
             let displayColumn = showBoth 
                 ? `<td>${weekday}</td><td>${row.Timestamp}</td>`  // ✅ Show both weekday & timestamp
                 : `<td>${row.Timestamp}</td>`;  // ✅ Show only timestamp
-
+            let weekday = getWeekday(row.OldTimestamp); // Convert timestamp to weekday
+            let displayColumnOld = showBoth 
+                ? `<td>${weekday}</td><td>${row.OldTimestamp}</td>`  // ✅ Show both weekday & timestamp
+                : `<td>${row.OldTimestamp}</td>`;  // ✅ Show only timestamp
             let tr = document.createElement("tr");
             tr.innerHTML = `<td>${row.ID}</td>
                             <td>${row.Name}</td>
@@ -373,6 +377,8 @@
                             <td>${row.Collection}</td>
                              <td>${row.DeltaPopularity}</td>
                             <td>${row.DeltaCollection}</td>
+                            <td>${row.OldTimestamp}</td>
+                            ${displayColumnOld}
                             ${displayColumn}`;
             tableBody.appendChild(tr);
         });
