@@ -43,7 +43,16 @@
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
      </p> 
 
+     <!-- 🔹 Manually Enter ID Here -->
+    <p>书架最后一位BL小说ID: <span id="selectedID">123451416779</span></p>
 
+    <!-- 🔹 Display Information Here -->
+    <div id="bookInfo">
+        <p><strong>📖 Name:</strong> <span id="bookName"></span></p>
+        <p><strong>🔥 Popularity:</strong> <span id="bookPopularity"></span></p>
+        <p><strong>📂 Collection:</strong> <span id="bookCollection"></span></p>
+        <p><strong>📂 Collection:</strong> <span id="bookTimestamp"></span></p>
+    </div>
     
     <h2 class="mt-5 text-primary">📖 播报</h2>
     <table class="table table-striped">
@@ -552,5 +561,31 @@
 // </table>
 </script>
 
+    <script>
+        async function loadJSONSJ() {
+            try {
+                const response = await fetch("output_data.json"); // Fetch JSON file
+                return await response.json();
+            } catch (error) {
+                console.error("Error loading JSON:", error);
+            }
+        }
+
+        async function displayBookInfo() {
+            let selectedID = document.getElementById("selectedID").textContent.trim();
+            let jsonData = await loadJSONSJ();
+            let foundItem = jsonData.find(item => item.ID === selectedID);
+
+            if (foundItem) {
+                document.getElementById("bookName").textContent = foundItem.Name;
+                document.getElementById("bookPopularity").textContent = foundItem.Popularity;
+                document.getElementById("bookCollection").textContent = foundItem.Collection;
+                document.getElementById("bookTimestamp").textContent = foundItem.Timestamp;
+            } else {
+                document.getElementById("bookInfo").innerHTML = "❌ No data found for this ID.";
+            }
+        }
+        displayBookInfo(); // Run when the page loads
+    </script>
 </body>
 </html>
