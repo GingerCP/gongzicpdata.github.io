@@ -2,37 +2,41 @@
     {
         "ID": 1683594,
         "Name": "禁止天真",
-        "Popularity": 7771464,
+        "Popularity": 7771809,
         "Collection": 9801,
-        "DeltaPopularity": 8866,
+        "DeltaPopularity": 9211,
         "DeltaCollection": 0,
-        "Timestamp": "2025-03-07 06:57:51"
+        "OldTimestamp": "2025-03-07 00:10:19",
+        "Timestamp": "2025-03-07 07:27:56"
     },
     {
         "ID": 1667642,
         "Name": "溶金",
-        "Popularity": 7122331,
+        "Popularity": 7122396,
         "Collection": 6860,
-        "DeltaPopularity": 10106,
+        "DeltaPopularity": 10171,
         "DeltaCollection": 1,
-        "Timestamp": "2025-03-07 06:57:51"
+        "OldTimestamp": "2025-03-07 00:10:19",
+        "Timestamp": "2025-03-07 07:27:56"
     },
     {
         "ID": 1706847,
         "Name": "他怎么可能暗恋我",
-        "Popularity": 6171101,
+        "Popularity": 6171431,
         "Collection": 7740,
-        "DeltaPopularity": 17215,
+        "DeltaPopularity": 17545,
         "DeltaCollection": 2,
-        "Timestamp": "2025-03-07 06:57:51"
+        "OldTimestamp": "2025-03-07 00:10:19",
+        "Timestamp": "2025-03-07 07:27:56"
     },
     {
         "ID": 1033252,
         "Name": "凶地实拍现场",
-        "Popularity": 5720724,
+        "Popularity": 5720799,
         "Collection": 7902,
-        "DeltaPopularity": 4015,
+        "DeltaPopularity": 4090,
         "DeltaCollection": 1,
-        "Timestamp": "2025-03-07 06:57:51"
+        "OldTimestamp": "2025-03-07 00:10:19",
+        "Timestamp": "2025-03-07 07:27:56"
     }
 ]
