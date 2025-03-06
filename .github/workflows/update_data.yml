@@ -1,0 +1,166 @@
+name: Scheduled Python Scripts
+
+on:
+  schedule:
+    - cron: "45 15 * * *"  # Runs at 15:40 UTC (23:40 CST) daily
+    - cron: "45 15 * * 4"  # Runs at 15:40 UTC (23:40 CST) on Thursday (for weekly job)
+  workflow_dispatch:  # ✅ Allows manual trigger
+
+jobs:
+  run_daily_script:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '45 15 * * *'  # ✅ Ensures only the daily job runs
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+
+      - name: Install Dependencies
+        run: pip install requests pandas
+
+      - name: Wait Until 00:05 CST Before Running
+        run: |
+          CURRENT_HOUR=$(date -u +"%H")
+          CURRENT_MINUTE=$(date -u +"%M")
+          TARGET_HOUR=16  # 00:05 CST is 16:05 UTC
+          TARGET_MINUTE=10
+
+          echo "⏳ Current UTC Time: $CURRENT_HOUR:$CURRENT_MINUTE"
+          if [ "$CURRENT_HOUR" -gt "$TARGET_HOUR" ] || ([ "$CURRENT_HOUR" -eq "$TARGET_HOUR" ] && [ "$CURRENT_MINUTE" -ge "$TARGET_MINUTE" ]); then
+            echo "✅ It's already past 00:05 CST. Running scripts immediately..."
+          else
+            SLEEP_TIME=$(( (TARGET_HOUR - CURRENT_HOUR) * 3600 + (TARGET_MINUTE - CURRENT_MINUTE) * 60 ))
+            echo "⏳ Sleeping for $SLEEP_TIME seconds until 00:05 CST..."
+            sleep $SLEEP_TIME
+          fi
+
+      - name: Run Daily Scripts
+        run: |
+          python bobao.py
+          python bidu.py
+          python weekly_daily_data.py
+
+      - name: Pull latest changes to avoid conflicts
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
+          git pull --rebase origin main || echo "No changes to pull"
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git add bobao.json bidu.json
+          git add bobao_weekly.json
+          git add bidu_weekly.json
+          git commit -m "Daily update from bobao.py & bidu.py" || echo "No changes to commit"
+          git push origin main || (git pull --rebase origin main && git push origin main)
+
+  run_weekly_script:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '45 15 * * 4'  # ✅ Ensures only the weekly job runs
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+
+      - name: Install Dependencies
+        run: pip install requests pandas
+
+      - name: Wait Until 00:05 CST Before Running
+        run: |
+          CURRENT_HOUR=$(date -u +"%H")
+          CURRENT_MINUTE=$(date -u +"%M")
+          TARGET_HOUR=16  # 00:05 CST is 16:05 UTC
+          TARGET_MINUTE=10
+
+          echo "⏳ Current UTC Time: $CURRENT_HOUR:$CURRENT_MINUTE"
+          if [ "$CURRENT_HOUR" -gt "$TARGET_HOUR" ] || ([ "$CURRENT_HOUR" -eq "$TARGET_HOUR" ] && [ "$CURRENT_MINUTE" -ge "$TARGET_MINUTE" ]); then
+            echo "✅ It's already past 00:05 CST. Running scripts immediately..."
+          else
+            SLEEP_TIME=$(( (TARGET_HOUR - CURRENT_HOUR) * 3600 + (TARGET_MINUTE - CURRENT_MINUTE) * 60 ))
+            echo "⏳ Sleeping for $SLEEP_TIME seconds until 00:05 CST..."
+            sleep $SLEEP_TIME
+          fi
+
+      - name: Run Weekly Scripts
+        run: |  
+          python qiangtui.py
+          python renqijiazuo.py
+          python chunaitaojin.py
+          python shouyechunai.py
+          python canybd.py
+          python sybd.py
+          python scrape_and_update.py
+
+      - name: Pull latest changes to avoid conflicts
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add syxd.json sygd.json syxy.json syhx.json syjk.json canybd.json
+          git add sybd.json
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
+          git pull --rebase origin main || echo "No changes to pull"
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git add output_data.json benzhouqiangtui.json renqijiazuo.json chunaitaojin.json
+          git commit -m "Weekly update from scrape_and_update.py" || echo "No changes to commit"
+          git push origin main || (git pull --rebase origin main && git push origin main)
+
+  run_test_script:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'  # ✅ Only runs manually
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+
+      - name: Install Dependencies
+        run: pip install requests pandas
+
+      - name: Run Test for chunaitaojin.py
+        run: |
+          echo "🚀 Running test script ..."
+          
+          
+
+      - name: Pull latest changes to avoid conflicts
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
+          git pull --rebase origin main || echo "No changes to pull"
+
+      - name: Commit and Push Test Output (If Any)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git add chunaishouye.json || echo "No changes in chunaishouye.json"
+          git commit -m "🚀 Manual test run for chunaitaojin.py" || echo "No changes to commit"
+          git push origin main || (git pull --rebase origin main && git push origin main)
