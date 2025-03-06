@@ -46,6 +46,7 @@ jobs:
           python bobao.py
           python bidu.py
           python weekly_daily_data.py
+          python chunaitaojin_increase.py
 
       - name: Pull latest changes to avoid conflicts
         run: |
@@ -61,6 +62,7 @@ jobs:
           git add bobao.json bidu.json
           git add bobao_weekly.json
           git add bidu_weekly.json
+          git add chunaitaojin_increase.json
           git commit -m "Daily update from bobao.py & bidu.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
 
@@ -146,7 +148,8 @@ jobs:
       - name: Run Test for chunaitaojin.py
         run: |
           echo "🚀 Running test script ..."
-          python chunaitaojin_increase.py
+          python Top3.py
+          
           
           
 
@@ -154,7 +157,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add chunaitaojin_increase.json
+          git add bzlj.json cxrz.json qltj.json
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
           git pull --rebase origin main || echo "No changes to pull"
 
