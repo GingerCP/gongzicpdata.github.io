@@ -164,6 +164,23 @@
         <tbody id="catj"></tbody>
     </table>
 
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 纯爱淘金</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>书名</th>
+                <th>当前热度</th>
+                <th>当前收藏</th>
+                <th>增加热度</th>
+                <th>增加收藏</th>
+                <th>数据更新时间</th>
+            </tr>
+        </thead>
+        <tbody id="catj_delta"></tbody>
+    </table>
+
 
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
     <h2 class="mt-5 text-primary">📖 人气佳作</h2>
@@ -337,7 +354,30 @@
             console.error(`Error loading ${jsonFile}:`, error);
         }
     }
-        
+
+    async function loadDataset_increase(jsonFile, tableId) {
+        try {
+            const response = await fetch(jsonFile);
+            const data = await response.json();
+            let tableBody = document.getElementById(tableId);
+            tableBody.innerHTML = "NULL";  // Clear previous data
+    
+            data.forEach(row => {    
+                let tr = document.createElement("tr");
+                tr.innerHTML = `<td>${row.ID}</td>
+                                <td>${row.Name}</td>
+                                <td>${row.Popularity}</td>
+                                <td>${row.Collection}</td>
+                                 <td>${row.DeltaPopularity}</td>
+                                <td>${row.DeltaCollectio}</td>
+                                <td?${row.Timestamp}</td>
+                                `;
+                tableBody.appendChild(tr);
+            });
+        } catch (error) {
+            console.error(`Error loading ${jsonFile}:`, error);
+        }
+    }
         // Load all datasets when the page loads
         loadDataset("bobao.json", "broadcast");  // Daily data on top
         loadDataset("bidu.json", "bidu");  // Daily data on top
@@ -354,6 +394,7 @@
         loadDataset("bidu_weekly.json", "bidulishi", true);  // Weekly data
         loadDataset_ny("canybd.json", "canybd");  // Weekly data
         loadDataset_ny("sybd.json", "sybd");  // Weekly data
+        loadDataset_increase('chunaitaojin_increase.json','catj_delta'); 
         loadDataset("output_data.json", "allbooks");  // Weekly data    
     </script>
 
