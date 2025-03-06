@@ -146,6 +146,7 @@ jobs:
       - name: Run Test for chunaitaojin.py
         run: |
           echo "🚀 Running test script ..."
+          python get_bookshelf.py
           
           
 
@@ -153,7 +154,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
+          git add tencent_doc_data.json
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
           git pull --rebase origin main || echo "No changes to pull"
 
