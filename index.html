@@ -366,9 +366,9 @@
             let displayColumn = showBoth 
                 ? `<td>${weekday}</td><td>${row.Timestamp}</td>`  // ✅ Show both weekday & timestamp
                 : `<td>${row.Timestamp}</td>`;  // ✅ Show only timestamp
-            let weekday = getWeekday(row.OldTimestamp); // Convert timestamp to weekday
+            let weekdayOld = getWeekday(row.OldTimestamp); // Convert timestamp to weekday
             let displayColumnOld = showBoth 
-                ? `<td>${weekday}</td><td>${row.OldTimestamp}</td>`  // ✅ Show both weekday & timestamp
+                ? `<td>${weekdayOld}</td><td>${row.OldTimestamp}</td>`  // ✅ Show both weekday & timestamp
                 : `<td>${row.OldTimestamp}</td>`;  // ✅ Show only timestamp
             let tr = document.createElement("tr");
             tr.innerHTML = `<td>${row.ID}</td>
