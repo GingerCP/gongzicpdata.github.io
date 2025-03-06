@@ -42,4 +42,4 @@ for novel in data_old:
   })
   print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
   with open('chunaitaojin_increase.json', "w", encoding="utf-8") as file:
-      json.dump(novels, file, ensure_ascii=False, indent=4)
+      json.dump(increased_data, file, ensure_ascii=False, indent=4)
