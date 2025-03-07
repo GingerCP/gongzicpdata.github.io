@@ -43,6 +43,5 @@ for json_name in json_name_list:
         "OldTimestamp": old_time,
         "Timestamp": fetch_time  # Store fetch time
     })
-    print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
     with open(json_name + '_increase.json', "w", encoding="utf-8") as file:
         json.dump(novels, file, ensure_ascii=False, indent=4)
