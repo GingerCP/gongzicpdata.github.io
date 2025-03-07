@@ -44,4 +44,4 @@ for json_name in json_name_list:
         "Timestamp": fetch_time  # Store fetch time
     })
     with open(json_name + '_increase.json', "w", encoding="utf-8") as file:
-        json.dump(novels, file, ensure_ascii=False, indent=4)
+        json.dump(increased_data, file, ensure_ascii=False, indent=4)
