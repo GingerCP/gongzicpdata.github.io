@@ -13,7 +13,7 @@ json_name_list = ['bzlj','cxrz','qltj']
 # data_old =json.loads('chunaitaojin.json')
 for json_name in json_name_list:
   with open(json_name + '.json', 'r', encoding='utf-8') as f:
-      data_old = json.load(f) 
+      data_old = json.load(f)
   increased_data = []
   headers = {"User-Agent": "Mozilla/5.0"}
   for novel in data_old:
@@ -31,17 +31,19 @@ for json_name in json_name_list:
         data = json.loads(text)
         # print(data)
         novel = data['data']
+        print(novel)
     # Print the HTML content in a formatted way
     # for novel in data['data']:
     increased_data.append({
         "ID": novel["novel_id"],
         "Name": novel["novel_name"],
         "Popularity": novel["novel_allpopu"] ,
-        "Collection": novel["novel_allcoll"] ,
+        "Collection": 0 ,
         "DeltaPopularity": novel["novel_allpopu"] - old_popularity,
-        "DeltaCollection": novel["novel_allcoll"] - old_collection,
+        "DeltaCollection": 0,
         "OldTimestamp": old_time,
         "Timestamp": fetch_time  # Store fetch time
     })
+    print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
     with open(json_name + '_increase.json', "w", encoding="utf-8") as file:
-        json.dump(increased_data, file, ensure_ascii=False, indent=4)
+        json.dump(novels, file, ensure_ascii=False, indent=4)
