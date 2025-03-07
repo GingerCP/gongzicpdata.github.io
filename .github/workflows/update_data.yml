@@ -9,7 +9,7 @@ on:
 jobs:
   run_daily_script:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '45 15 * * *'  # ✅ Ensures only the daily job runs
+    if: github.event.schedule == 'workflow_dispatch' # ✅ Ensures only the daily job runs
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -43,11 +43,11 @@ jobs:
 
       - name: Run Daily Scripts
         run: |
-          python Top3_increase.py
           python bobao.py
           python bidu.py
           python weekly_daily_data.py
           python chunaitaojin_increase.py
+          python Top3_increase.py
           
 
       - name: Pull latest changes to avoid conflicts
