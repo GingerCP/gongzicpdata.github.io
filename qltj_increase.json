@@ -1,0 +1,62 @@
+[
+    {
+        "ID": 1170470,
+        "Name": "缚春恩",
+        "Popularity": 12737304,
+        "Collection": 16948,
+        "DeltaPopularity": 6715,
+        "DeltaCollection": 13,
+        "OldTimestamp": "2025-03-07 07:55:23",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1579289,
+        "Name": "缺觉",
+        "Popularity": 7959093,
+        "Collection": 12032,
+        "DeltaPopularity": 1676,
+        "DeltaCollection": 4,
+        "OldTimestamp": "2025-03-07 07:55:23",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1646891,
+        "Name": "休想",
+        "Popularity": 6892529,
+        "Collection": 11387,
+        "DeltaPopularity": 1391,
+        "DeltaCollection": 4,
+        "OldTimestamp": "2025-03-07 07:55:23",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1478102,
+        "Name": "你听话点",
+        "Popularity": 2470972,
+        "Collection": 4422,
+        "DeltaPopularity": 671,
+        "DeltaCollection": 1,
+        "OldTimestamp": "2025-03-07 07:55:23",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1351332,
+        "Name": "彩虹连接",
+        "Popularity": 3052585,
+        "Collection": 4065,
+        "DeltaPopularity": 280,
+        "DeltaCollection": 0,
+        "OldTimestamp": "2025-03-07 07:55:23",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1499589,
+        "Name": "候鸟与翠榴石",
+        "Popularity": 11036193,
+        "Collection": 9169,
+        "DeltaPopularity": 201,
+        "DeltaCollection": 1,
+        "OldTimestamp": "2025-03-07 07:55:23",
+        "Timestamp": "2025-03-07 08:04:07"
+    }
+]

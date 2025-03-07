@@ -1,0 +1,92 @@
+[
+    {
+        "ID": 1574443,
+        "Name": "夜跑别在雷雨天",
+        "Popularity": 17906889,
+        "Collection": 28872,
+        "DeltaPopularity": 9173,
+        "DeltaCollection": 14,
+        "OldTimestamp": "2025-03-07 07:55:20",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1518857,
+        "Name": "酩酊不醒",
+        "Popularity": 12853062,
+        "Collection": 24237,
+        "DeltaPopularity": 3800,
+        "DeltaCollection": 9,
+        "OldTimestamp": "2025-03-07 07:55:20",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1634084,
+        "Name": "冷冰冰和哭唧唧",
+        "Popularity": 3860221,
+        "Collection": 7560,
+        "DeltaPopularity": 2741,
+        "DeltaCollection": 9,
+        "OldTimestamp": "2025-03-07 07:55:20",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1780640,
+        "Name": "我们不是分手了吗",
+        "Popularity": 2969033,
+        "Collection": 6234,
+        "DeltaPopularity": 4996,
+        "DeltaCollection": 11,
+        "OldTimestamp": "2025-03-07 07:55:21",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1640384,
+        "Name": "和死对头一起穿到了ABO",
+        "Popularity": 2315952,
+        "Collection": 5252,
+        "DeltaPopularity": 1051,
+        "DeltaCollection": 5,
+        "OldTimestamp": "2025-03-07 07:55:21",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1699185,
+        "Name": "善养",
+        "Popularity": 2210998,
+        "Collection": 3652,
+        "DeltaPopularity": 1390,
+        "DeltaCollection": 4,
+        "OldTimestamp": "2025-03-07 07:55:21",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1590031,
+        "Name": "荆棘之路",
+        "Popularity": 1065323,
+        "Collection": 1549,
+        "DeltaPopularity": 610,
+        "DeltaCollection": 2,
+        "OldTimestamp": "2025-03-07 07:55:22",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1711067,
+        "Name": "雀儿",
+        "Popularity": 1515199,
+        "Collection": 1491,
+        "DeltaPopularity": 840,
+        "DeltaCollection": 2,
+        "OldTimestamp": "2025-03-07 07:55:22",
+        "Timestamp": "2025-03-07 08:04:07"
+    },
+    {
+        "ID": 1715113,
+        "Name": "他们都说我该死",
+        "Popularity": 1677561,
+        "Collection": 2978,
+        "DeltaPopularity": 300,
+        "DeltaCollection": 2,
+        "OldTimestamp": "2025-03-07 07:55:22",
+        "Timestamp": "2025-03-07 08:04:07"
+    }
+]
