@@ -42,6 +42,8 @@
         <a href="mailto:jingerfish.stories@gmail.com">jingerfish.stories@gmail.com</a> </li>
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
      </p> 
+
+    <h1 class="mt-4">📚 榜单线</h1>
     
     <h2 class="mt-5 text-primary">📖 播报</h2>
     <table class="table table-striped">
@@ -134,6 +136,62 @@
         <tbody id="canybd"></tbody>
     </table>
 
+    <h1 class="mt-4">📚 涨幅</h1>
+
+    <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 本周力荐-涨幅</h2>
+    <table class="table table-striped">
+        <thead>
+                <th>ID</th>
+                <th>书名</th>
+                <th>当前热度</th>
+                <th>当前收藏</th>
+                <th>增加热度</th>
+                <th>增加收藏</th>
+                <th>初始时间</th>
+                <th>截止时间</th>
+            </tr>
+        </thead>
+        <tbody id="bzlj"></tbody>
+    </table>
+
+        <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 畅销热追-涨幅</h2>
+    <table class="table table-striped">
+        <thead>
+                <th>ID</th>
+                <th>书名</th>
+                <th>当前热度</th>
+                <th>当前收藏</th>
+                <th>增加热度</th>
+                <th>增加收藏</th>
+                <th>初始时间</th>
+                <th>截止时间</th>
+            </tr>
+        </thead>
+        <tbody id="cxrz"></tbody>
+    </table>
+
+        <!-- Daily Data (Best Sellers) - Appears at the Top -->
+    <h2 class="mt-5 text-primary">📖 人气飙升-涨幅</h2>
+    <table class="table table-striped">
+        <thead>
+                <th>ID</th>
+                <th>书名</th>
+                <th>当前热度</th>
+                <th>当前收藏</th>
+                <th>增加热度</th>
+                <th>增加收藏</th>
+                <th>初始时间</th>
+                <th>截止时间</th>
+            </tr>
+        </thead>
+        <tbody id="qltj"></tbody>
+    </table>
+    
+
+    <h1 class="mt-4">📚 具体数据</h1>
+
     <!-- Daily Data (Best Sellers) - Appears at the Top -->
     <h2 class="mt-5 text-primary">📖 本周强推</h2>
     <table class="table table-striped">
@@ -162,23 +220,6 @@
             </tr>
         </thead>
         <tbody id="catj"></tbody>
-    </table>
-
-    <!-- Daily Data (Best Sellers) - Appears at the Top -->
-    <h2 class="mt-5 text-primary">📖 纯爱淘金-涨幅</h2>
-    <table class="table table-striped">
-        <thead>
-                <th>ID</th>
-                <th>书名</th>
-                <th>当前热度</th>
-                <th>当前收藏</th>
-                <th>增加热度</th>
-                <th>增加收藏</th>
-                <th>初始时间</th>
-                <th>截止时间</th>
-            </tr>
-        </thead>
-        <tbody id="catj_delta"></tbody>
     </table>
 
 
@@ -403,6 +444,9 @@
         loadDataset_ny("canybd.json", "canybd");  // Weekly data
         loadDataset_ny("sybd.json", "sybd");  // Weekly data
         loadDataset_increase('chunaitaojin_increase.json','catj_delta'); 
+        loadDataset_increase('bzlj_increase.json','bzlj'); 
+        loadDataset_increase('cxrz_increase.json','cxrz'); 
+        loadDataset_increase('qltj_increase.json','qltj'); 
         loadDataset("output_data.json", "allbooks");  // Weekly data    
     </script>
 
