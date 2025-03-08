@@ -2,32 +2,32 @@
     {
         "ID": 1170470,
         "Name": "缚春恩",
-        "Popularity": 14041225,
+        "Popularity": 14043385,
         "Collection": 0,
-        "DeltaPopularity": 1310636,
+        "DeltaPopularity": 1312796,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:23",
-        "Timestamp": "2025-03-09 00:46:54"
+        "Timestamp": "2025-03-09 00:50:02"
     },
     {
         "ID": 1579289,
         "Name": "缺觉",
-        "Popularity": 8181290,
+        "Popularity": 8181645,
         "Collection": 0,
-        "DeltaPopularity": 223873,
+        "DeltaPopularity": 224228,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:23",
-        "Timestamp": "2025-03-09 00:46:54"
+        "Timestamp": "2025-03-09 00:50:02"
     },
     {
         "ID": 1646891,
         "Name": "休想",
-        "Popularity": 7116407,
+        "Popularity": 7116837,
         "Collection": 0,
-        "DeltaPopularity": 225269,
+        "DeltaPopularity": 225699,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:23",
-        "Timestamp": "2025-03-09 00:46:54"
+        "Timestamp": "2025-03-09 00:50:02"
     },
     {
         "ID": 1478102,
@@ -37,26 +37,26 @@
         "DeltaPopularity": 113155,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:23",
-        "Timestamp": "2025-03-09 00:46:54"
+        "Timestamp": "2025-03-09 00:50:02"
     },
     {
         "ID": 1351332,
         "Name": "彩虹连接",
-        "Popularity": 3155666,
+        "Popularity": 3155671,
         "Collection": 0,
-        "DeltaPopularity": 103361,
+        "DeltaPopularity": 103366,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:23",
-        "Timestamp": "2025-03-09 00:46:54"
+        "Timestamp": "2025-03-09 00:50:02"
     },
     {
         "ID": 1499589,
         "Name": "候鸟与翠榴石",
-        "Popularity": 11176161,
+        "Popularity": 11176516,
         "Collection": 0,
-        "DeltaPopularity": 140169,
+        "DeltaPopularity": 140524,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:23",
-        "Timestamp": "2025-03-09 00:46:54"
+        "Timestamp": "2025-03-09 00:50:02"
     }
 ]
