@@ -34,9 +34,9 @@ for novel in data_old:
       "ID": novel["novel_id"],
       "Name": novel["novel_name"],
       "Popularity": novel["novel_allpopu"] ,
-      "Collection": novel["novel_allcoll"] ,
+      "Collection": 0, #novel["novel_allcoll"] ,
       "DeltaPopularity": novel["novel_allpopu"] - old_popularity,
-      "DeltaCollection": novel["novel_allcoll"] - old_collection,
+      "DeltaCollection": 0, # novel["novel_allcoll"] - old_collection,
       "OldTimestamp": old_time,
       "Timestamp": fetch_time  # Store fetch time
   })
