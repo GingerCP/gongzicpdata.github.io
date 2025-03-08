@@ -154,7 +154,6 @@ jobs:
           python bobao.py
           python bidu.py
           python weekly_daily_data.py
-          python chunaitaojin_increase.py
           python Top3_increase.py
 
           
@@ -176,7 +175,6 @@ jobs:
           git add bobao_weekly.json
           git add bidu_weekly.json
           git add bzlj_increase.json cxrz_increase.json qltj_increase.json
-          git add chunaitaojin_increase.json
           git add chunaishouye.json || echo "No changes in chunaishouye.json"
           git commit -m "🚀 Manual test run for chunaitaojin.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
