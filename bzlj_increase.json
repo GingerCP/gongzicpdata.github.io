@@ -2,81 +2,81 @@
     {
         "ID": 1712177,
         "Name": "献我",
-        "Popularity": 129880091,
-        "Collection": 124724,
-        "DeltaPopularity": 16056,
-        "DeltaCollection": 57,
+        "Popularity": 132917779,
+        "Collection": 0,
+        "DeltaPopularity": 3053744,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1755823,
         "Name": "我带钥匙有用吗",
-        "Popularity": 20459278,
-        "Collection": 18192,
-        "DeltaPopularity": 9890,
-        "DeltaCollection": 50,
+        "Popularity": 22195200,
+        "Collection": 0,
+        "DeltaPopularity": 1745812,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1731402,
         "Name": "隐燃",
-        "Popularity": 4795077,
-        "Collection": 6140,
-        "DeltaPopularity": 2190,
-        "DeltaCollection": 11,
+        "Popularity": 5398930,
+        "Collection": 0,
+        "DeltaPopularity": 606043,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1580767,
         "Name": "千万次的见面",
-        "Popularity": 3677984,
-        "Collection": 4292,
-        "DeltaPopularity": 1425,
-        "DeltaCollection": 7,
+        "Popularity": 3959292,
+        "Collection": 0,
+        "DeltaPopularity": 282733,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1724886,
         "Name": "劣质真心",
-        "Popularity": 4378048,
-        "Collection": 6642,
-        "DeltaPopularity": 8365,
-        "DeltaCollection": 24,
+        "Popularity": 5343568,
+        "Collection": 0,
+        "DeltaPopularity": 973885,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1739413,
         "Name": "他的择偶标准是会捡破烂",
-        "Popularity": 3528675,
-        "Collection": 4365,
-        "DeltaPopularity": 2771,
-        "DeltaCollection": 16,
+        "Popularity": 3998514,
+        "Collection": 0,
+        "DeltaPopularity": 472610,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1652843,
         "Name": "不期",
-        "Popularity": 3114456,
-        "Collection": 3015,
-        "DeltaPopularity": 1530,
-        "DeltaCollection": 4,
+        "Popularity": 3368507,
+        "Collection": 0,
+        "DeltaPopularity": 255581,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     },
     {
         "ID": 1367690,
         "Name": "未晚",
-        "Popularity": 4038447,
-        "Collection": 6699,
-        "DeltaPopularity": 671,
-        "DeltaCollection": 4,
+        "Popularity": 4282449,
+        "Collection": 0,
+        "DeltaPopularity": 244673,
+        "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:19",
-        "Timestamp": "2025-03-07 08:04:07"
+        "Timestamp": "2025-03-09 00:46:54"
     }
 ]
