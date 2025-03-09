@@ -2,91 +2,91 @@
     {
         "ID": 1574443,
         "Name": "夜跑别在雷雨天",
-        "Popularity": 19036462,
+        "Popularity": 19815936,
         "Collection": 0,
-        "DeltaPopularity": 1138746,
+        "DeltaPopularity": 1918220,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:20",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1518857,
         "Name": "酩酊不醒",
-        "Popularity": 13511746,
+        "Popularity": 14008822,
         "Collection": 0,
-        "DeltaPopularity": 662484,
+        "DeltaPopularity": 1159560,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:20",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1634084,
         "Name": "冷冰冰和哭唧唧",
-        "Popularity": 4274459,
+        "Popularity": 4570216,
         "Collection": 0,
-        "DeltaPopularity": 416979,
+        "DeltaPopularity": 712736,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:20",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1780640,
         "Name": "我们不是分手了吗",
-        "Popularity": 3322257,
+        "Popularity": 3554205,
         "Collection": 0,
-        "DeltaPopularity": 358220,
+        "DeltaPopularity": 590168,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:21",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1640384,
         "Name": "和死对头一起穿到了ABO",
-        "Popularity": 2597194,
+        "Popularity": 2813526,
         "Collection": 0,
-        "DeltaPopularity": 282293,
+        "DeltaPopularity": 498625,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:21",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1699185,
         "Name": "善养",
-        "Popularity": 2489953,
+        "Popularity": 2694633,
         "Collection": 0,
-        "DeltaPopularity": 280345,
+        "DeltaPopularity": 485025,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:21",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1590031,
         "Name": "荆棘之路",
-        "Popularity": 1264824,
+        "Popularity": 1399439,
         "Collection": 0,
-        "DeltaPopularity": 200111,
+        "DeltaPopularity": 334726,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:22",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1711067,
         "Name": "雀儿",
-        "Popularity": 1556288,
+        "Popularity": 1591032,
         "Collection": 0,
-        "DeltaPopularity": 41929,
+        "DeltaPopularity": 76673,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:22",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     },
     {
         "ID": 1715113,
         "Name": "他们都说我该死",
-        "Popularity": 1824057,
+        "Popularity": 1965404,
         "Collection": 0,
-        "DeltaPopularity": 146796,
+        "DeltaPopularity": 288143,
         "DeltaCollection": 0,
         "OldTimestamp": "2025-03-07 07:55:22",
-        "Timestamp": "2025-03-09 00:50:02"
+        "Timestamp": "2025-03-10 00:10:35"
     }
 ]
