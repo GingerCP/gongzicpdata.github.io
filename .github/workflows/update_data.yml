@@ -156,7 +156,7 @@ jobs:
           import os
           key = os.getenv('API_KEY')
           print('::add-mask::' + key)  # 防止密钥在日志中暴露
-          print('签名生成成功！前4位:', key[:4] + '****') if key else print('密钥未找到')
+          print('签名生成成功！前4位:', key[:4] + '****') if key else print('密钥未找到')"
           
           
       - name: 验证密钥更新
