@@ -140,6 +140,13 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
+      - name: 验证密钥更新
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          echo "新密钥前8位: ${API_KEY:0:8}..."  # 安全显示部分
+          python -c "import os; assert len(os.getenv('API_KEY')) >= 16, '密钥长度不足'"
+
       - name: Set Up Python
         uses: actions/setup-python@v3
         with:
@@ -151,14 +158,6 @@ jobs:
       - name: Run Test for chunaitaojin.py
         run: |
           echo "🚀 Running test script ..."
-          python bobao.py
-          python bidu.py
-          python weekly_daily_data.py
-          python Top3_increase.py
-
-          
-          
-          
 
       - name: Pull latest changes to avoid conflicts
         run: |
@@ -171,10 +170,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git add bobao.json bidu.json
-          git add bobao_weekly.json
-          git add bidu_weekly.json
-          git add bzlj_increase.json cxrz_increase.json qltj_increase.json
           git add chunaishouye.json || echo "No changes in chunaishouye.json"
           git commit -m "🚀 Manual test run for chunaitaojin.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
