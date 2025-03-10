@@ -8,7 +8,7 @@ import json
 from urllib.parse import urlparse, parse_qs, urlencode
 from datetime import datetime, timedelta
 from urllib.parse import urlparse, parse_qs, urlencode
-from get_key import generate_request_key
+from request_key import generate_request_key
 import os
 
 key = os.getenv('API_KEY')
