@@ -48,6 +48,7 @@ jobs:
           python weekly_daily_data.py
           python chunaitaojin_increase.py
           python Top3_increase.py
+          python bobao_test.py
           
 
       - name: Pull latest changes to avoid conflicts
@@ -61,10 +62,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git add bobao.json bidu.json
+          git add bobao.json bidu.json 
           git add bobao_weekly.json
           git add bidu_weekly.json
           git add bzlj_increase.json cxrz_increase.json qltj_increase.json
+          git add bobao_backup.json
           git add chunaitaojin_increase.json
           git commit -m "Daily update from bobao.py & bidu.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
