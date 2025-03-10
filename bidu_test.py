@@ -47,7 +47,7 @@ for page in range(1,2):
               "Timestamp": fetch_time  # Store fetch time
           })
           print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allcoll'])
-      with open('bidu_test.json', "w", encoding="utf-8") as file:
+      with open('bidu.json', "w", encoding="utf-8") as file:
            json.dump(novels, file, ensure_ascii=False, indent=4)
 
 
