@@ -158,7 +158,8 @@ jobs:
           python-version: "3.x"
 
       - name: Install Dependencies
-        run: pip install requests beautifulsoup4
+        run: | 
+             pip install requests beautifulsoup4
              pip install get_key-0.1.0-py3-none-any.whl
 
       - name: Run Test for chunaitaojin.py
