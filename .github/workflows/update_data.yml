@@ -171,7 +171,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add bobao_test.json
           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/GingerCP/gongzicpdata.github.io.git
           git pull --rebase origin main || echo "No changes to pull"
 
@@ -179,6 +178,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git add chunaishouye.json || echo "No changes in chunaishouye.json"
+          git add bobao_test.json
+          # git add chunaishouye.json || echo "No changes in chunaishouye.json"
           git commit -m "🚀 Manual test run for chunaitaojin.py" || echo "No changes to commit"
           git push origin main || (git pull --rebase origin main && git push origin main)
