@@ -37,7 +37,7 @@ for page in range(0,4):
               "Timestamp": fetch_time 
           })
           print(novel['novel_name'], novel['novel_id'], novel['novel_allpopu'], novel['novel_allpopu'])
-      with open('bobao.json', "w", encoding="utf-8") as file:
+      with open('bobao_backup.json', "w", encoding="utf-8") as file:
            json.dump(novels, file, ensure_ascii=False, indent=4)
 
 
