@@ -150,21 +150,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 生成签名
-        run: |
-          python -c "
-          import os
-          key = os.getenv('API_KEY')
-          print('::add-mask::' + key)  # 防止密钥在日志中暴露
-          print('签名生成成功！前4位:', key[:4] + '****') if key else print('密钥未找到')"
-          
-          
-      - name: 验证密钥更新
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          echo "新密钥前8位: ${API_KEY:0:8}..."  # 安全显示部分
-          python -c "import os; assert len(os.getenv('API_KEY')) >= 16, '密钥长度不足'"
+
 
       - name: Set Up Python
         uses: actions/setup-python@v3
@@ -173,6 +159,7 @@ jobs:
 
       - name: Install Dependencies
         run: pip install requests beautifulsoup4
+             pip install get_key-0.1.0-py3-none-any.whl
 
       - name: Run Test for chunaitaojin.py
         run: |
